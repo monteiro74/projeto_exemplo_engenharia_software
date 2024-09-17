@@ -597,12 +597,13 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 
 ### 16.2.1. Explicação dos dados fictícios:
 
-Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
-Animais: Rex (cachorro), Mimi (gato) e Bolinha (cachorro) são os animais dos clientes.
-Veterinários: Dr. Ana, Dr. Pedro e Dra. Carla são os veterinários com diferentes especialidades.
-Condições dos animais: Febre, fratura e coceira são exemplos de condições tratadas na clínica.
-Atendimentos: Registros de atendimentos realizados para cada animal, com ficha, prontuário e receita.
-Agendas: Agenda dos veterinários para os animais em horários específicos.
-Atendentes: Patrícia e Lucas são os atendentes responsáveis.
-Fila de espera: Fila de clientes e animais aguardando atendimento.
-Entrevistas: Observações feitas durante a entrevista entre veterinário e dono do animal.
+* Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
+* Animais: Rex (cachorro), Mimi (gato) e Bolinha (cachorro) são os animais dos clientes.
+* Veterinários: Dr. Ana, Dr. Pedro e Dra. Carla são os veterinários com diferentes especialidades.
+* Condições dos animais: Febre, fratura e coceira são exemplos de condições tratadas na clínica.
+* Atendimentos: Registros de atendimentos realizados para cada animal, com ficha, prontuário e receita.
+* Agendas: Agenda dos veterinários para os animais em horários específicos.
+* Atendentes: Patrícia e Lucas são os atendentes responsáveis.
+* Fila de espera: Fila de clientes e animais aguardando atendimento.
+* Entrevistas: Observações feitas durante a entrevista entre veterinário e dono do animal.
+
