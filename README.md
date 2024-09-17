@@ -14,17 +14,18 @@ Repositório, Gerencia de proj sw. 2024/2
   - [5.1. Descrição das Classes e Relacionamentos](#51-descrição-das-classes-e-relacionamentos)
   - [5.2. Relacionamentos](#52-relacionamentos)
 - [6. Casos de uso](#6-casos-de-uso)
-  - [6.1. Histórias de usuário](#61-histórias-de-usuário)
-    - [6.1.1. História de Usuário 1: Cadastro de Cliente](#611-história-de-usuário-1-cadastro-de-cliente)
-    - [6.1.2. História de Usuário 2: Cadastro de Animal](#612-história-de-usuário-2-cadastro-de-animal)
-    - [6.1.3. História de Usuário 3: Informar Condições e Hábitos do Animal](#613-história-de-usuário-3-informar-condições-e-hábitos-do-animal)
-    - [6.1.4. História de Usuário 4: Informar Tipo de Ração](#614-história-de-usuário-4-informar-tipo-de-ração)
-    - [6.1.5. História de Usuário 5: Marcar Atendimento Futuro](#615-história-de-usuário-5-marcar-atendimento-futuro)
-    - [6.1.6. História de Usuário 6: Atendimento pelo Atendente](#616-história-de-usuário-6-atendimento-pelo-atendente)
-    - [6.1.7. História de Usuário 7: Entrevista e Exame pelo Veterinário](#617-história-de-usuário-7-entrevista-e-exame-pelo-veterinário)
-    - [6.1.8. História de Usuário 8: Gerar Receita](#618-história-de-usuário-8-gerar-receita)
-    - [6.1.9. História de Usuário 9: Criar Ficha e Prontuário](#619-história-de-usuário-9-criar-ficha-e-prontuário)
-    - [6.1.10. História de Usuário 10: Acesso às Informações de Atendimento](#6110-história-de-usuário-10-acesso-às-informações-de-atendimento)
+  - [6.1. Casos de uso](#61-casos-de-uso)
+  - [6.2. Histórias de usuário](#62-histórias-de-usuário)
+    - [6.2.1. História de Usuário 1: Cadastro de Cliente](#621-história-de-usuário-1-cadastro-de-cliente)
+    - [6.2.2. História de Usuário 2: Cadastro de Animal](#622-história-de-usuário-2-cadastro-de-animal)
+    - [6.2.3. História de Usuário 3: Informar Condições e Hábitos do Animal](#623-história-de-usuário-3-informar-condições-e-hábitos-do-animal)
+    - [6.2.4. História de Usuário 4: Informar Tipo de Ração](#624-história-de-usuário-4-informar-tipo-de-ração)
+    - [6.2.5. História de Usuário 5: Marcar Atendimento Futuro](#625-história-de-usuário-5-marcar-atendimento-futuro)
+    - [6.2.6. História de Usuário 6: Atendimento pelo Atendente](#626-história-de-usuário-6-atendimento-pelo-atendente)
+    - [6.2.7. História de Usuário 7: Entrevista e Exame pelo Veterinário](#627-história-de-usuário-7-entrevista-e-exame-pelo-veterinário)
+    - [6.2.8. História de Usuário 8: Gerar Receita](#628-história-de-usuário-8-gerar-receita)
+    - [6.2.9. História de Usuário 9: Criar Ficha e Prontuário](#629-história-de-usuário-9-criar-ficha-e-prontuário)
+    - [6.2.10. História de Usuário 10: Acesso às Informações de Atendimento](#6210-história-de-usuário-10-acesso-às-informações-de-atendimento)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -275,10 +276,12 @@ classDiagram
 
 # 6. Casos de uso
 
-## 6.1. Histórias de usuário
+## 6.1. Casos de uso
+
+## 6.2. Histórias de usuário
 
 
-### 6.1.1. História de Usuário 1: Cadastro de Cliente
+### 6.2.1. História de Usuário 1: Cadastro de Cliente
 
 ```
 **Como** um novo cliente,  
@@ -291,7 +294,7 @@ classDiagram
 ```
 
 
-### 6.1.2. História de Usuário 2: Cadastro de Animal
+### 6.2.2. História de Usuário 2: Cadastro de Animal
 
 ```
 **Como** um cliente,  
@@ -304,7 +307,7 @@ classDiagram
 ```
 
 
-### 6.1.3. História de Usuário 3: Informar Condições e Hábitos do Animal
+### 6.2.3. História de Usuário 3: Informar Condições e Hábitos do Animal
 
 ```
 **Como** um cliente,  
@@ -316,7 +319,7 @@ classDiagram
 - Essas informações devem ser armazenadas no perfil do animal.
 ```
 
-### 6.1.4. História de Usuário 4: Informar Tipo de Ração
+### 6.2.4. História de Usuário 4: Informar Tipo de Ração
 
 ```
 **Como** um cliente,  
@@ -329,7 +332,7 @@ classDiagram
 ```
 
 
-### 6.1.5. História de Usuário 5: Marcar Atendimento Futuro
+### 6.2.5. História de Usuário 5: Marcar Atendimento Futuro
 
 ```
 **Como** um cliente,  
@@ -342,7 +345,7 @@ classDiagram
 ```
 
 
-### 6.1.6. História de Usuário 6: Atendimento pelo Atendente
+### 6.2.6. História de Usuário 6: Atendimento pelo Atendente
 
 ```
 **Como** um cliente,  
@@ -355,7 +358,7 @@ classDiagram
 ```
 
 
-### 6.1.7. História de Usuário 7: Entrevista e Exame pelo Veterinário
+### 6.2.7. História de Usuário 7: Entrevista e Exame pelo Veterinário
 
 ```
 **Como** um veterinário,  
@@ -369,7 +372,7 @@ classDiagram
 ```
 
 
-### 6.1.8. História de Usuário 8: Gerar Receita
+### 6.2.8. História de Usuário 8: Gerar Receita
 
 ```
 **Como** um veterinário,  
@@ -382,7 +385,7 @@ classDiagram
 ```
 
 
-### 6.1.9. História de Usuário 9: Criar Ficha e Prontuário
+### 6.2.9. História de Usuário 9: Criar Ficha e Prontuário
 
 ```
 **Como** um veterinário,  
@@ -395,7 +398,7 @@ classDiagram
 ```
 
 
-### 6.1.10. História de Usuário 10: Acesso às Informações de Atendimento
+### 6.2.10. História de Usuário 10: Acesso às Informações de Atendimento
 
 ```
 **Como** um cliente,  
