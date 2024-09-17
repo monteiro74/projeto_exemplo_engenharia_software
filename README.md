@@ -278,8 +278,11 @@ classDiagram
 
 ## 6.1. Casos de uso
 
+:bulb: **Dica:** Situações de utilização do sistema.
+
 ## 6.2. Histórias de usuário
 
+:bulb: **Dica:** .
 
 ### 6.2.1. História de Usuário 1: Cadastro de Cliente
 
