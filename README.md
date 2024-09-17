@@ -5,9 +5,11 @@ Repositório, Gerencia de proj sw. 2024/2
 
 - [Repositório da eng. de sw.](#repositório-da-eng-de-sw)
 - [1. Introdução](#1-introdução)
-- [2. Problema e descrição do negócio.](#2-problema-e-descrição-do-negócio)
+- [2. Descrição do negócio.](#2-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
+  - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
+  - [4.2 Relacionamentos](#42-relacionamentos)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1. Histórias de usuário](#61-histórias-de-usuário)
@@ -27,7 +29,7 @@ Repositório, Gerencia de proj sw. 2024/2
 
 O projeto a seguir apresenta um sistema desenvolvidor para uma petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
 
-# 2. Problema e descrição do negócio.
+# 2. Descrição do negócio.
 
 Descrição do cenário onde o sistema deverá funcionar:
 
@@ -69,6 +71,101 @@ Descrição do cenário onde o sistema deverá funcionar:
 Descrição do sistema e suas relações.
 
 # 4. Diagrama ER
+
+```mermaid
+
+erDiagram
+    CLIENTE {
+        int id_cliente PK
+        string nome
+        string endereco
+        string telefone
+    }
+
+    ANIMAL {
+        int id_animal PK
+        string nome
+        string tipo
+        string condicao
+        string tipo_racao
+        string habitos
+        int id_cliente FK
+    }
+
+    VETERINARIO {
+        int id_veterinario PK
+        string nome
+        string especialidade
+    }
+
+    ATENDENTE {
+        int id_atendente PK
+        string nome
+    }
+
+    AGENDA {
+        int id_agenda PK
+        date data
+        time hora
+        int id_veterinario FK
+    }
+
+    ATENDIMENTO {
+        int id_atendimento PK
+        date data
+        time hora
+        int id_animal FK
+        int id_veterinario FK
+        int id_atendente FK
+        string resultado
+        string receita
+    }
+
+    FICHA {
+        int id_ficha PK
+        int id_animal FK
+        string observacoes
+    }
+
+    PRONTUARIO {
+        int id_prontuario PK
+        int id_animal FK
+        string anotacoes
+    }
+
+    CLIENTE ||--o{ ANIMAL : possui
+    ANIMAL ||--o{ ATENDIMENTO : recebe
+    VETERINARIO ||--o{ AGENDA : tem
+    AGENDA ||--o{ ATENDIMENTO : tem
+    ATENDENTE ||--o{ ATENDIMENTO : realiza
+    ANIMAL ||--o{ FICHA : possui
+    ANIMAL ||--o{ PRONTUARIO : possui
+
+```
+
+
+
+## 4.1 Descrição das Entidades e Relacionamentos
+
+- **CLIENTE**: Contém informações sobre os clientes da clínica.
+- **ANIMAL**: Contém informações sobre os animais que pertencem aos clientes.
+- **VETERINARIO**: Contém informações sobre os veterinários.
+- **ATENDENTE**: Contém informações sobre os atendentes.
+- **AGENDA**: Contém informações sobre horários disponíveis para atendimento.
+- **ATENDIMENTO**: Registra os atendimentos realizados para os animais.
+- **FICHA**: Contém observações feitas pelo veterinário durante o atendimento.
+- **PRONTUARIO**: Contém anotações adicionais feitas pelo veterinário.
+
+## 4.2 Relacionamentos
+
+- **CLIENTE** pode ter vários **ANIMAL**s.
+- **ANIMAL** pode receber vários **ATENDIMENTO**s.
+- **VETERINARIO** pode ter várias **AGENDA**s.
+- **AGENDA** pode ter vários **ATENDIMENTO**s.
+- **ATENDENTE** pode realizar vários **ATENDIMENTO**s.
+- **ANIMAL** pode ter uma **FICHA**.
+- **ANIMAL** pode ter um **PRONTUARIO**.
+
 
 
 
