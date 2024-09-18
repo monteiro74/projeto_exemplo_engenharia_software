@@ -41,7 +41,6 @@ Repositório, Gerencia de proj sw. 2024/2
     - [16.2.1. Explicação dos dados fictícios:](#1621-explicação-dos-dados-fictícios)
 
 
- mudar alguma coisa
 
 # 1. Introdução
 
