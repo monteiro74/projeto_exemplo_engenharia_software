@@ -41,6 +41,8 @@ Repositório, Gerencia de proj sw. 2024/2
     - [16.2.1. Explicação dos dados fictícios:](#1621-explicação-dos-dados-fictícios)
 
 
+ mudar alguma coisa
+
 # 1. Introdução
 
 O projeto a seguir apresenta um sistema desenvolvidor para uma petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
@@ -86,6 +88,23 @@ Descrição do cenário onde o sistema deverá funcionar:
 Descrição do sistema e suas relações.
 
 # 4. Diagrama ER
+
+```
+bloco
+```
+
+```python
+print("abc")
+
+```
+
+
+
+
+
+
+
+
 
 ```mermaid
 
