@@ -88,22 +88,6 @@ Descrição do sistema e suas relações.
 
 # 4. Diagrama ER
 
-```
-bloco
-```
-
-```python
-print("abc")
-
-```
-
-
-
-
-
-
-
-
 
 ```mermaid
 
@@ -301,7 +285,7 @@ classDiagram
 
 :bulb: **Dica:** Situações de utilização do sistema.
 
-![Casos de uso](https://raw.githubusercontent.com/monteiro74/emiliano_monteiro2024/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACFWYPSDZDOQACQ7NYQOXNCGZXTJ7BA)
+![Casos de uso](https://raw.githubusercontent.com/monteiro74/emiliano_monteiro2024/refs/heads/main/casos_de_uso.png)
 
 
 ## 6.2. Histórias de usuário
