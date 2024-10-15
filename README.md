@@ -285,7 +285,7 @@ classDiagram
 
 :bulb: **Dica:** Situações de utilização do sistema.
 
-![Casos de uso](https://raw.githubusercontent.com/monteiro74/emiliano_monteiro2024/refs/heads/main/casos_de_uso.png)
+![Casos de uso](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/casos_de_uso.png)
 
 
 ## 6.2. Histórias de usuário
