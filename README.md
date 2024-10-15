@@ -30,6 +30,8 @@ Repositório, Gerencia de proj sw. 2024/2
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
+  - [10.1. Editado manualmente](#101-editado-manualmente)
+  - [10.2. Segunda geração do diagrama](#102-segunda-geração-do-diagrama)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
@@ -435,6 +437,8 @@ classDiagram
 
 # 10. Diagrama de navegação de telas
 
+## 10.1. Editado manualmente
+
 ```mermaid
 graph TD;
     X[login] --> A[menu]
@@ -463,6 +467,35 @@ graph TD;
     R --> S[Finalizar Atendimento]
 
 ```
+
+## 10.2. Segunda geração do diagrama
+
+```mermaid
+graph TD
+    Login[Login] --> Menu[Menu Principal]
+    
+    Menu --> CadastroCliente[Cadastro de Cliente]
+    Menu --> CadastroAnimal[Cadastro de Animal]
+    Menu --> CondicoesAnimal[Informar Condições do Animal]
+    Menu --> RacaoAnimal[Informar Tipo de Ração]
+    Menu --> HabitosAnimal[Informar Hábitos do Animal]
+    Menu --> FichaAtendimento[Ficha de Atendimento]
+    Menu --> ProntuarioAnimal[Prontuário do Animal]
+    Menu --> AgendarAtendimento[Agendar Atendimento Futuro]
+    Menu --> FilaAtendimento[Fila de Espera]
+    Menu --> VerificarAgenda[Verificar Agenda de Veterinários]
+    Menu --> EntrevistaVeterinario[Entrevista com Veterinário]
+    Menu --> ReceitaAnimal[Gerar Receita]
+    
+    subgraph Processo de Atendimento
+        FilaAtendimento --> FichaAtendimento
+        FichaAtendimento --> EntrevistaVeterinario
+        EntrevistaVeterinario --> ProntuarioAnimal
+        ProntuarioAnimal --> ReceitaAnimal
+    end
+
+```
+
 
 
 # 11. Pilha tecnológica
