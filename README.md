@@ -435,7 +435,85 @@ classDiagram
 
 # 10. Diagrama de navegação de telas
 
+```mermaid
+graph TD;
+    X[login] --> A[menu]
+    A[menu] --> B[Cadastro de Cliente]
+    A --> C[Cadastro de Animal]
+    A --> D[Agendar Atendimento]
+    A --> E[Consulta de Fichas]
+    
+    B --> F[Formulário de Dados do Cliente]
+    F --> G[Salvar Cliente]
+    
+    C --> H[Formulário de Dados do Animal]
+    H --> I[Salvar Animal]
+    
+    D --> J[Selecionar Veterinário]
+    J --> K[Verificar Agenda]
+    K --> L[Colocar na Fila de Espera]
+    L --> M[Atendimento]
+    
+    E --> N[Selecionar Animal]
+    N --> O[Exibir Prontuário]
+    O --> P[Gerar Receita]
+    
+    M --> Q[Entrevista com Veterinário]
+    Q --> R[Registrar Observações]
+    R --> S[Finalizar Atendimento]
+
+```
+
+
 # 11. Pilha tecnológica
+
+```mermaid
+
+graph TD;
+    A[Pilha Tecnológica do Sistema Web] --> B[Servidor Web]
+    A --> C[Linguagem de Programação]
+    A --> D[Sistema de Gerenciamento de Banco de Dados]
+    A --> E[Ambiente de Desenvolvimento]
+    A --> F[Controle de Versão]
+    A --> G[Frameworks e Bibliotecas]
+    A --> H[Segurança]
+    A --> I[Testes]
+    A --> J[Gerenciamento de Dependências]
+    A --> K[Documentação]
+    
+    B --> B1[Apache HTTP Server]
+    B --> B2[XAMPP/WAMP/MAMP]
+
+    C --> C1[PHP]
+    
+    D --> D1[MySQL]
+    D --> D2[MySQL Workbench]
+    D --> D3[phpMyAdmin]
+
+    E --> E1[Visual Studio Code]
+    E --> E2[Sublime Text]
+    E --> E3[PHPStorm]
+
+    F --> F1[Git]
+    F --> F2[GitHub]
+    F --> F3[GitLab]
+    F --> F4[Bitbucket]
+
+    G --> G1[Laravel]
+    G --> G2[CodeIgniter]
+    G --> G3[Bootstrap]
+
+    H --> H1[SSL/TLS]
+    H --> H2[Let’s Encrypt]
+
+    I --> I1[PHPUnit]
+    I --> I2[Postman]
+
+    J --> J1[Composer]
+
+    K --> K1[Markdown]
+```
+
 
 # 12. Requisitos de sistemas
 
