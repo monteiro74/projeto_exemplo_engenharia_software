@@ -424,7 +424,12 @@ classDiagram
 
 # 7. Diagrama de componentes
 
+
+![Diagrama de componentes](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_componentes.png)
+
 # 8. Diagrama de implantação
+
+![Diagrama de implantação](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_implantacao.png)
 
 # 9. Protótipo de telas
 
