@@ -33,10 +33,20 @@ Repositório, Gerencia de proj sw. 2024/2
   - [10.1. Editado manualmente](#101-editado-manualmente)
   - [10.2. Segunda geração do diagrama](#102-segunda-geração-do-diagrama)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
+  - [11.1. segunda versão](#111-segunda-versão)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
+  - [12.1. Requisitos do Lado cliente](#121-requisitos-do-lado-cliente)
+  - [12.2. Requisitos do Lado Servidor](#122-requisitos-do-lado-servidor)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
-- [14. Manutenção e instalação](#14-manutenção-e-instalação)
-- [15. Glossário](#15-glossário)
+  - [13.1. Lado cliente](#131-lado-cliente)
+  - [13.2. Lado servidor](#132-lado-servidor)
+- [14. Manutenção, instalação e Novas funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
+  - [14.1. instalado no servidor !](#141-instalado-no-servidor-)
+  - [14.2. Manutenção](#142-manutenção)
+  - [14.3. Novas funcionalidades](#143-novas-funcionalidades)
+- [15. Treinamento](#15-treinamento)
+  - [15.1. usuário](#151-usuário)
+  - [15.2. admin](#152-admin)
 - [16. Script SQL](#16-script-sql)
   - [16.1. Comandos CREATE table:](#161-comandos-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios:](#162-comandos-insert-gerando-dados-fictícios)
@@ -86,7 +96,9 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 # 3. Visão geral do sistema
 
-Descrição do sistema e suas relações.
+
+Descreva o que o sistema entrega do ponto de vista do usuário final. 
+
 
 # 4. Diagrama ER
 
@@ -547,14 +559,128 @@ graph TD;
     K --> K1[Markdown]
 ```
 
+## 11.1. segunda versão
+
+
+```mermaid
+graph TD;
+    A[Pilha Tecnológica] --> B[Frontend]
+    A --> C[Backend]
+    A --> D[Banco de Dados]
+    A --> E[Servidor Web]
+    A --> F[Segurança]
+    A --> G[Ambiente de Desenvolvimento]
+    
+    %% Frontend Details
+    B --> B1[HTML/CSS/JavaScript]
+    B --> B2[Bootstrap]
+    B --> B3[Formulários de Cadastro e Atendimento]
+
+    %% Backend Details
+    C --> C1[PHP]
+    C --> C2[Framework PHP]
+    C --> C3[Componentes do Sistema]
+    C1 --> C4[Gerenciamento de Sessões]
+    C1 --> C5[Validação de Formulários]
+    C3 --> C6[Cadastro de Cliente e Animal]
+    C3 --> C7[Atendimentos e Prontuários]
+    C3 --> C8[Controle de Agendas e Fila de Espera]
+
+    %% Database Details
+    D --> D1[MySQL]
+    D --> D2[phpMyAdmin/MySQL Workbench]
+    D --> D3[Tabelas: Clientes, Animais, Atendimentos, Prontuários, Veterinários]
+    
+    %% Web Server Details
+    E --> E1[Apache HTTP Server]
+    E --> E2[XAMPP/WAMP/MAMP]
+
+    %% Security Details
+    F --> F1[SSL/TLS]
+    F --> F2[Let’s Encrypt]
+    F --> F3[Autenticação de Usuários]
+
+    %% Development Environment Details
+    G --> G1[Visual Studio Code/Sublime Text/PHPStorm]
+    G --> G2[Git]
+    G --> G3[GitHub/GitLab/Bitbucket]
+    G --> G4[Composer]
+    G --> G5[PHPUnit para Testes]
+
+```
+
+
 
 # 12. Requisitos de sistemas
 
+
+## 12.1. Requisitos do Lado cliente
+
+asdasdasdasdas
+
+## 12.2. Requisitos do Lado Servidor
+
+asdasdasda
+
+asdsadasdas
+
+a
+sdasdas
+
+
+
 # 13. Considerações sobre segurança
 
-# 14. Manutenção e instalação
 
-# 15. Glossário
+## 13.1. Lado cliente
+
+Regras de senha
+catcha, qtda min. caracteres, caracteres especiais, etc...
+autenticação de 2 fatores
+recuperação de senha com email
+código no email
+anti vírus
+
+>> escrever uma mini política de seg.
+
+## 13.2. Lado servidor
+
+Linux ! 
+
+Política de backup de aplicação e banco !
+1x/mês 1 full backup
+1x a cada 15 dias 1 full backup
+no final de cada dia um backup incremental
+
+o admin do sistema não acessa dados do usuário
+
+
+# 14. Manutenção, instalação e Novas funcionalidades
+
+## 14.1. instalado no servidor !
+
+## 14.2. Manutenção
+
+## 14.3. Novas funcionalidades
+
+1. formalização do pedido
+2. cliente não dá palpite em beleza de tela
+3. decidir sob 3 critérios:
+a) equipe tem tempo ?
+b) é economicamente viável ?
+c) é tecnológicamente viável ?
+
+# 15. Treinamento 
+
+## 15.1. usuário
+
+video na web
+
+## 15.2. admin
+
+
+
+
 
 # 16. Script SQL
 
