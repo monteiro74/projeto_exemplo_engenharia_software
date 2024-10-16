@@ -54,6 +54,7 @@ Repositório, Gerencia de proj sw. 2024/2
 
 
 
+
 # 1. Introdução
 
 O projeto a seguir apresenta um sistema desenvolvidor para uma petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
