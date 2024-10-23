@@ -104,6 +104,10 @@ Descreva o que o sistema entrega do ponto de vista do usuário final.
 # 4. Diagrama ER
 
 
+> :memo: **Dica:** O diagrama ER é importante neste projeto porque... 1) Permite a visualização clara da estrutura de dado. 2) Facilita a comunicação entre a equipe, entre os devs. 3) É a base para o projeto do banco de dados. 4) Permite a identificação de possíveis problemas de projeto.
+
+
+
 ```mermaid
 
 erDiagram
@@ -175,9 +179,12 @@ erDiagram
 
 ```
 
+> :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Veja os casos dos atributos "resultados" e "receita", poderiam ter sido modelados de outra forma.
 
 
 ## 4.1 Descrição das Entidades e Relacionamentos
+
+> :memo: **Dica:** Esta relação é um simplificação das entidades e seus relacionamentos, serve como um princípio para a elaboração de um dicionário de dados.
 
 - **CLIENTE**: Contém informações sobre os clientes da clínica.
 - **ANIMAL**: Contém informações sobre os animais que pertencem aos clientes.
@@ -202,6 +209,10 @@ erDiagram
 
 
 # 5. Diagrama de classe
+
+
+> :memo: **Dica:** O diagrama de classes é importante neste projeto porque... 1) Modela a estrutura do sistema. 2) Facilita a comunicação entre os devs. 3) Organiza a lógica do negócio pois diferente do modelo ER, este diagrama poderá ter uma relação de métodos. 4) Ajuda na reutilização de código. 
+
 
 ```mermaid
 classDiagram
@@ -272,6 +283,9 @@ classDiagram
     Animal "1" -- "0..1" Prontuario : possui
 ```
 
+> :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Como este diagrama foi gerado a partir do diagrama ER anterior, apresenta os mesmos problemas. Note que a ferramenta não detectou na descrição do negócio métodos significativos para representá-los neste diagrama.
+
+
 ## 5.1. Descrição das Classes e Relacionamentos
 
 - **Cliente**: Contém informações sobre os clientes da clínica. Um cliente pode ter vários animais.
@@ -296,16 +310,22 @@ classDiagram
 
 # 6. Casos de uso
 
+> :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 1) Define os requisitos funcionais e seus personagens. 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 3) Identifica os atores e suas interações em cada módulo do sistema. 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro.
+
 ## 6.1. Casos de uso
 
-:bulb: **Dica:** Situações de utilização do sistema.
+:bulb: **Dica:** Crie diagramas com situações de utilização do sistema.
 
 ![Casos de uso](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/casos_de_uso.png)
 
 
 ## 6.2. Histórias de usuário
 
-:bulb: **Dica:** .
+
+
+:bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque... 1) Foco nas necessidades do usuário. 2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 3) Promovem entregas incrementais (cada entrega por ser uma entrega). 4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega).
+
+
 
 ### 6.2.1. História de Usuário 1: Cadastro de Cliente
 
@@ -440,13 +460,22 @@ classDiagram
 # 7. Diagrama de componentes
 
 
+:bulb: **Dica:** Diagramas de componentes são importantes no projeto técnico porque... 1) Visualização da arquitetura do sistema. 2) Explica a modularidade do projeto. 3) Apresenta casos de modularidade dos componentes do sistema. 4) Permite identificar peças críticas do projeto.
+
+
 ![Diagrama de componentes](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_componentes2.png)
 
 # 8. Diagrama de implantação
 
+
+:bulb: **Dica:** Diagramas de implantação são importantes no projeto técnico porque... 1) Permite visualizar o planejamento de instalação do sistema no parque de máquinas. 2) Permite identificar hardwa e software que serão necessários adquirir e organizar. 3) Ajuda no projeto de infra e segurança de rede. 4) Possibilida a visualização do parque computacional (incluindo hardware e software). 5) Permite identificar qual componente de software estará instalado em qual nó.
+
+
 ![Diagrama de implantação](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_implantacao2.png)
 
 # 9. Protótipo de telas
+
+
 
 # 10. Diagrama de navegação de telas
 
