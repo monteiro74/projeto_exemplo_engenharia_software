@@ -38,8 +38,8 @@ Repositório, Gerencia de proj sw. 2024/2
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
   - [11.1. segunda versão](#111-segunda-versão)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
-  - [12.1. Requisitos do Lado cliente](#121-requisitos-do-lado-cliente)
-  - [12.2. Requisitos do Lado Servidor](#122-requisitos-do-lado-servidor)
+  - [12.1. Requisitos do lado cliente](#121-requisitos-do-lado-cliente)
+  - [12.2. Requisitos do lado servidor](#122-requisitos-do-lado-servidor)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
   - [13.1. Lado cliente](#131-lado-cliente)
   - [13.2. Lado servidor](#132-lado-servidor)
@@ -708,7 +708,7 @@ graph TD;
 
 :bulb: **Dica:** É uma parte importante do projeto técnico porque: 1) permite projetar o mínimo requisito de hardware e software necessário para que o software possa funcionar com desempenho satisfatório. 2) Permitirá explicitar ao PO detalhes como integração de sistemas. 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
 
-## 12.1. Requisitos do Lado cliente
+## 12.1. Requisitos do lado cliente
 
 1)
 
@@ -718,7 +718,7 @@ graph TD;
 
 
 
-## 12.2. Requisitos do Lado Servidor
+## 12.2. Requisitos do lado servidor
 
 :bulb: **Dica:** Veja o que uma hospedagem web oferece nos planos para hospedar um site !!
 
