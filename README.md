@@ -31,10 +31,10 @@ Repositório, Gerencia de proj sw. 2024/2
 - [9. Protótipo de telas](#9-protótipo-de-telas)
       - [DICA ! Diferenças entre Wireframe x Mockup x Prototipação:](#dica--diferenças-entre-wireframe-x-mockup-x-prototipação)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
-      - [Dica ! Exemplo 1:](#dica--exemplo-1)
-      - [Dica ! Exemplo 2:](#dica--exemplo-2)
-  - [10.1. Editado manualmente](#101-editado-manualmente)
-  - [10.2. Segunda geração do diagrama](#102-segunda-geração-do-diagrama)
+  - [10.1. Exemplo 1](#101-exemplo-1)
+  - [10.2.  Exemplo 2](#102--exemplo-2)
+  - [10.3. Editado manualmente](#103-editado-manualmente)
+  - [10.4. Segunda geração do diagrama](#104-segunda-geração-do-diagrama)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
   - [11.1. segunda versão](#111-segunda-versão)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -507,19 +507,21 @@ classDiagram
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
 # 10. Diagrama de navegação de telas
+
 
 :bulb: **Dica:** São importantes porque: 1) Permitem a visualização do fluxo do usuário, mostrando o caminho que o usuário deve percorrer ao utilizar o sistema. 2) Facilitam o design da interface, ajudam o PO e o Dev a alterar componentes (controles visuais) durante as Sprints. 3) Uma variação do item 2, é que a equipe toda tem uma visão geral da navegação entre interfaces (formulários) com o usuário. Inclusive os stakeholders. 4) Possibilita identificar fluxos quebrados ou incompletos e telas "perdidas" no sistema. 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
 
 
 
-#### Dica ! Exemplo 1:
+## 10.1. Exemplo 1
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-#### Dica ! Exemplo 2:
+## 10.2.  Exemplo 2
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png)
 
@@ -529,7 +531,7 @@ classDiagram
 > :warning: **Atenção:** Diagramas gerados por IA podem conter erros, veja o caso abaixo temos um form chamado "entrevista com veterinário", entre outros. 
 
 
-## 10.1. Editado manualmente
+## 10.3. Editado manualmente
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
@@ -565,7 +567,7 @@ graph TD;
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 10.2. Segunda geração do diagrama
+## 10.4. Segunda geração do diagrama
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
