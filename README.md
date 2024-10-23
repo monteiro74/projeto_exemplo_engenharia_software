@@ -29,7 +29,6 @@ Repositório, Gerencia de proj sw. 2024/2
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
-      - [DICA ! Diferenças entre Wireframe x Mockup x Prototipação:](#dica--diferenças-entre-wireframe-x-mockup-x-prototipação)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
   - [10.1. Exemplo 1](#101-exemplo-1)
   - [10.2.  Exemplo 2](#102--exemplo-2)
@@ -493,7 +492,7 @@ classDiagram
 :bulb: **Dica:** É uma etapa importante do projeto porque: 1) Permite a visualização clara do design (UX/IX) e sua representação visual do que será entregue em diferentes formatos até a utilização dos controles (visuais) reais para o usuário testar a tela. 2) Facilitam ajustes antecipados: Com protótipos é possível testar antes de "entrar em produção". 3) Permite que o usuário possa "se manifestar" antecipadamente para a equipe e comentar o que deseja e o que deve conter ou não nos formulários. 4) Testam a experiência do usuário quanto a velocidade de acesso, facilidade de uso, compreensão do que deve fazer nas telas e o que deve acionar. 5) Auxiliam na definição de requisitos técnicos que ainda não foram percebidos pelos Devs.
 
 
-#### DICA ! Diferenças entre Wireframe x Mockup x Prototipação: 
+:bulb: **Dica:** Diferenças entre Wireframe x Mockup x Prototipação... 
 
 | Wireframe  | Mockup | Prototipo |
 | ------------- | ------------- | ------- |
