@@ -97,11 +97,14 @@ Descrição do cenário onde o sistema deverá funcionar:
 29.
 30.	
 
+> :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
+
+[Início](Repositório da eng. de sw.)
 
 # 3. Visão geral do sistema
 
 
-Descreva o que o sistema entrega do ponto de vista do usuário final. 
+> :memo: **Dica:** Descreva o que o sistema entrega do ponto de vista do usuário final. 
 
 
 # 4. Diagrama ER
@@ -184,6 +187,7 @@ erDiagram
 
 > :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Veja os casos dos atributos "resultados" e "receita", poderiam ter sido modelados de outra forma.
 
+[]()
 
 ## 4.1 Descrição das Entidades e Relacionamentos
 
@@ -773,7 +777,7 @@ c) é tecnológicamente viável ?
 
 1)
 
-2)
+2) 
 
 
 
