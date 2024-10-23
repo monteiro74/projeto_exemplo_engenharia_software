@@ -187,7 +187,7 @@ erDiagram
 
 > :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Veja os casos dos atributos "resultados" e "receita", poderiam ter sido modelados de outra forma.
 
-[]()
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 4.1 Descrição das Entidades e Relacionamentos
 
@@ -213,7 +213,7 @@ erDiagram
 - **ANIMAL** pode ter um **PRONTUARIO**.
 
 
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 5. Diagrama de classe
 
@@ -292,6 +292,7 @@ classDiagram
 
 > :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Como este diagrama foi gerado a partir do diagrama ER anterior, apresenta os mesmos problemas. Note que a ferramenta não detectou na descrição do negócio métodos significativos para representá-los neste diagrama.
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 5.1. Descrição das Classes e Relacionamentos
 
@@ -319,12 +320,15 @@ classDiagram
 
 > :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 1) Define os requisitos funcionais e seus personagens. 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 3) Identifica os atores e suas interações em cada módulo do sistema. 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro. 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
+
 ## 6.1. Casos de uso
 
 :bulb: **Dica:** Crie diagramas com situações de utilização do sistema.
 
 ![Casos de uso](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/casos_de_uso.png)
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 6.2. Histórias de usuário
 
@@ -332,7 +336,7 @@ classDiagram
 
 :bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque... 1) Foco nas necessidades do usuário. 2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 3) Promovem entregas incrementais (cada entrega por ser uma entrega). 4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega). 5) É uma ferramenta mais próxima da realidade do usuário. 6) Histórias de usuário não fazem parte da UML, é um texto!
 
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ### 6.2.1. História de Usuário 1: Cadastro de Cliente
 
@@ -462,7 +466,7 @@ classDiagram
 - O cliente deve poder visualizar o histórico de atendimentos, fichas e prontuários dos seus animais.
 - As informações devem estar organizadas e acessíveis na interface do cliente.
 ```
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 7. Diagrama de componentes
 
@@ -472,6 +476,8 @@ classDiagram
 
 ![Diagrama de componentes](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_componentes2.png)
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
+
 # 8. Diagrama de implantação
 
 
@@ -479,6 +485,8 @@ classDiagram
 
 
 ![Diagrama de implantação](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_implantacao2.png)
+
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 9. Protótipo de telas
 
@@ -497,16 +505,19 @@ classDiagram
 | $  | $$ | $$$ |
 | Exemplos de softwares: Balsamiq, Adobe XD, Evolus, UXpin  | Exemplos de software: InVision, Moqups, Photoshop, Evolus | Exemplos de softwares: FlutterFlow, Mockplus, Adobe XD, Android Studio, Embarcadero Delphi, MS Xamarin |
 
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 10. Diagrama de navegação de telas
 
 :bulb: **Dica:** São importantes porque: 1) Permitem a visualização do fluxo do usuário, mostrando o caminho que o usuário deve percorrer ao utilizar o sistema. 2) Facilitam o design da interface, ajudam o PO e o Dev a alterar componentes (controles visuais) durante as Sprints. 3) Uma variação do item 2, é que a equipe toda tem uma visão geral da navegação entre interfaces (formulários) com o usuário. Inclusive os stakeholders. 4) Possibilita identificar fluxos quebrados ou incompletos e telas "perdidas" no sistema. 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
 
 
+
 #### Dica ! Exemplo 1:
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
+
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 #### Dica ! Exemplo 2:
 
@@ -552,6 +563,8 @@ graph TD;
 
 ```
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
+
 ## 10.2. Segunda geração do diagrama
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
@@ -582,6 +595,7 @@ graph TD
 
 ```
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 11. Pilha tecnológica
 
@@ -634,6 +648,8 @@ graph TD;
     K --> K1[Markdown]
 ```
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
+
 ## 11.1. segunda versão
 
 
@@ -684,7 +700,7 @@ graph TD;
 
 ```
 
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 12. Requisitos de sistemas
 
@@ -710,7 +726,7 @@ graph TD;
 
 3)
 
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 13. Considerações sobre segurança
 
@@ -737,8 +753,9 @@ Política de backup de aplicação e banco !
 1x a cada 15 dias 1 full backup
 no final de cada dia um backup incremental
 
-o admin do sistema não acessa dados do usuário
+o admin do sistema não acessa dados do usuário!
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 14. Manutenção, instalação e Novas funcionalidades
 
@@ -758,6 +775,8 @@ o admin do sistema não acessa dados do usuário
 a) equipe tem tempo ?
 b) é economicamente viável ?
 c) é tecnológicamente viável ?
+
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 15. Treinamento 
 
@@ -779,7 +798,7 @@ c) é tecnológicamente viável ?
 
 2) 
 
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 
 # 16. Script SQL
@@ -787,6 +806,8 @@ c) é tecnológicamente viável ?
 > :warning: **Atenção:** No projeto de um software não criamos o banco de dados ainda, pois a fase de projeto é um "visão de futuro"; o exemplo abaixo foi inserido para que exercícios pudessem ser realizados em ferramenta IDE RAD.
 
 > :warning: **Atenção:** Em alguns projetos com necessidades específicas, como prototipar telas e navegação usando o Scriptcase é necessário ter um banco de dados com uma quantidade mínima de tabelas; ou em situações em que o projeto de software irá realizar uma atualização de um software legado, pode ser necessário trazer detalhes técnicos do banco ou outras partes.
+
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 16.1. Comandos CREATE table:
 
@@ -886,7 +907,7 @@ CREATE TABLE entrevistas (
     FOREIGN KEY (id_atendimento) REFERENCES atendimentos(id_atendimento)
 );
 ```
-
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 16.2. Comandos INSERT gerando dados fictícios:
 
@@ -946,6 +967,8 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 
 ```
 
+[Voltar ao Início](#repositório_projeto_eng_sw)
+
 ### 16.2.1. Explicação dos dados fictícios:
 
 * Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
@@ -957,4 +980,6 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 * Atendentes: Patrícia e Lucas são os atendentes responsáveis.
 * Fila de espera: Fila de clientes e animais aguardando atendimento.
 * Entrevistas: Observações feitas durante a entrevista entre veterinário e dono do animal.
+
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
