@@ -44,7 +44,7 @@ Repositório, Gerencia de proj sw. 2024/2
   - [13.1. Lado cliente](#131-lado-cliente)
   - [13.2. Lado servidor](#132-lado-servidor)
 - [14. Manutenção, instalação e Novas funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
-  - [14.1. instalado no servidor !](#141-instalado-no-servidor-)
+  - [14.1. instalado no lado servidor](#141-instalado-no-lado-servidor)
   - [14.2. Manutenção](#142-manutenção)
   - [14.3. Novas funcionalidades](#143-novas-funcionalidades)
 - [15. Treinamento](#15-treinamento)
@@ -734,7 +734,6 @@ graph TD;
 
 :bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 2) Ajuda a prevenir contra ataques cibernéticos. 3) Torna o projeto do software compatível com leis e regulamentos. 4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
 
-
 ## 13.1. Lado cliente
 
 Regras de senha
@@ -744,16 +743,11 @@ recuperação de senha com email
 código no email
 anti vírus
 
->> escrever uma mini política de seg.
-
 ## 13.2. Lado servidor
 
-Linux ! 
+Sugerir Linux ou Windows ??
 
-Política de backup de aplicação e banco !
-1x/mês 1 full backup
-1x a cada 15 dias 1 full backup
-no final de cada dia um backup incremental
+Sugestão ?? Política de backup de aplicação e banco ?? 1x/mês 1 full backup, 1x a cada 15 dias 1 full backup, no final de cada dia um backup incremental
 
 o admin do sistema não acessa dados do usuário!
 
@@ -761,11 +755,10 @@ o admin do sistema não acessa dados do usuário!
 
 # 14. Manutenção, instalação e Novas funcionalidades
 
-
 :bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 3) É uma ferramenta que auxilia na elaboração do plano de continguência. 4) Detalha procedimentos pós-instalação. 5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 6) Poderá ter critérios para backup e restore. 7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
 
 
-## 14.1. instalado no servidor !
+## 14.1. instalado no lado servidor 
 
 ## 14.2. Manutenção
 
