@@ -576,8 +576,10 @@ graph TD
 
 # 11. Pilha tecnológica
 
-```mermaid
 
+:bulb: **Dica:** Esta parte do projeto técnico é importante porque: 1) Permite que o projeto seja compatível com os requisitos técnicos e com as funcionalidades esperados pelo usuário. 2) Possibilita que equipamentos e software sejam especificados antecipadamente possibilitando estudo prévio sobre custo, desempenho e escalabilidade. 3) Possibilitará futuras operações de manutenção. 4) Poderá ajudar na definição de requisitos de segurança e velocidade.
+
+```mermaid
 graph TD;
     A[Pilha Tecnológica do Sistema Web] --> B[Servidor Web]
     A --> C[Linguagem de Programação]
@@ -672,7 +674,6 @@ graph TD;
     G --> G5[PHPUnit para Testes]
 
 ```
-
 
 
 # 12. Requisitos de sistemas
