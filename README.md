@@ -1,9 +1,9 @@
-# Repositório da eng. de sw.
+# Repositório_Projeto_Eng_Sw
 
 Repositório, Gerencia de proj sw. 2024/2
 
 
-- [Repositório da eng. de sw.](#repositório-da-eng-de-sw)
+- [Repositório\_Projeto\_Eng\_Sw](#repositório_projeto_eng_sw)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio.](#2-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
@@ -99,7 +99,7 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
 
-[Início](Repositório da eng. de sw.)
+[Início](Repositório_Projeto_Eng_Sw)
 
 # 3. Visão geral do sistema
 
