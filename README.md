@@ -99,7 +99,7 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
 
-[Início](Repositório_Projeto_Eng_Sw)
+[Voltar ao Início](#repositório_projeto_eng_sw)
 
 # 3. Visão geral do sistema
 
