@@ -310,7 +310,7 @@ classDiagram
 
 # 6. Casos de uso
 
-> :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 1) Define os requisitos funcionais e seus personagens. 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 3) Identifica os atores e suas interações em cada módulo do sistema. 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro.
+> :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 1) Define os requisitos funcionais e seus personagens. 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 3) Identifica os atores e suas interações em cada módulo do sistema. 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro. 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
 
 ## 6.1. Casos de uso
 
@@ -323,7 +323,7 @@ classDiagram
 
 
 
-:bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque... 1) Foco nas necessidades do usuário. 2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 3) Promovem entregas incrementais (cada entrega por ser uma entrega). 4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega).
+:bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque... 1) Foco nas necessidades do usuário. 2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 3) Promovem entregas incrementais (cada entrega por ser uma entrega). 4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega). 5) É uma ferramenta mais próxima da realidade do usuário. 6) Histórias de usuário não fazem parte da UML, é um texto!
 
 
 
@@ -474,6 +474,10 @@ classDiagram
 ![Diagrama de implantação](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_implantacao2.png)
 
 # 9. Protótipo de telas
+
+
+:bulb: **Dica:** São importantes porque: 1) Permitem a visualização do fluxo do usuário, mostrando o caminho que o usuário deve percorrer ao utilizar o sistema. 2) Facilitam o design da interface, ajudam o PO e o Dev a alterar componentes (controles visuais) durante as Sprints. 3) Uma variação do item 2, é que a equipe toda tem uma visão geral da interface com o usuário. Inclusive os stakeholders. 4) Possibilita identificar fluxos quebrados ou incompletos e telas "perdidas" no sistema. 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
+
 
 
 
