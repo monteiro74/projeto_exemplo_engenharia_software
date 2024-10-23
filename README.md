@@ -511,10 +511,13 @@ classDiagram
 
 > :warning: **Atenção:** Veja diferença entre os diagramas acima e o que a ferrementa de IA produziu abaixo! Dependendo da complexidade e quantidade de formulários uma abordagem contendo apenas os nomes de formulários pode reduzir signficativamente o espaço dos diagramas nos projetos. 
 
-> :warning: **Atenção:** Diagramas gerados por IA podem conter erros, veja o caso abaixo temos um form chamado "entrvista com veterinário", entre outros. 
+> :warning: **Atenção:** Diagramas gerados por IA podem conter erros, veja o caso abaixo temos um form chamado "entrevista com veterinário", entre outros. 
 
 
 ## 10.1. Editado manualmente
+
+> :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
+
 
 ```mermaid
 graph TD;
@@ -547,6 +550,8 @@ graph TD;
 
 ## 10.2. Segunda geração do diagrama
 
+> :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
+
 ```mermaid
 graph TD
     Login[Login] --> Menu[Menu Principal]
@@ -577,7 +582,7 @@ graph TD
 # 11. Pilha tecnológica
 
 
-:bulb: **Dica:** Esta parte do projeto técnico é importante porque: 1) Permite que o projeto seja compatível com os requisitos técnicos e com as funcionalidades esperados pelo usuário. 2) Possibilita que equipamentos e software sejam especificados antecipadamente possibilitando estudo prévio sobre custo, desempenho e escalabilidade. 3) Possibilitará futuras operações de manutenção. 4) Poderá ajudar na definição de requisitos de segurança e velocidade.
+:bulb: **Dica:** Esta parte do projeto técnico é importante porque: 1) Permite que o projeto seja compatível com os requisitos técnicos e com as funcionalidades esperados pelo usuário. 2) Possibilita que equipamentos e software sejam especificados antecipadamente possibilitando estudo prévio sobre custo, desempenho e escalabilidade. 3) Possibilitará futuras operações de manutenção. 4) Poderá ajudar na definição de requisitos de segurança e velocidade. 5) Permite que seja feita uma projeção e planejamento de compatibilidade tecnológica na fase de projeto com o que existe atualmente na estrutura da empresa.
 
 ```mermaid
 graph TD;
@@ -676,25 +681,36 @@ graph TD;
 ```
 
 
+
 # 12. Requisitos de sistemas
 
+:bulb: **Dica:** É uma parte importante do projeto técnico porque: 1) permite projetar o mínimo requisito de hardware e software necessário para que o software possa funcionar com desempenho satisfatório. 2) Permitirá explicitar ao PO detalhes como integração de sistemas. 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
 
 ## 12.1. Requisitos do Lado cliente
 
-asdasdasdasdas
+1)
+
+2)
+
+3)
+
+
 
 ## 12.2. Requisitos do Lado Servidor
 
-asdasdasda
+:bulb: **Dica:** Veja o que uma hospedagem web oferece nos planos para hospedar um site !!
 
-asdsadasdas
+1)
 
-a
-sdasdas
+2)
+
+3)
 
 
 
 # 13. Considerações sobre segurança
+
+:bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 2) Ajuda a prevenir contra ataques cibernéticos. 3) Torna o projeto do software compatível com leis e regulamentos. 4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
 
 
 ## 13.1. Lado cliente
@@ -722,6 +738,10 @@ o admin do sistema não acessa dados do usuário
 
 # 14. Manutenção, instalação e Novas funcionalidades
 
+
+:bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 3) É uma ferramenta que auxilia na elaboração do plano de continguência. 4) Detalha procedimentos pós-instalação. 5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 6) Poderá ter critérios para backup e restore. 7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
+
+
 ## 14.1. instalado no servidor !
 
 ## 14.2. Manutenção
@@ -737,17 +757,32 @@ c) é tecnológicamente viável ?
 
 # 15. Treinamento 
 
+:bulb: **Dica:** O projeto do poderá ter critérios indicando o que é importante constar em um treinamento para capacitar o usuário e os administradores do sistema. O projeto de software poderá indicar a necessidade de atenção em determinados procedimentos operacionais de uso, instalação e manutenção que não são tão claros/óbvios e que merecem atenção e treino.
+
+> :warning: **Atenção:** O projeto de software não é material de treinamento !
+
 ## 15.1. usuário
 
-video na web
+1)
+
+2)
+
+
 
 ## 15.2. admin
 
+1)
+
+2)
 
 
 
 
 # 16. Script SQL
+
+> :warning: **Atenção:** No projeto de um software não criamos o banco de dados ainda, pois a fase de projeto é um "visão de futuro"; o exemplo abaixo foi inserido para que exercícios pudessem ser realizados em ferramenta IDE RAD.
+
+> :warning: **Atenção:** Em alguns projetos com necessidades específicas, como prototipar telas e navegação usando o Scriptcase é necessário ter um banco de dados com uma quantidade mínima de tabelas.
 
 ## 16.1. Comandos CREATE table:
 
