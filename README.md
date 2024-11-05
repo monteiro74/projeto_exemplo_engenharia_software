@@ -3,7 +3,11 @@
 Repositório, Gerencia de proj sw. 2024/2
 
 
+---
+# Sumário
+
 - [Repositório\_Projeto\_Eng\_Sw](#repositório_projeto_eng_sw)
+- [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio.](#2-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
@@ -56,11 +60,12 @@ Repositório, Gerencia de proj sw. 2024/2
 
 
 
-
+---
 # 1. Introdução
 
 O projeto a seguir apresenta um sistema desenvolvidor para uma petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
 
+---
 # 2. Descrição do negócio.
 
 Descrição do cenário onde o sistema deverá funcionar:
@@ -100,12 +105,16 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+---
 # 3. Visão geral do sistema
 
 
 > :memo: **Dica:** Descreva o que o sistema entrega do ponto de vista do usuário final. 
 
 
+
+---
 # 4. Diagrama ER
 
 
@@ -188,6 +197,7 @@ erDiagram
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
 ## 4.1 Descrição das Entidades e Relacionamentos
 
 > :memo: **Dica:** Esta relação é um simplificação das entidades e seus relacionamentos, serve como um princípio para a elaboração de um dicionário de dados.
@@ -214,6 +224,8 @@ erDiagram
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+---
 # 5. Diagrama de classe
 
 
@@ -315,6 +327,8 @@ classDiagram
 - **Animal** pode ter um **Prontuario**.
 
 
+
+---
 # 6. Casos de uso
 
 > :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 1) Define os requisitos funcionais e seus personagens. 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 3) Identifica os atores e suas interações em cada módulo do sistema. 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro. 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
@@ -467,6 +481,8 @@ classDiagram
 ```
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+---
 # 7. Diagrama de componentes
 
 
@@ -477,6 +493,8 @@ classDiagram
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+---
 # 8. Diagrama de implantação
 
 
@@ -487,6 +505,9 @@ classDiagram
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+
+---
 # 9. Protótipo de telas
 
 :bulb: **Dica:** É uma etapa importante do projeto porque: 1) Permite a visualização clara do design (UX/IX) e sua representação visual do que será entregue em diferentes formatos até a utilização dos controles (visuais) reais para o usuário testar a tela. 2) Facilitam ajustes antecipados: Com protótipos é possível testar antes de "entrar em produção". 3) Permite que o usuário possa "se manifestar" antecipadamente para a equipe e comentar o que deseja e o que deve conter ou não nos formulários. 4) Testam a experiência do usuário quanto a velocidade de acesso, facilidade de uso, compreensão do que deve fazer nas telas e o que deve acionar. 5) Auxiliam na definição de requisitos técnicos que ainda não foram percebidos pelos Devs.
@@ -507,6 +528,10 @@ classDiagram
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
 
+
+
+
+---
 # 10. Diagrama de navegação de telas
 
 
@@ -598,6 +623,9 @@ graph TD
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+
+---
 # 11. Pilha tecnológica
 
 
@@ -703,6 +731,9 @@ graph TD;
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+
+---
 # 12. Requisitos de sistemas
 
 :bulb: **Dica:** É uma parte importante do projeto técnico porque: 1) permite projetar o mínimo requisito de hardware e software necessário para que o software possa funcionar com desempenho satisfatório. 2) Permitirá explicitar ao PO detalhes como integração de sistemas. 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
@@ -729,6 +760,9 @@ graph TD;
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+
+---
 # 13. Considerações sobre segurança
 
 :bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 2) Ajuda a prevenir contra ataques cibernéticos. 3) Torna o projeto do software compatível com leis e regulamentos. 4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
@@ -752,6 +786,9 @@ o admin do sistema não acessa dados do usuário!
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+
+---
 # 14. Manutenção, instalação e Novas funcionalidades
 
 :bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 3) É uma ferramenta que auxilia na elaboração do plano de continguência. 4) Detalha procedimentos pós-instalação. 5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 6) Poderá ter critérios para backup e restore. 7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
@@ -772,6 +809,9 @@ c) é tecnológicamente viável ?
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+
+
+---
 # 15. Treinamento 
 
 :bulb: **Dica:** O projeto do poderá ter critérios indicando o que é importante constar em um treinamento para capacitar o usuário e os administradores do sistema. O projeto de software poderá indicar a necessidade de atenção em determinados procedimentos operacionais de uso, instalação e manutenção que não são tão claros/óbvios e que merecem atenção e treino.
@@ -794,7 +834,7 @@ c) é tecnológicamente viável ?
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-
+---
 # 16. Script SQL
 
 > :warning: **Atenção:** No projeto de um software não criamos o banco de dados ainda, pois a fase de projeto é um "visão de futuro"; o exemplo abaixo foi inserido para que exercícios pudessem ser realizados em ferramenta IDE RAD.
