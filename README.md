@@ -10,6 +10,8 @@ Repositório, Gerencia de proj sw. 2024/2
 - [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio.](#2-descrição-do-negócio)
+  - [2.1. Requisitos](#21-requisitos)
+- [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
@@ -104,6 +106,43 @@ Descrição do cenário onde o sistema deverá funcionar:
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+## 2.1. Requisitos
+
+# Requisitos Funcionais e Não Funcionais
+
+| **Categoria**                  | **Requisito**                                                                                                                                                  |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos Funcionais**      | 1. A clínica veterinária atende apenas gatos e cachorros.                                                                                                      |
+|                                 | 2. Os clientes devem fazer um cadastro de si e dos animais.                                                                                                   |
+|                                 | 3. Os clientes devem informar as condições nas quais os animais chegam.                                                                                       |
+|                                 | 4. Os clientes devem informar o tipo de ração que o animal come.                                                                                             |
+|                                 | 5. O cliente deve informar os hábitos do animal.                                                                                                              |
+|                                 | 6. Para cada animal, mais de um veterinário pode realizar o atendimento.                                                                                      |
+|                                 | 7. Os animais podem chegar e serem atendidos de acordo com uma agenda do dia.                                                                                |
+|                                 | 8. Cada animal atendido receberá uma ficha e um prontuário.                                                                                                   |
+|                                 | 9. Outros donos podem querer marcar horários de atendimento futuro.                                                                                            |
+|                                 | 10. O atendimento gera uma receita para o animal.                                                                                                             |
+|                                 | 11. Quando um cliente chega na clínica veterinária, ele é atendido por um atendente.                                                                          |
+|                                 | 12. O atendente deve verificar se existe agenda disponível com um veterinário.                                                                                |
+|                                 | 13. O atendente deve colocar o cliente e seu animal na fila de espera, se necessário.                                                                        |
+|                                 | 14. O atendente deve levar o cliente e o animal até o veterinário.                                                                                            |
+|                                 | 15. O veterinário deve realizar uma entrevista com o dono do animal.                                                                                         |
+|                                 | 16. O resultado da entrevista deve ser registrado em um formulário.                                                                                            |
+|                                 | 17. O veterinário deverá examinar o animal e anotar suas observações no prontuário (ficha).                                                                  |
+|                                 | 18. Dependendo da situação do animal, este receberá uma receita.                                                                                             |
+| **Requisitos Não Funcionais**  | 1. O sistema deve ser acessível a partir de dispositivos móveis (responsivo).                                                                                 |
+|                                 | 2. O sistema deve ser seguro, protegendo os dados pessoais dos clientes e os históricos dos animais.                                                         |
+|                                 | 3. O sistema deve ser capaz de lidar com múltiplos atendimentos simultaneamente.                                                                               |
+|                                 | 4. O sistema deve permitir que as informações sejam facilmente atualizadas, como as condições do animal e a agenda do veterinário.                           |
+|                                 | 5. O tempo de resposta do sistema não deve exceder 5 segundos para a maioria das operações.                                                                  |
+|                                 | 6. O sistema deve ser intuitivo e fácil de usar para atendentes e veterinários, com uma interface amigável.                                                   |
+|                                 | 7. O sistema deve ser compatível com as versões mais recentes dos navegadores web.                                                                          |
+|                                 | 8. O sistema deve ter backup regular para garantir a recuperação de dados em caso de falha.                                                                 |
+|                                 | 9. O sistema deve ser capaz de gerar relatórios de atendimentos e receitas de forma automática.                                                              |
+|                                 | 10. O sistema deve ser escalável, permitindo a adição de novos veterinários, atendentes e clientes sem comprometer o desempenho.                              |
+
 
 
 ---
