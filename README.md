@@ -54,9 +54,9 @@ Repositório, Gerencia de proj sw. 2024/2
   - [15.1. usuário](#151-usuário)
   - [15.2. admin](#152-admin)
 - [16. Script SQL](#16-script-sql)
-  - [16.1. Comandos CREATE table:](#161-comandos-create-table)
-  - [16.2. Comandos INSERT gerando dados fictícios:](#162-comandos-insert-gerando-dados-fictícios)
-    - [16.2.1. Explicação dos dados fictícios:](#1621-explicação-dos-dados-fictícios)
+  - [16.1. Comandos CREATE table](#161-comandos-create-table)
+  - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
+    - [16.2.1. Explicação dos dados fictícios](#1621-explicação-dos-dados-fictícios)
 
 
 
@@ -843,7 +843,7 @@ c) é tecnológicamente viável ?
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 16.1. Comandos CREATE table:
+## 16.1. Comandos CREATE table
 
 ```SQL
 
@@ -943,7 +943,7 @@ CREATE TABLE entrevistas (
 ```
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 16.2. Comandos INSERT gerando dados fictícios:
+## 16.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
 -- Inserindo clientes
@@ -1003,7 +1003,7 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-### 16.2.1. Explicação dos dados fictícios:
+### 16.2.1. Explicação dos dados fictícios
 
 * Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
 * Animais: Rex (cachorro), Mimi (gato) e Bolinha (cachorro) são os animais dos clientes.
