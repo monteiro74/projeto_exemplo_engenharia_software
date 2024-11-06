@@ -6,12 +6,13 @@ Repositório, Gerencia de proj sw. 2024/2
 ---
 # Sumário
 
+
 - [Repositório\_Projeto\_Eng\_Sw](#repositório_projeto_eng_sw)
 - [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio.](#2-descrição-do-negócio)
   - [2.1. Requisitos](#21-requisitos)
-- [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
+    - [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
@@ -34,6 +35,11 @@ Repositório, Gerencia de proj sw. 2024/2
     - [6.2.10. História de Usuário 10: Acesso às Informações de Atendimento](#6210-história-de-usuário-10-acesso-às-informações-de-atendimento)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
+- [9. Diagramas C4](#9-diagramas-c4)
+  - [9.1. Diagrama de contexto](#91-diagrama-de-contexto)
+  - [9.2. Diagrama de container](#92-diagrama-de-container)
+  - [9.3. Diagrama de componente](#93-diagrama-de-componente)
+  - [9.4. Diagrama de código](#94-diagrama-de-código)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
   - [10.1. Exemplo 1](#101-exemplo-1)
@@ -59,6 +65,9 @@ Repositório, Gerencia de proj sw. 2024/2
   - [16.1. Comandos CREATE table](#161-comandos-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
     - [16.2.1. Explicação dos dados fictícios](#1621-explicação-dos-dados-fictícios)
+
+
+
 
 
 
@@ -95,13 +104,10 @@ Descrição do cenário onde o sistema deverá funcionar:
 21.	
 22.	
 23.	
-24.	
-25.
-26.
-27.
-28.
-29.
-30.	
+
+
+
+
 
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
 
@@ -110,7 +116,7 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 ## 2.1. Requisitos
 
-# Requisitos Funcionais e Não Funcionais
+### Requisitos Funcionais e Não Funcionais
 
 | **Categoria**                  | **Requisito**                                                                                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -543,6 +549,26 @@ classDiagram
 ![Diagrama de implantação](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_implantacao2.png)
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
+
+---
+# 9. Diagramas C4
+
+
+
+## 9.1. Diagrama de contexto
+
+```
+cole aqui !
+```
+
+## 9.2. Diagrama de container
+
+
+## 9.3. Diagrama de componente
+
+
+## 9.4. Diagrama de código
+
 
 
 
