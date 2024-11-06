@@ -7,6 +7,9 @@ Repositório, Gerencia de proj sw. 2024/2
 # Sumário
 
 
+
+
+
 - [Repositório\_Projeto\_Eng\_Sw](#repositório_projeto_eng_sw)
 - [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
@@ -242,6 +245,7 @@ erDiagram
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
+[início](#sumário)
 
 ## 4.1 Descrição das Entidades e Relacionamentos
 
