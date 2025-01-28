@@ -14,7 +14,7 @@ b) Modelagem e projeto de banco de dados.
 - [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
   - [1.1. Contexto](#11-contexto)
-- [2. Descrição do negócio.](#2-descrição-do-negócio)
+- [2. Descrição do negócio](#2-descrição-do-negócio)
   - [2.1. Requisitos](#21-requisitos)
     - [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
@@ -77,48 +77,54 @@ b) Modelagem e projeto de banco de dados.
 # 1. Introdução
 
 > [!IMPORTANT]  
-> O projeto a seguir é um exercício para o desenvolvimento futuro sistema para uma petshop.
+> O projeto a seguir é um exercício para discussão em sala de aula.
+> O projeto atende uma petshop/clínica veterinária.
 
 ## 1.1. Contexto 
 
-A empresa é considerada "micro empresa" e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
+A empresa é considerada "micro empresa" e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadrão em suas necessidades, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
 
 ---
-# 2. Descrição do negócio.
+# 2. Descrição do negócio
 
-Descrição do cenário onde o sistema deverá funcionar:
+Descrição do cenário onde o sistema deverá funcionar e funcionalidades:
 
-1.	Uma clínica veterinária atende apenas os animais: gatos e cachorros. 
-2.	Os clientes devem fazer um cadastro de si e dos animais. 
-3.	Os clientes devem informar as condições nas quais os animais chegam. 
-4.	Os clientes devem informar o tipo de ração que o animal come. 
-5.	O cliente deve informar hábitos do animal. 
-6.	Para cada animal é possível que mais de um veterinário o atenda. 
-7.	Os animais podem chegar e serem atendidos de acordo com uma agenda do dia. 
-8.	Cada animal atendido receberá uma ficha e um prontuário. 
-9.	Outros dono podem querer marcar horários de atendimento futuro. 
-10.	O atendimento gera uma receita para o animal. 
+> [!IMPORTANT]  
+> Considere que esta lista foi elabora conforme o usuário ia comentando.
+
+1. Uma Petshop e clínica veterinária atende apenas os animais: gatos e cachorros. 
+2. Os clientes devem fazer um cadastro de si e dos animais. 
+3. Os clientes devem informar as condições nas quais os animais chegam.
+4. Os clientes devem informar o tipo de ração que o animal come. 
+5. Os clientes devem informar hábitos do animal. 
+6. Para cada animal é possível que mais de um veterinário o atenda. 
+7. Os animais podem chegar e serem atendidos de acordo com uma agenda do dia. 
+8. Cada animal atendido receberá uma ficha ou cadastro (a ficha irá conter dados como: apelido, raça, sexo, altura, peso, cor principal, idade aproximada, data de nascimento) e um prontuário (que irá conter: datas de vacinação, vacinas aplicadas, tratamentos médicos, remédios que esta tomando, vacinas contra raiva). 
+9. Os clientes podem querer marcar horários de atendimento futuro, na forma de agendamento. 
+10. Cada atendimento gera uma receita para o animal. 
 11.	Quando um cliente chega na clínica veterinária ele é atendido por um atendente. 
 12.	O atendente deve verificar se existe agenda disponível com um veterinário. 
 13.	O atendente deve colocar o cliente e seu animal na fila de espera, se for o caso. 
 14.	O atendente deve levar o cliente e o animal até o veterinário. 
 15.	O veterinário deve realizar uma entrevista com o dono do animal. 
-16.	O resultado da entrevista deve ir para um formulário. 
-17.	O veterinário deverá examinar o animal e anotar em prontuário(ficha) suas observações. 
-18.	Dependendo da situação do animal este receberá uma receita.
-19.	
-20.	
-21.	
-22.	
-23.	
-
-
-
+16.	O resultado da entrevista deve alimenta dados no cadastro ou ficha do animal e no prontuário. 
+17.	O veterinário deverá examinar o animal e anotar em um prontuário suas observações. 
+18.	Dependendo da situação do animal, ele poderá receberá uma receita com medicamentos ou vacinas.
+19.	A clínica pode realizar cirurgias de pequeno porte nos animais.
+20.	A clínica também vende rações especiais para tratamento de cães e gatos.
+21.	A clínica também oferece serviço de hospedagem por até uma semana.
+22.	A clínica oferece serviço de hospedagem se houver agendamento prévio e disponibilidade na agenda da hospedagem.
+23.	A clínica oferece serviços de limpeza, banho e tosa dos cães e gatos.
+24. A clíniva se comunica com os clientes via aplicativos de mensagens whatsapp e telegram.
+25. A clínica usa os aplicativos de mensagens para realizar os agendamentos de atendimento médico, limpeza e hospedagem.
+26. A clínica usar o seu sistema interno para enviar uma notificiação para os donos dos animais que o serviço terminou, esta notificação deve ser por duas vias email e aplicativo de mensagens.
+27. A clínica deve ter no seu controle um sistema de caixa, com os registros dos recebimentos diários.
+28. A clínica deve ter um sistema de contas a pagar e receber, indicando em tabelas separadas os valores entrantes e despesas pagas.
+29. A clínica emite uma nota fiscal de serviço para os serviços e um cupom fiscal para os produtos da petshop.
+30. A petshop tem apenas um atendente. A clínica tem um atendente para limpeza dos animais, um atendente na recepção e um médico veteriário.
 
 
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
-
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
 
 ## 2.1. Requisitos
