@@ -725,7 +725,7 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 > 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
 
 
-<img src="https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGD3TCL67JGVEPT3NGZ4ZLWNA" alt="casos de uso" width="200"/>
+<img src="https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGD3TCL67JGVEPT3NGZ4ZLWNA" alt="casos de uso" width="400"/>
 
 
 # 7. Histórias de usuário
