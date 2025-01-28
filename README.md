@@ -18,7 +18,7 @@ b) Modelagem e projeto de banco de dados.
   - [2.1. Definições](#21-definições)
 - [3. Requisitos](#3-requisitos)
   - [3.1. Requisitos Funcionais e Não Funcionais](#31-requisitos-funcionais-e-não-funcionais)
-- [3. Visão geral do sistema](#3-visão-geral-do-sistema)
+  - [3.2. Decisões de projeto](#32-decisões-de-projeto)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
   - [4.2 Relacionamentos](#42-relacionamentos)
@@ -174,20 +174,22 @@ Prontuário: é um documento que consta a história de atendimento, é elabora p
 
 
 
-
-
-
-
-
-
-
-
----
-# 3. Visão geral do sistema
-
-
 > :memo: **Dica:** Descreva o que o sistema entrega do ponto de vista do usuário final. 
 
+
+## 3.2. Decisões de projeto
+
+Neste estudo de caso:
+
+* Não será detalhada o tipo de empresa e sua configuração jurídica. A ideia é discutir um modelo genérico.
+  
+* Não será detalhado o perfil dos atendentes nem seu nível de formação.
+
+* O foco deste documento é ser uma breve especificação do problema e conter algumas sugestões para modelagem e futuramente e discussões em sala de aula.
+
+* Este exercício supões que a empresa possui uma rede de computadores.
+
+* Também supõe que já existem pelo menos um sistema de email corporativo.
 
 
 ---
