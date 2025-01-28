@@ -139,36 +139,46 @@ Prontuário: é um documento que consta a história de atendimento, é elabora p
 
 ## 3.1. Requisitos Funcionais e Não Funcionais
 
-| **Categoria**                  | **Requisito**                                                                                                                                                  |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos Funcionais**      | 1. A clínica veterinária atende apenas gatos e cachorros.                                                                                                      |
-|                                 | 2. Os clientes devem fazer um cadastro de si e dos animais.                                                                                                   |
-|                                 | 3. Os clientes devem informar as condições nas quais os animais chegam.                                                                                       |
-|                                 | 4. Os clientes devem informar o tipo de ração que o animal come.                                                                                             |
-|                                 | 5. O cliente deve informar os hábitos do animal.                                                                                                              |
-|                                 | 6. Para cada animal, mais de um veterinário pode realizar o atendimento.                                                                                      |
-|                                 | 7. Os animais podem chegar e serem atendidos de acordo com uma agenda do dia.                                                                                |
-|                                 | 8. Cada animal atendido receberá uma ficha e um prontuário.                                                                                                   |
-|                                 | 9. Outros donos podem querer marcar horários de atendimento futuro.                                                                                            |
-|                                 | 10. O atendimento gera uma receita para o animal.                                                                                                             |
-|                                 | 11. Quando um cliente chega na clínica veterinária, ele é atendido por um atendente.                                                                          |
-|                                 | 12. O atendente deve verificar se existe agenda disponível com um veterinário.                                                                                |
-|                                 | 13. O atendente deve colocar o cliente e seu animal na fila de espera, se necessário.                                                                        |
-|                                 | 14. O atendente deve levar o cliente e o animal até o veterinário.                                                                                            |
-|                                 | 15. O veterinário deve realizar uma entrevista com o dono do animal.                                                                                         |
-|                                 | 16. O resultado da entrevista deve ser registrado em um formulário.                                                                                            |
-|                                 | 17. O veterinário deverá examinar o animal e anotar suas observações no prontuário (ficha).                                                                  |
-|                                 | 18. Dependendo da situação do animal, este receberá uma receita.                                                                                             |
-| **Requisitos Não Funcionais**  | 1. O sistema deve ser acessível a partir de dispositivos móveis (responsivo).                                                                                 |
-|                                 | 2. O sistema deve ser seguro, protegendo os dados pessoais dos clientes e os históricos dos animais.                                                         |
-|                                 | 3. O sistema deve ser capaz de lidar com múltiplos atendimentos simultaneamente.                                                                               |
-|                                 | 4. O sistema deve permitir que as informações sejam facilmente atualizadas, como as condições do animal e a agenda do veterinário.                           |
-|                                 | 5. O tempo de resposta do sistema não deve exceder 5 segundos para a maioria das operações.                                                                  |
-|                                 | 6. O sistema deve ser intuitivo e fácil de usar para atendentes e veterinários, com uma interface amigável.                                                   |
-|                                 | 7. O sistema deve ser compatível com as versões mais recentes dos navegadores web.                                                                          |
-|                                 | 8. O sistema deve ter backup regular para garantir a recuperação de dados em caso de falha.                                                                 |
-|                                 | 9. O sistema deve ser capaz de gerar relatórios de atendimentos e receitas de forma automática.                                                              |
-|                                 | 10. O sistema deve ser escalável, permitindo a adição de novos veterinários, atendentes e clientes sem comprometer o desempenho.                              |
+| **Tipo de Requisito**   | **Descrição do Requisito**                                                                 |
+|-------------------------|-------------------------------------------------------------------------------------------|
+| Funcional               | 1. Atender apenas gatos e cachorros.                                                     |
+| Funcional               | 2. Cadastro de clientes e animais (nome, telefone, email, endereço, etc.).               |
+| Funcional               | 3. Informar condições de saúde do animal ao chegar.                                      |
+| Funcional               | 4. Informar tipo de ração que o animal consome.                                          |
+| Funcional               | 5. Informar hábitos do animal (sono, alimentação, exercícios, cirurgias, etc.).          |
+| Funcional               | 6. Possibilidade de mais de um veterinário por animal.                                   |
+| Funcional               | 7. Atendimento dos animais conforme agenda do dia.                                       |
+| Funcional               | 8. Criação de ficha e prontuário para cada animal (dados pessoais, vacinas, tratamentos).|
+| Funcional               | 9. Agendamento de horários futuros para atendimento.                                     |
+| Funcional               | 10. Geração de receita para o animal após atendimento.                                   |
+| Funcional               | 11. Atendimento inicial por um atendente.                                                |
+| Funcional               | 12. Verificação de agenda disponível com veterinário.                                    |
+| Funcional               | 13. Inclusão do cliente e animal na fila de espera, se necessário.                       |
+| Funcional               | 14. Acompanhamento do cliente e animal até o veterinário.                                |
+| Funcional               | 15. Realização de entrevista com o dono do animal pelo veterinário.                      |
+| Funcional               | 16. Atualização do cadastro e prontuário com dados da entrevista.                        |
+| Funcional               | 17. Exame do animal e registro das observações no prontuário.                            |
+| Funcional               | 18. Prescrição de medicamentos ou vacinas, se necessário.                                |
+| Funcional               | 19. Realização de cirurgias de pequeno porte.                                            |
+| Funcional               | 20. Venda de rações especiais para tratamento.                                           |
+| Funcional               | 21. Hospedagem dos animais por até uma semana.                                           |
+| Funcional               | 22. Hospedagem mediante agendamento prévio e disponibilidade.                            |
+| Funcional               | 23. Serviços de limpeza, banho e tosa.                                                   |
+| Não Funcional           | 24. Comunicação com clientes via WhatsApp e Telegram.                                    |
+| Não Funcional           | 25. Uso de aplicativos de mensagens para agendamentos.                                   |
+| Não Funcional           | 26. Notificação aos donos via email e aplicativo de mensagens.                           |
+| Não Funcional           | 27. Sistema de caixa com registros de recebimentos diários.                              |
+| Não Funcional           | 28. Sistema de contas a pagar e receber com tabelas de entradas e despesas.              |
+| Não Funcional           | 29. Emissão de nota fiscal para serviços e cupom fiscal para produtos.                   |
+| Não Funcional           | 30. Quantidade de funcionários: 1 atendente na petshop, 1 para limpeza, 1 na recepção e 1 veterinário. |
+
+
+
+
+
+
+
+
 
 
 
