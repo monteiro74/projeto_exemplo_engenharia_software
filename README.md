@@ -26,8 +26,7 @@ b) Modelagem e projeto de banco de dados.
   - [5.1. Descrição das Classes e Relacionamentos](#51-descrição-das-classes-e-relacionamentos)
   - [5.2. Relacionamentos](#52-relacionamentos)
 - [6. Casos de uso](#6-casos-de-uso)
-  - [6.1. Casos de uso](#61-casos-de-uso)
-  - [6.2. Histórias de usuário](#62-histórias-de-usuário)
+- [7. Histórias de usuário](#7-histórias-de-usuário)
     - [6.2.1. História de Usuário 1: Cadastro de Cliente](#621-história-de-usuário-1-cadastro-de-cliente)
     - [6.2.2. História de Usuário 2: Cadastro de Animal](#622-história-de-usuário-2-cadastro-de-animal)
     - [6.2.3. História de Usuário 3: Informar Condições e Hábitos do Animal](#623-história-de-usuário-3-informar-condições-e-hábitos-do-animal)
@@ -196,25 +195,6 @@ Neste estudo de caso:
 * Este exercício supões que a empresa possui uma rede de computadores.
 
 * Também supõe que já existem pelo menos um sistema de email corporativo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -745,19 +725,10 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 > 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
 
 
+![Casos de uso](https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGD3TCL67JGVEPT3NGZ4ZLWNA)
 
 
-
-
-## 6.1. Casos de uso
-
-:bulb: **Dica:** Crie diagramas com situações de utilização do sistema.
-
-![Casos de uso](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/casos_de_uso.png)
-
-[Voltar ao Início](#repositório_projeto_eng_sw)
-
-## 6.2. Histórias de usuário
+# 7. Histórias de usuário
 
 
 
