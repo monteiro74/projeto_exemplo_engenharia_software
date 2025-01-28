@@ -1,7 +1,8 @@
-# Repositório_Projeto_Eng_Sw
+# Projeto exemplo para Engenharia de Software
 
-Repositório, Gerencia de proj sw. 2024/2
-
+Repositório usado nas disciplinas de:
+a) Engenharia de Software e,
+b) Modelagem e projeto de banco de dados.
 
 ---
 # Sumário
@@ -9,10 +10,10 @@ Repositório, Gerencia de proj sw. 2024/2
 
 
 
-
-- [Repositório\_Projeto\_Eng\_Sw](#repositório_projeto_eng_sw)
+- [Projeto exemplo para Engenharia de Software](#projeto-exemplo-para-engenharia-de-software)
 - [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
+  - [1.1. Contexto](#11-contexto)
 - [2. Descrição do negócio.](#2-descrição-do-negócio)
   - [2.1. Requisitos](#21-requisitos)
     - [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
@@ -72,12 +73,15 @@ Repositório, Gerencia de proj sw. 2024/2
 
 
 
-
-
 ---
 # 1. Introdução
 
-O projeto a seguir apresenta um sistema desenvolvidor para uma petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
+> [!IMPORTANT]  
+> O projeto a seguir é um exercício para o desenvolvimento futuro sistema para uma petshop.
+
+## 1.1. Contexto 
+
+A empresa é considerada "micro empresa" e iniciou as atividades recentemente. Ao possuir serviços exclusivos, os sistemas presentes no mercado não se enquadra, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhda a seguir:
 
 ---
 # 2. Descrição do negócio.
