@@ -15,8 +15,9 @@ b) Modelagem e projeto de banco de dados.
 - [1. Introdução](#1-introdução)
   - [1.1. Contexto](#11-contexto)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
-  - [2.1. Requisitos](#21-requisitos)
-    - [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
+  - [2.1. Definições](#21-definições)
+- [3. Requisitos](#3-requisitos)
+  - [3.1. Requisitos Funcionais e Não Funcionais](#31-requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
@@ -93,13 +94,13 @@ Descrição do cenário onde o sistema deverá funcionar e funcionalidades:
 > Considere que esta lista foi elabora conforme o usuário ia comentando.
 
 1. Uma Petshop e clínica veterinária atende apenas os animais: gatos e cachorros. 
-2. Os clientes devem fazer um cadastro de si e dos animais. 
-3. Os clientes devem informar as condições nas quais os animais chegam.
+2. Os clientes devem fazer um cadastro de si (nome do responsável, telefone, email, endereço) e dos animais. 
+3. Os clientes devem informar as condições (se esta bem de saúde, o que tem comido, sono, etc) nas quais os animais chegam.
 4. Os clientes devem informar o tipo de ração que o animal come. 
-5. Os clientes devem informar hábitos do animal. 
-6. Para cada animal é possível que mais de um veterinário o atenda. 
+5. Os clientes devem informar hábitos do animal (quando dorme, quando come, se faz exercícios, se já teve cirurgias, etc). 
+6. Para cada animal é possível que mais de um veterinário. 
 7. Os animais podem chegar e serem atendidos de acordo com uma agenda do dia. 
-8. Cada animal atendido receberá uma ficha ou cadastro (a ficha irá conter dados como: apelido, raça, sexo, altura, peso, cor principal, idade aproximada, data de nascimento) e um prontuário (que irá conter: datas de vacinação, vacinas aplicadas, tratamentos médicos, remédios que esta tomando, vacinas contra raiva). 
+8. Cada animal atendido receberá uma ficha ou cadastro (a ficha irá conter dados como: nome do responsável, apelido, raça, sexo, altura, peso, cor principal, idade aproximada, data de nascimento) e um prontuário (que irá conter: datas de vacinação, vacinas aplicadas, tratamentos médicos, remédios que esta tomando, vacinas contra raiva). 
 9. Os clientes podem querer marcar horários de atendimento futuro, na forma de agendamento. 
 10. Cada atendimento gera uma receita para o animal. 
 11.	Quando um cliente chega na clínica veterinária ele é atendido por um atendente. 
@@ -127,9 +128,16 @@ Descrição do cenário onde o sistema deverá funcionar e funcionalidades:
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
 
 
-## 2.1. Requisitos
+## 2.1. Definições
 
-### Requisitos Funcionais e Não Funcionais
+Prontuário: é um documento que consta a história de atendimento, é elabora pelo veterinário.
+
+> :memo: **Dica:** Crie uma seção com definições para ajudar outros a compreenderem os termos usados no projeto!
+
+
+# 3. Requisitos
+
+## 3.1. Requisitos Funcionais e Não Funcionais
 
 | **Categoria**                  | **Requisito**                                                                                                                                                  |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
