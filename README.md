@@ -27,25 +27,24 @@ b) Modelagem e projeto de banco de dados.
   - [5.2. Relacionamentos](#52-relacionamentos)
 - [6. Casos de uso](#6-casos-de-uso)
 - [7. Histórias de usuário](#7-histórias-de-usuário)
-    - [6.2.1. História de Usuário 1: Cadastro de Cliente](#621-história-de-usuário-1-cadastro-de-cliente)
-    - [6.2.2. História de Usuário 2: Cadastro de Animal](#622-história-de-usuário-2-cadastro-de-animal)
-    - [6.2.3. História de Usuário 3: Informar Condições e Hábitos do Animal](#623-história-de-usuário-3-informar-condições-e-hábitos-do-animal)
-    - [6.2.4. História de Usuário 4: Informar Tipo de Ração](#624-história-de-usuário-4-informar-tipo-de-ração)
-    - [6.2.5. História de Usuário 5: Marcar Atendimento Futuro](#625-história-de-usuário-5-marcar-atendimento-futuro)
-    - [6.2.6. História de Usuário 6: Atendimento pelo Atendente](#626-história-de-usuário-6-atendimento-pelo-atendente)
-    - [6.2.7. História de Usuário 7: Entrevista e Exame pelo Veterinário](#627-história-de-usuário-7-entrevista-e-exame-pelo-veterinário)
-    - [6.2.8. História de Usuário 8: Gerar Receita](#628-história-de-usuário-8-gerar-receita)
-    - [6.2.9. História de Usuário 9: Criar Ficha e Prontuário](#629-história-de-usuário-9-criar-ficha-e-prontuário)
-    - [6.2.10. História de Usuário 10: Acesso às Informações de Atendimento](#6210-história-de-usuário-10-acesso-às-informações-de-atendimento)
-- [7. Diagrama de componentes](#7-diagrama-de-componentes)
-- [8. Diagrama de implantação](#8-diagrama-de-implantação)
-- [9. Diagramas C4](#9-diagramas-c4)
+  - [7.1. Cadastro e Gestão de Clientes e Animais](#71-cadastro-e-gestão-de-clientes-e-animais)
+  - [7.2. Atendimento e Agendamentos](#72-atendimento-e-agendamentos)
+  - [7.3. Gestão de Fichas e Prontuários](#73-gestão-de-fichas-e-prontuários)
+  - [7.4. Receitas e Medicamentos](#74-receitas-e-medicamentos)
+  - [7.5. Serviços de Limpeza, Hospedagem e Produtos](#75-serviços-de-limpeza-hospedagem-e-produtos)
+  - [7.6. Comunicação com Clientes](#76-comunicação-com-clientes)
+  - [7.7. Gestão Financeira e Fiscal](#77-gestão-financeira-e-fiscal)
+  - [7.8. Estrutura Interna e Organização](#78-estrutura-interna-e-organização)
+  - [7.9. Estrutura da Equipe](#79-estrutura-da-equipe)
+- [8. Diagrama de componentes](#8-diagrama-de-componentes)
+- [9. Diagrama de implantação](#9-diagrama-de-implantação)
+- [10. Diagramas C4](#10-diagramas-c4)
   - [9.1. Diagrama de contexto](#91-diagrama-de-contexto)
   - [9.2. Diagrama de container](#92-diagrama-de-container)
   - [9.3. Diagrama de componente](#93-diagrama-de-componente)
   - [9.4. Diagrama de código](#94-diagrama-de-código)
-- [9. Protótipo de telas](#9-protótipo-de-telas)
-- [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
+- [11. Protótipo de telas](#11-protótipo-de-telas)
+- [12. Diagrama de navegação de telas](#12-diagrama-de-navegação-de-telas)
   - [10.1. Exemplo 1](#101-exemplo-1)
   - [10.2.  Exemplo 2](#102--exemplo-2)
   - [10.3. Editado manualmente](#103-editado-manualmente)
@@ -734,141 +733,87 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 
 :bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque... 1) Foco nas necessidades do usuário. 2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 3) Promovem entregas incrementais (cada entrega por ser uma entrega). 4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega). 5) É uma ferramenta mais próxima da realidade do usuário. 6) Histórias de usuário não fazem parte da UML, é um texto!
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
-### 6.2.1. História de Usuário 1: Cadastro de Cliente
+## 7.1. Cadastro e Gestão de Clientes e Animais
 
-```
-**Como** um novo cliente,  
-**Quero** cadastrar minhas informações pessoais na clínica veterinária,  
-**Para que** eu possa ser identificado e contatado pela clínica quando necessário.
+Como cliente, quero realizar meu cadastro informando meu nome, telefone, email e endereço, para que eu possa acessar os serviços oferecidos pela clínica de forma personalizada.
 
-**Critérios de Aceitação:**
-- O cliente pode inserir seu nome, endereço e telefone.
-- O sistema deve armazenar essas informações e associá-las ao cliente.
-```
+Como cliente, quero cadastrar meus animais informando nome, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para que a clínica tenha um histórico completo de cada animal.
 
+Como cliente, quero informar as condições de saúde do meu animal na chegada (se está bem de saúde, alimentação, sono, etc.), para que o veterinário tenha informações atualizadas para o atendimento.
 
-### 6.2.2. História de Usuário 2: Cadastro de Animal
+Como cliente, quero informar o tipo de ração que meu animal consome regularmente, para que a clínica possa oferecer recomendações adequadas, caso necessário.
 
-```
-**Como** um cliente,  
-**Quero** cadastrar meus animais na clínica,  
-**Para que** eu possa acompanhar os atendimentos e necessidades de cada um.
+Como cliente, quero registrar os hábitos do meu animal (como horários de sono, alimentação, exercícios e cirurgias anteriores), para que o veterinário tenha um histórico mais detalhado para análises futuras.
 
-**Critérios de Aceitação:**
-- O cliente pode inserir o nome, tipo (gato ou cachorro), condição, tipo de ração e hábitos do animal.
-- O sistema deve associar o animal ao cliente que o cadastrou.
-```
+## 7.2. Atendimento e Agendamentos
 
+Como cliente, quero agendar um horário para o atendimento do meu animal com o veterinário, para evitar filas e garantir um atendimento no horário combinado.
 
-### 6.2.3. História de Usuário 3: Informar Condições e Hábitos do Animal
+Como atendente, quero verificar na agenda os horários disponíveis para atendimento com o veterinário, para organizar os agendamentos e minimizar conflitos de horários.
 
-```
-**Como** um cliente,  
-**Quero** informar as condições nas quais meu animal chega e seus hábitos,  
-**Para que** o veterinário tenha informações completas sobre o estado do animal.
+Como atendente, quero registrar o cliente e seu animal na fila de espera, caso não haja horários disponíveis no momento, para garantir que o cliente será atendido assim que possível.
 
-**Critérios de Aceitação:**
-- O cliente pode adicionar informações sobre a condição e hábitos do animal durante o cadastro ou na atualização do perfil do animal.
-- Essas informações devem ser armazenadas no perfil do animal.
-```
+Como atendente, quero acompanhar o cliente e seu animal até a sala do veterinário no horário marcado ou quando chamado, para garantir uma boa experiência para o cliente e organização no atendimento.
 
-### 6.2.4. História de Usuário 4: Informar Tipo de Ração
+## 7.3. Gestão de Fichas e Prontuários
 
-```
-**Como** um cliente,  
-**Quero** informar o tipo de ração que meu animal come,  
-**Para que** o veterinário possa considerar isso durante o atendimento.
+Como sistema, quero criar fichas para cada animal atendido contendo dados como nome do responsável, apelido, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para manter registros completos e organizados sobre cada animal.
 
-**Critérios de Aceitação:**
-- O cliente pode adicionar o tipo de ração que o animal consome.
-- O sistema deve armazenar essa informação e associá-la ao perfil do animal.
-```
+Como veterinário, quero registrar no prontuário do animal informações como datas de vacinação, vacinas aplicadas, tratamentos médicos e medicamentos prescritos, para manter um histórico detalhado e confiável do animal.
 
+Como veterinário, quero registrar no prontuário observações e resultados de exames realizados no animal durante o atendimento, para documentar as condições do animal e embasar futuras consultas ou tratamentos.
 
-### 6.2.5. História de Usuário 5: Marcar Atendimento Futuro
+## 7.4. Receitas e Medicamentos
 
-```
-**Como** um cliente,  
-**Quero** marcar horários de atendimento futuros para meu animal,  
-**Para que** eu possa garantir que meu animal será atendido quando necessário.
+Como veterinário, quero emitir receitas contendo os medicamentos ou vacinas necessários para o tratamento do animal, para orientar o cliente sobre os cuidados e ações a serem tomados após o atendimento.
 
-**Critérios de Aceitação:**
-- O cliente pode solicitar uma marcação de horário para atendimento futuro.
-- O sistema deve verificar a disponibilidade na agenda dos veterinários e confirmar a marcação.
-```
+## 7.5. Serviços de Limpeza, Hospedagem e Produtos
 
+Como cliente, quero contratar serviços de limpeza como banho e tosa para meu animal, para mantê-lo higienizado e bem cuidado.
 
-### 6.2.6. História de Usuário 6: Atendimento pelo Atendente
+Como cliente, quero contratar serviços de hospedagem para meu animal com duração de até uma semana, para que ele tenha um local seguro enquanto estou ausente.
 
-```
-**Como** um cliente,  
-**Quero** ser atendido por um atendente ao chegar na clínica,  
-**Para que** eu possa ser direcionado adequadamente e verificar a disponibilidade de horários para atendimento.
+Como atendente, quero verificar a disponibilidade na agenda para serviços de hospedagem antes de confirmar o agendamento, para evitar conflitos de reserva e garantir a organização do espaço.
 
-**Critérios de Aceitação:**
-- O atendente deve verificar a disponibilidade de horários com os veterinários.
-- O atendente deve colocar o cliente e o animal na fila de espera, se necessário, e direcioná-los ao veterinário.
-```
+Como cliente, quero comprar rações especiais para meu animal diretamente na clínica, para facilitar o acesso a produtos que atendam às necessidades específicas dele.
 
+## 7.6. Comunicação com Clientes
 
-### 6.2.7. História de Usuário 7: Entrevista e Exame pelo Veterinário
+Como sistema, quero enviar mensagens via WhatsApp ou Telegram para confirmar agendamentos de serviços e consultas, para garantir que o cliente esteja ciente da data e horário marcado.
 
-```
-**Como** um veterinário,  
-**Quero** realizar uma entrevista com o dono do animal e examinar o animal,  
-**Para que** eu possa entender o estado do animal e registrar minhas observações.
+Como sistema, quero enviar notificações via email e aplicativos de mensagens para informar o cliente quando um serviço for concluído, para que ele saiba quando buscar o animal ou finalizar a compra.
 
-**Critérios de Aceitação:**
-- O veterinário deve poder registrar as observações durante a entrevista e o exame.
-- O resultado da entrevista deve ser registrado em um formulário.
-- As observações do exame devem ser anotadas no prontuário do animal.
-```
+## 7.7. Gestão Financeira e Fiscal
 
+Como atendente, quero registrar os valores recebidos no caixa diariamente, para controlar o fluxo financeiro da clínica de forma organizada.
 
-### 6.2.8. História de Usuário 8: Gerar Receita
+Como sistema, quero gerenciar contas a pagar e a receber em tabelas separadas, para monitorar as finanças e identificar rapidamente despesas e receitas.
 
-```
-**Como** um veterinário,  
-**Quero** gerar uma receita para o animal,  
-**Para que** o cliente possa seguir as recomendações de tratamento.
+Como sistema, quero emitir notas fiscais de serviços prestados (consultas, hospedagem, limpeza), para atender às exigências legais e documentar as operações da clínica.
 
-**Critérios de Aceitação:**
-- O veterinário deve poder registrar uma receita para o animal, se necessário.
-- A receita deve ser vinculada ao atendimento e disponível para o cliente.
-```
+Como sistema, quero emitir cupons fiscais para os produtos vendidos na petshop, para formalizar a venda de produtos como rações e acessórios.
 
+## 7.8. Estrutura Interna e Organização
 
-### 6.2.9. História de Usuário 9: Criar Ficha e Prontuário
+Como gerente, quero consultar os dados cadastrais da clínica (endereço, telefone, site, nome e CNPJ), para manter as informações acessíveis para clientes e parceiros.
 
-```
-**Como** um veterinário,  
-**Quero** criar uma ficha e um prontuário para o animal atendido,  
-**Para que** haja um registro completo das observações e tratamentos recomendados.
+Como sistema, quero registrar produtos com código, nome e valor no estoque, para organizar o inventário e facilitar a venda.
 
-**Critérios de Aceitação:**
-- O veterinário deve poder criar e associar uma ficha ao animal.
-- O prontuário deve conter todas as anotações e observações do atendimento.
-```
+Como sistema, quero cadastrar serviços com código, nome e valor, para organizar a tabela de serviços oferecidos pela clínica.
+Integração com Notas e Cupons Fiscais
 
+Como sistema, quero registrar itens nas notas fiscais (vinculando produtos e serviços ao código da nota), para detalhar todas as transações de forma clara e organizada.
 
-### 6.2.10. História de Usuário 10: Acesso às Informações de Atendimento
+Como sistema, quero registrar itens nos cupons fiscais (vinculando produtos e serviços ao código do cupom), para detalhar as vendas realizadas na petshop.
 
-```
-**Como** um cliente,  
-**Quero** acessar as informações de atendimento e registros de meus animais,  
-**Para que** eu possa acompanhar o histórico de atendimentos e recomendações.
+## 7.9. Estrutura da Equipe
 
-**Critérios de Aceitação:**
-- O cliente deve poder visualizar o histórico de atendimentos, fichas e prontuários dos seus animais.
-- As informações devem estar organizadas e acessíveis na interface do cliente.
-```
-[Voltar ao Início](#repositório_projeto_eng_sw)
+Como cliente, quero saber que há atendentes para recepção, limpeza e médicos veterinários disponíveis, para confiar que o atendimento será realizado por profissionais organizados e capacitados.
 
 
 ---
-# 7. Diagrama de componentes
+# 8. Diagrama de componentes
 
 
 :bulb: **Dica:** Diagramas de componentes são importantes no projeto técnico porque... 1) Visualização da arquitetura do sistema. 2) Explica a modularidade do projeto. 3) Apresenta casos de modularidade dos componentes do sistema. 4) Permite identificar peças críticas do projeto.
@@ -880,7 +825,7 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 
 
 ---
-# 8. Diagrama de implantação
+# 9. Diagrama de implantação
 
 
 :bulb: **Dica:** Diagramas de implantação são importantes no projeto técnico porque... 1) Permite visualizar o planejamento de instalação do sistema no parque de máquinas. 2) Permite identificar hardwa e software que serão necessários adquirir e organizar. 3) Ajuda no projeto de infra e segurança de rede. 4) Possibilida a visualização do parque computacional (incluindo hardware e software). 5) Permite identificar qual componente de software estará instalado em qual nó.
@@ -891,7 +836,7 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
 ---
-# 9. Diagramas C4
+# 10. Diagramas C4
 
 
 
@@ -913,7 +858,7 @@ cole aqui !
 
 
 ---
-# 9. Protótipo de telas
+# 11. Protótipo de telas
 
 :bulb: **Dica:** É uma etapa importante do projeto porque: 1) Permite a visualização clara do design (UX/IX) e sua representação visual do que será entregue em diferentes formatos até a utilização dos controles (visuais) reais para o usuário testar a tela. 2) Facilitam ajustes antecipados: Com protótipos é possível testar antes de "entrar em produção". 3) Permite que o usuário possa "se manifestar" antecipadamente para a equipe e comentar o que deseja e o que deve conter ou não nos formulários. 4) Testam a experiência do usuário quanto a velocidade de acesso, facilidade de uso, compreensão do que deve fazer nas telas e o que deve acionar. 5) Auxiliam na definição de requisitos técnicos que ainda não foram percebidos pelos Devs.
 
@@ -937,7 +882,7 @@ cole aqui !
 
 
 ---
-# 10. Diagrama de navegação de telas
+# 12. Diagrama de navegação de telas
 
 
 :bulb: **Dica:** São importantes porque: 1) Permitem a visualização do fluxo do usuário, mostrando o caminho que o usuário deve percorrer ao utilizar o sistema. 2) Facilitam o design da interface, ajudam o PO e o Dev a alterar componentes (controles visuais) durante as Sprints. 3) Uma variação do item 2, é que a equipe toda tem uma visão geral da navegação entre interfaces (formulários) com o usuário. Inclusive os stakeholders. 4) Possibilita identificar fluxos quebrados ou incompletos e telas "perdidas" no sistema. 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
