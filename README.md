@@ -8,8 +8,6 @@ b) Modelagem e projeto de banco de dados.
 # Sumário
 
 
-
-
 - [Projeto exemplo para Engenharia de Software](#projeto-exemplo-para-engenharia-de-software)
 - [Sumário](#sumário)
 - [1. Introdução](#1-introdução)
@@ -39,37 +37,32 @@ b) Modelagem e projeto de banco de dados.
 - [8. Diagrama de componentes](#8-diagrama-de-componentes)
 - [9. Diagrama de implantação](#9-diagrama-de-implantação)
 - [10. Diagramas C4](#10-diagramas-c4)
-  - [9.1. Diagrama de contexto](#91-diagrama-de-contexto)
-  - [9.2. Diagrama de container](#92-diagrama-de-container)
-  - [9.3. Diagrama de componente](#93-diagrama-de-componente)
-  - [9.4. Diagrama de código](#94-diagrama-de-código)
+  - [10.1. Diagrama de contexto](#101-diagrama-de-contexto)
+  - [10.2. Diagrama de container](#102-diagrama-de-container)
+  - [10.3. Diagrama de componente](#103-diagrama-de-componente)
+  - [10.4. Diagrama de código](#104-diagrama-de-código)
 - [11. Protótipo de telas](#11-protótipo-de-telas)
 - [12. Diagrama de navegação de telas](#12-diagrama-de-navegação-de-telas)
-  - [10.1. Exemplo 1](#101-exemplo-1)
-  - [10.2.  Exemplo 2](#102--exemplo-2)
-  - [10.3. Editado manualmente](#103-editado-manualmente)
-  - [10.4. Segunda geração do diagrama](#104-segunda-geração-do-diagrama)
-- [11. Pilha tecnológica](#11-pilha-tecnológica)
-  - [11.1. segunda versão](#111-segunda-versão)
-- [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
-  - [12.1. Requisitos do lado cliente](#121-requisitos-do-lado-cliente)
-  - [12.2. Requisitos do lado servidor](#122-requisitos-do-lado-servidor)
-- [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
-  - [13.1. Lado cliente](#131-lado-cliente)
-  - [13.2. Lado servidor](#132-lado-servidor)
-- [14. Manutenção, instalação e Novas funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
-  - [14.1. instalado no lado servidor](#141-instalado-no-lado-servidor)
-  - [14.2. Manutenção](#142-manutenção)
-  - [14.3. Novas funcionalidades](#143-novas-funcionalidades)
-- [15. Treinamento](#15-treinamento)
-  - [15.1. usuário](#151-usuário)
-  - [15.2. admin](#152-admin)
-- [16. Script SQL](#16-script-sql)
-  - [16.1. Comandos CREATE table](#161-comandos-create-table)
-  - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
-    - [16.2.1. Explicação dos dados fictícios](#1621-explicação-dos-dados-fictícios)
-
-
+  - [12.1. Exemplo 1](#121-exemplo-1)
+  - [12.2.  Exemplo 2](#122--exemplo-2)
+  - [12.3. Editado manualmente](#123-editado-manualmente)
+  - [12.4. Segunda geração do diagrama](#124-segunda-geração-do-diagrama)
+- [13. Pilha tecnológica](#13-pilha-tecnológica)
+  - [13.1. segunda versão](#131-segunda-versão)
+- [14. Requisitos de sistemas](#14-requisitos-de-sistemas)
+  - [14.1. Requisitos do lado cliente](#141-requisitos-do-lado-cliente)
+  - [14.2. Requisitos do lado servidor](#142-requisitos-do-lado-servidor)
+- [15. Considerações sobre segurança](#15-considerações-sobre-segurança)
+  - [15.1. Lado cliente](#151-lado-cliente)
+  - [15.2. Lado servidor](#152-lado-servidor)
+- [16. Manutenção, instalação e Novas funcionalidades](#16-manutenção-instalação-e-novas-funcionalidades)
+  - [16.1. instalado no lado servidor](#161-instalado-no-lado-servidor)
+  - [16.2. Manutenção](#162-manutenção)
+  - [16.3. Novas funcionalidades](#163-novas-funcionalidades)
+- [18. Script SQL](#18-script-sql)
+  - [18.1. Comandos CREATE table](#181-comandos-create-table)
+  - [18.2. Comandos INSERT gerando dados fictícios](#182-comandos-insert-gerando-dados-fictícios)
+    - [18.2.1. Explicação dos dados fictícios](#1821-explicação-dos-dados-fictícios)
 
 
 ---
@@ -840,19 +833,19 @@ Como cliente, quero saber que há atendentes para recepção, limpeza e médicos
 
 
 
-## 9.1. Diagrama de contexto
+## 10.1. Diagrama de contexto
 
 ```
 cole aqui !
 ```
 
-## 9.2. Diagrama de container
+## 10.2. Diagrama de container
 
 
-## 9.3. Diagrama de componente
+## 10.3. Diagrama de componente
 
 
-## 9.4. Diagrama de código
+## 10.4. Diagrama de código
 
 
 
@@ -889,13 +882,13 @@ cole aqui !
 
 
 
-## 10.1. Exemplo 1
+## 12.1. Exemplo 1
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 10.2.  Exemplo 2
+## 12.2.  Exemplo 2
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png)
 
@@ -905,7 +898,7 @@ cole aqui !
 > :warning: **Atenção:** Diagramas gerados por IA podem conter erros, veja o caso abaixo temos um form chamado "entrevista com veterinário", entre outros. 
 
 
-## 10.3. Editado manualmente
+## 12.3. Editado manualmente
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
@@ -941,7 +934,7 @@ graph TD;
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 10.4. Segunda geração do diagrama
+## 12.4. Segunda geração do diagrama
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
@@ -976,7 +969,7 @@ graph TD
 
 
 ---
-# 11. Pilha tecnológica
+# 13. Pilha tecnológica
 
 
 :bulb: **Dica:** Esta parte do projeto técnico é importante porque: 1) Permite que o projeto seja compatível com os requisitos técnicos e com as funcionalidades esperados pelo usuário. 2) Possibilita que equipamentos e software sejam especificados antecipadamente possibilitando estudo prévio sobre custo, desempenho e escalabilidade. 3) Possibilitará futuras operações de manutenção. 4) Poderá ajudar na definição de requisitos de segurança e velocidade. 5) Permite que seja feita uma projeção e planejamento de compatibilidade tecnológica na fase de projeto com o que existe atualmente na estrutura da empresa.
@@ -1029,7 +1022,7 @@ graph TD;
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 11.1. segunda versão
+## 13.1. segunda versão
 
 
 ```mermaid
@@ -1084,11 +1077,11 @@ graph TD;
 
 
 ---
-# 12. Requisitos de sistemas
+# 14. Requisitos de sistemas
 
 :bulb: **Dica:** É uma parte importante do projeto técnico porque: 1) permite projetar o mínimo requisito de hardware e software necessário para que o software possa funcionar com desempenho satisfatório. 2) Permitirá explicitar ao PO detalhes como integração de sistemas. 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
 
-## 12.1. Requisitos do lado cliente
+## 14.1. Requisitos do lado cliente
 
 1)
 
@@ -1098,7 +1091,7 @@ graph TD;
 
 
 
-## 12.2. Requisitos do lado servidor
+## 14.2. Requisitos do lado servidor
 
 :bulb: **Dica:** Veja o que uma hospedagem web oferece nos planos para hospedar um site !!
 
@@ -1113,11 +1106,11 @@ graph TD;
 
 
 ---
-# 13. Considerações sobre segurança
+# 15. Considerações sobre segurança
 
 :bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 2) Ajuda a prevenir contra ataques cibernéticos. 3) Torna o projeto do software compatível com leis e regulamentos. 4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
 
-## 13.1. Lado cliente
+## 15.1. Lado cliente
 
 Regras de senha
 catcha, qtda min. caracteres, caracteres especiais, etc...
@@ -1126,7 +1119,7 @@ recuperação de senha com email
 código no email
 anti vírus
 
-## 13.2. Lado servidor
+## 15.2. Lado servidor
 
 Sugerir Linux ou Windows ??
 
@@ -1139,16 +1132,16 @@ o admin do sistema não acessa dados do usuário!
 
 
 ---
-# 14. Manutenção, instalação e Novas funcionalidades
+# 16. Manutenção, instalação e Novas funcionalidades
 
 :bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 3) É uma ferramenta que auxilia na elaboração do plano de continguência. 4) Detalha procedimentos pós-instalação. 5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 6) Poderá ter critérios para backup e restore. 7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
 
 
-## 14.1. instalado no lado servidor 
+## 16.1. instalado no lado servidor 
 
-## 14.2. Manutenção
+## 16.2. Manutenção
 
-## 14.3. Novas funcionalidades
+## 16.3. Novas funcionalidades
 
 1. formalização do pedido
 2. cliente não dá palpite em beleza de tela
@@ -1162,30 +1155,7 @@ c) é tecnológicamente viável ?
 
 
 ---
-# 15. Treinamento 
-
-:bulb: **Dica:** O projeto do poderá ter critérios indicando o que é importante constar em um treinamento para capacitar o usuário e os administradores do sistema. O projeto de software poderá indicar a necessidade de atenção em determinados procedimentos operacionais de uso, instalação e manutenção que não são tão claros/óbvios e que merecem atenção e treino.
-
-> :warning: **Atenção:** O projeto de software não é material de treinamento !
-
-## 15.1. usuário
-
-1)
-
-2)
-
-
-
-## 15.2. admin
-
-1)
-
-2) 
-
-[Voltar ao Início](#repositório_projeto_eng_sw)
-
----
-# 16. Script SQL
+# 18. Script SQL
 
 > :warning: **Atenção:** No projeto de um software não criamos o banco de dados ainda, pois a fase de projeto é um "visão de futuro"; o exemplo abaixo foi inserido para que exercícios pudessem ser realizados em ferramenta IDE RAD.
 
@@ -1193,7 +1163,7 @@ c) é tecnológicamente viável ?
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 16.1. Comandos CREATE table
+## 18.1. Comandos CREATE table
 
 ```SQL
 
@@ -1293,7 +1263,7 @@ CREATE TABLE entrevistas (
 ```
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 16.2. Comandos INSERT gerando dados fictícios
+## 18.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
 -- Inserindo clientes
@@ -1353,7 +1323,7 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
-### 16.2.1. Explicação dos dados fictícios
+### 18.2.1. Explicação dos dados fictícios
 
 * Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
 * Animais: Rex (cachorro), Mimi (gato) e Bolinha (cachorro) são os animais dos clientes.
