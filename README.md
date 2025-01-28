@@ -90,7 +90,7 @@ A empresa é considerada "micro empresa" e iniciou as atividades recentemente. A
 
 Descrição do cenário onde o sistema deverá funcionar e funcionalidades:
 
-> [!IMPORTANT]  
+> [!Importante]  
 > Considere que esta lista foi elabora conforme o usuário ia comentando.
 
 1. Uma Petshop e clínica veterinária atende apenas os animais: gatos e cachorros. 
@@ -123,6 +123,10 @@ Descrição do cenário onde o sistema deverá funcionar e funcionalidades:
 28. A clínica deve ter um sistema de contas a pagar e receber, indicando em tabelas separadas os valores entrantes e despesas pagas.
 29. A clínica emite uma nota fiscal de serviço para os serviços e um cupom fiscal para os produtos da petshop.
 30. A petshop tem apenas um atendente. A clínica tem um atendente para limpeza dos animais, um atendente na recepção e um médico veteriário.
+
+> [!Importante]  
+> Considere que esta lista foi elabora conforme o usuário ia comentando.
+
 
 
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
