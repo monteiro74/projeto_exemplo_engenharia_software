@@ -198,6 +198,31 @@ Neste estudo de caso:
 * Também supõe que já existem pelo menos um sistema de email corporativo.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 # 4. Diagrama ER
 
@@ -441,6 +466,11 @@ ITEM_NOTA e ITEM_CUPOM referenciam PRODUTO e SERVICO.
 
 
 
+
+
+
+
+
 ---
 # 5. Diagrama de classe
 
@@ -449,7 +479,196 @@ ITEM_NOTA e ITEM_CUPOM referenciam PRODUTO e SERVICO.
 
 
 ```mermaid
+classDiagram
+    class Clinica {
+        -string endereco
+        -string telefone
+        -string site
+        -string nome
+        -string cnpj
+        +List~Cliente~ clientes
+        +List~Animal~ animais
+        +List~Atendente~ atendentes
+        +List~Veterinario~ veterinarios
+        +List~Agendamento~ agendamentos
+        +List~NotaFiscal~ notasFiscais
+        +List~CupomFiscal~ cuponsFiscais
+        +List~Produto~ produtos
+        +List~Servico~ servicos
+        +Caixa caixa
+        +List~ContaPagar~ contasPagar
+        +List~ContaReceber~ contasReceber
+    }
 
+    class Cliente {
+        -string nome
+        -string telefone
+        -string email
+        -string endereco
+        +List~Animal~ animais
+        +List~Agendamento~ agendamentos
+    }
+
+    class Animal {
+        -string apelido
+        -string raca
+        -string sexo
+        -float altura
+        -float peso
+        -string corPrincipal
+        -int idade
+        -date dataNascimento
+        +Ficha ficha
+        +Prontuario prontuario
+        +List~Receita~ receitas
+        +List~Cirurgia~ cirurgias
+        +List~Hospedagem~ hospedagens
+        +List~ServicoLimpeza~ servicosLimpeza
+        +List~Veterinario~ veterinarios
+    }
+
+    class Ficha {
+        -string nomeResponsavel
+        -string apelido
+        -string raca
+        -string sexo
+        -float altura
+        -float peso
+        -string corPrincipal
+        -int idade
+        -date dataNascimento
+    }
+
+    class Prontuario {
+        -date dataVacinacao
+        -string vacinasAplicadas
+        -string tratamentosMedicos
+        -string remedios
+        -string vacinaRaiva
+    }
+
+    class Receita {
+        -string medicamentos
+        -string vacinas
+    }
+
+    class Cirurgia {
+        -string tipo
+        -date data
+        -string observacoes
+    }
+
+    class Hospedagem {
+        -date dataInicio
+        -date dataFim
+    }
+
+    class ServicoLimpeza {
+        -date data
+        -string tipoServico
+    }
+
+    class Atendente {
+        -string nome
+        -string funcao
+    }
+
+    class Veterinario {
+        -string nome
+        -string crmv
+    }
+
+    class Agendamento {
+        -date data
+        -string tipoServico
+    }
+
+    class NotaFiscal {
+        -string numero
+        -date data
+        -float valorTotal
+        +List~ItemNota~ itens
+    }
+
+    class CupomFiscal {
+        -string numero
+        -date data
+        -float valorTotal
+        +List~ItemCupom~ itens
+    }
+
+    class ItemNota {
+        -int quantidade
+        -float valorUnitario
+        +Produto produto
+        +Servico servico
+    }
+
+    class ItemCupom {
+        -int quantidade
+        -float valorUnitario
+        +Produto produto
+        +Servico servico
+    }
+
+    class Produto {
+        -int codigo
+        -string nome
+        -float valor
+    }
+
+    class Servico {
+        -int codigo
+        -string nome
+        -float valor
+    }
+
+    class Caixa {
+        -date data
+        -float saldo
+    }
+
+    class ContaPagar {
+        -date dataVencimento
+        -float valor
+    }
+
+    class ContaReceber {
+        -date dataVencimento
+        -float valor
+    }
+
+    Clinica "1" *-- "0..*" Cliente : possui
+    Clinica "1" *-- "0..*" Animal : possui
+    Clinica "1" *-- "0..*" Atendente : possui
+    Clinica "1" *-- "0..*" Veterinario : possui
+    Clinica "1" *-- "0..*" Agendamento : gerencia
+    Clinica "1" *-- "0..*" NotaFiscal : emite
+    Clinica "1" *-- "0..*" CupomFiscal : emite
+    Clinica "1" *-- "0..*" Produto : vende
+    Clinica "1" *-- "0..*" Servico : oferece
+    Clinica "1" *-- "1" Caixa : controla
+    Clinica "1" *-- "0..*" ContaPagar : controla
+    Clinica "1" *-- "0..*" ContaReceber : controla
+
+    Cliente "1" *-- "0..*" Animal : possui
+    Cliente "1" *-- "0..*" Agendamento : realiza
+
+    Animal "1" *-- "1" Ficha : possui
+    Animal "1" *-- "1" Prontuario : possui
+    Animal "1" *-- "0..*" Receita : recebe
+    Animal "1" *-- "0..*" Cirurgia : realiza
+    Animal "1" *-- "0..*" Hospedagem : utiliza
+    Animal "1" *-- "0..*" ServicoLimpeza : utiliza
+    Animal "1" *-- "0..*" Veterinario : atende
+
+    NotaFiscal "1" *-- "0..*" ItemNota : contém
+    CupomFiscal "1" *-- "0..*" ItemCupom : contém
+
+    ItemNota "1" *-- "1" Produto : referencia
+    ItemNota "1" *-- "1" Servico : referencia
+    ItemCupom "1" *-- "1" Produto : referencia
+    ItemCupom "1" *-- "1" Servico : referencia
 ```
 
 > :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Como este diagrama foi gerado a partir do diagrama ER anterior, apresenta os mesmos problemas. Note que a ferramenta não detectou na descrição do negócio métodos significativos para representá-los neste diagrama.
@@ -459,13 +678,92 @@ ITEM_NOTA e ITEM_CUPOM referenciam PRODUTO e SERVICO.
 ## 5.1. Descrição das Classes e Relacionamentos
 
 
+Clinica: Classe central que representa a clínica veterinária e petshop. Contém listas de clientes, animais, atendentes, veterinários, agendamentos, notas fiscais, cupons fiscais, produtos, serviços, caixa, contas a pagar e contas a receber.
+
+Cliente: Representa os clientes da clínica, com informações pessoais e listas de animais e agendamentos.
+
+Animal: Representa os animais atendidos pela clínica, com detalhes físicos e listas de fichas, prontuários, receitas, cirurgias, hospedagens, serviços de limpeza e veterinários.
+
+Ficha: Contém os dados básicos do animal.
+
+Prontuario: Armazena informações médicas do animal.
+
+Receita: Representa as receitas médicas emitidas pelos veterinários.
+
+Cirurgia: Registra as cirurgias realizadas nos animais.
+
+Hospedagem: Representa o serviço de hospedagem oferecido pela clínica.
+
+ServicoLimpeza: Registra os serviços de limpeza, banho e tosa realizados nos animais.
+
+Atendente: Representa os atendentes da clínica.
+
+Veterinario: Representa os veterinários da clínica.
+
+Agendamento: Representa os agendamentos de serviços.
+
+NotaFiscal: Representa as notas fiscais emitidas pela clínica, contendo itens de serviços.
+
+CupomFiscal: Representa os cupons fiscais emitidos pela clínica, contendo itens de produtos.
+
+ItemNota: Representa os itens de uma nota fiscal, com quantidade e valor unitário, referenciando produtos e serviços.
+
+ItemCupom: Representa os itens de um cupom fiscal, com quantidade e valor unitário, referenciando produtos e serviços.
+
+Produto: Representa os produtos vendidos pela clínica.
+
+Servico: Representa os serviços oferecidos pela clínica.
+
+Caixa: Representa o controle de caixa da clínica.
+
+ContaPagar: Representa as contas a pagar da clínica.
+
+ContaReceber: Representa as contas a receber da clínica.
+
+
+
 ## 5.2. Relacionamentos
+
+Clinica possui Cliente, Animal, Atendente, Veterinario, Agendamento, NotaFiscal, CupomFiscal, Produto, Servico, Caixa, ContaPagar e ContaReceber.
+
+Cliente possui Animal e realiza Agendamento.
+
+Animal possui Ficha, Prontuario, Receita, Cirurgia, Hospedagem, ServicoLimpeza e é atendido por Veterinario.
+
+NotaFiscal e CupomFiscal contêm ItemNota e ItemCupom, respectivamente.
+
+ItemNota e ItemCupom referenciam Produto e Servico.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
 # 6. Casos de uso
 
-> :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 1) Define os requisitos funcionais e seus personagens. 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 3) Identifica os atores e suas interações em cada módulo do sistema. 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro. 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
+> :memo: **Dica:** O diagrama casos de uso é importante neste projeto porque... 
+> 1) Define os requisitos funcionais e seus personagens. 
+> 2) Facilita a comunicação com stakeholders, usuários da área de negócio podem entender este diagrama. 
+> 3) Identifica os atores e suas interações em cada módulo do sistema. 
+> 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro. 
+> 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
+
+
+
+
+
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
