@@ -734,22 +734,6 @@ NotaFiscal e CupomFiscal contêm ItemNota e ItemCupom, respectivamente.
 
 ItemNota e ItemCupom referenciam Produto e Servico.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 # 6. Casos de uso
 
@@ -764,8 +748,6 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 
 
 
-
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 6.1. Casos de uso
 
