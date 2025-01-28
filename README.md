@@ -115,15 +115,20 @@ Descrição do cenário onde o sistema deverá funcionar e funcionalidades:
 21.	A clínica também oferece serviço de hospedagem por até uma semana.
 22.	A clínica oferece serviço de hospedagem se houver agendamento prévio e disponibilidade na agenda da hospedagem.
 23.	A clínica oferece serviços de limpeza, banho e tosa dos cães e gatos.
-24. A clíniva se comunica com os clientes via aplicativos de mensagens whatsapp e telegram.
+24. A clínica se comunica com os clientes via aplicativos de mensagens whatsapp e telegram.
 25. A clínica usa os aplicativos de mensagens para realizar os agendamentos de atendimento médico, limpeza e hospedagem.
 26. A clínica usar o seu sistema interno para enviar uma notificiação para os donos dos animais que o serviço terminou, esta notificação deve ser por duas vias email e aplicativo de mensagens.
 27. A clínica deve ter no seu controle um sistema de caixa, com os registros dos recebimentos diários.
 28. A clínica deve ter um sistema de contas a pagar e receber, indicando em tabelas separadas os valores entrantes e despesas pagas.
 29. A clínica emite uma nota fiscal de serviço para os serviços e um cupom fiscal para os produtos da petshop.
 30. A petshop tem apenas um atendente. A clínica tem um atendente para limpeza dos animais, um atendente na recepção e um médico veteriário.
-
-
+31. A clínica tem os seguintes dados (endereço, telefone, site, nome, cnpj)
+32. A clínica tem os seguintes dados (endereço, telefone, site, nome, cnpj).
+33. Uma clínica pode ter um ou mais clientes.
+34. A note fiscal e o cupom fiscal possuem uma entidade intermediária chamada itens da nota e itens do cupom
+35. Adicione uma tabela de produto (com os campos, código do produto, nome e valor)
+36. Adicione uma tabela de serviço (com os campos, código do serviço, nome e valor)
+37. Atualize as relações de NOTA_FISCAL e CUPOM_FISCAL para ter os itens da note e cupom e as respectivas ligações com as tabelas de produto e serviço
 
 > :memo: **Dica:** Adicione características a mais na relação acima para personalizar seu projeto.
 
@@ -164,13 +169,14 @@ Prontuário: é um documento que consta a história de atendimento, é elabora p
 | Funcional               | 21. Hospedagem dos animais por até uma semana.                                           |
 | Funcional               | 22. Hospedagem mediante agendamento prévio e disponibilidade.                            |
 | Funcional               | 23. Serviços de limpeza, banho e tosa.                                                   |
-| Não Funcional           | 24. Comunicação com clientes via WhatsApp e Telegram.                                    |
-| Não Funcional           | 25. Uso de aplicativos de mensagens para agendamentos.                                   |
-| Não Funcional           | 26. Notificação aos donos via email e aplicativo de mensagens.                           |
-| Não Funcional           | 27. Sistema de caixa com registros de recebimentos diários.                              |
-| Não Funcional           | 28. Sistema de contas a pagar e receber com tabelas de entradas e despesas.              |
-| Não Funcional           | 29. Emissão de nota fiscal para serviços e cupom fiscal para produtos.                   |
-| Não Funcional           | 30. Quantidade de funcionários: 1 atendente na petshop, 1 para limpeza, 1 na recepção e 1 veterinário. |
+| Funcional               | 24. Emissão de nota e cupom. |
+| Não Funcional           | 25. Comunicação com clientes via WhatsApp e Telegram.                                    |
+| Não Funcional           | 26. Uso de aplicativos de mensagens para agendamentos.                                   |
+| Não Funcional           | 27. Notificação aos donos via email e aplicativo de mensagens.                           |
+| Não Funcional           | 28. Sistema de caixa com registros de recebimentos diários.                              |
+| Não Funcional           | 29. Sistema de contas a pagar e receber com tabelas de entradas e despesas.              |
+| Não Funcional           | 30. Emissão de nota fiscal para serviços e cupom fiscal para produtos.                   |
+| Não Funcional           | 31. Quantidade de funcionários: 1 atendente na petshop, 1 para limpeza, 1 na recepção e 1 veterinário. |
 
 
 
@@ -196,82 +202,180 @@ Neste estudo de caso:
 # 4. Diagrama ER
 
 
-> :memo: **Dica:** O diagrama ER é importante neste projeto porque... 1) Permite a visualização clara da estrutura de dado. 2) Facilita a comunicação entre a equipe, entre os devs. 3) É a base para o projeto do banco de dados. 4) Permite a identificação de possíveis problemas de projeto.
+> :memo: **Dica:** O diagrama ER é importante neste projeto porque... 
+> 1) Permite a visualização clara da estrutura de dado. 
+> 2) Facilita a comunicação entre a equipe, entre os devs. 
+> 3) É a base para o projeto do banco de dados. 
+> 4) Permite a identificação de possíveis problemas de projeto.
 
 
 
 ```mermaid
 
+
 erDiagram
-    CLIENTE {
-        int id_cliente PK
-        string nome
+    CLINICA ||--o{ CLIENTE : "atende"
+    CLINICA ||--o{ ANIMAL : "atende"
+    CLINICA ||--o{ ATENDENTE : "possui"
+    CLINICA ||--o{ VETERINARIO : "possui"
+    CLINICA ||--o{ AGENDAMENTO : "gerencia"
+    CLINICA ||--o{ NOTA_FISCAL : "emite"
+    CLINICA ||--o{ CUPOM_FISCAL : "emite"
+    CLINICA ||--o{ PRODUTO : "vende"
+    CLINICA ||--o{ SERVICO : "oferece"
+    CLINICA ||--o{ CAIXA : "controla"
+    CLINICA ||--o{ CONTAS_PAGAR : "controla"
+    CLINICA ||--o{ CONTAS_RECEBER : "controla"
+    CLINICA {
         string endereco
         string telefone
+        string site
+        string nome
+        string cnpj
     }
 
+    CLIENTE ||--o{ ANIMAL : "possui"
+    CLIENTE ||--o{ AGENDAMENTO : "realiza"
+    CLIENTE {
+        string nome
+        string telefone
+        string email
+        string endereco
+    }
+
+    ANIMAL ||--o{ FICHA : "possui"
+    ANIMAL ||--o{ PRONTUARIO : "possui"
+    ANIMAL ||--o{ RECEITA : "recebe"
+    ANIMAL ||--o{ CIRURGIA : "realiza"
+    ANIMAL ||--o{ HOSPEDAGEM : "utiliza"
+    ANIMAL ||--o{ SERVICO_LIMPEZA : "utiliza"
     ANIMAL {
-        int id_animal PK
-        string nome
-        string tipo
-        string condicao
-        string tipo_racao
-        string habitos
-        int id_cliente FK
-    }
-
-    VETERINARIO {
-        int id_veterinario PK
-        string nome
-        string especialidade
-    }
-
-    ATENDENTE {
-        int id_atendente PK
-        string nome
-    }
-
-    AGENDA {
-        int id_agenda PK
-        date data
-        time hora
-        int id_veterinario FK
-    }
-
-    ATENDIMENTO {
-        int id_atendimento PK
-        date data
-        time hora
-        int id_animal FK
-        int id_veterinario FK
-        int id_atendente FK
-        string resultado
-        string receita
+        string apelido
+        string raca
+        string sexo
+        float altura
+        float peso
+        string cor_principal
+        int idade
+        date data_nascimento
     }
 
     FICHA {
-        int id_ficha PK
-        int id_animal FK
-        string observacoes
+        string nome_responsavel
+        string apelido
+        string raca
+        string sexo
+        float altura
+        float peso
+        string cor_principal
+        int idade
+        date data_nascimento
     }
 
     PRONTUARIO {
-        int id_prontuario PK
-        int id_animal FK
-        string anotacoes
+        date data_vacinacao
+        string vacinas_aplicadas
+        string tratamentos_medicos
+        string remedios
+        string vacina_raiva
     }
 
-    CLIENTE ||--o{ ANIMAL : possui
-    ANIMAL ||--o{ ATENDIMENTO : recebe
-    VETERINARIO ||--o{ AGENDA : tem
-    AGENDA ||--o{ ATENDIMENTO : tem
-    ATENDENTE ||--o{ ATENDIMENTO : realiza
-    ANIMAL ||--o{ FICHA : possui
-    ANIMAL ||--o{ PRONTUARIO : possui
+    RECEITA {
+        string medicamentos
+        string vacinas
+    }
+
+    CIRURGIA {
+        string tipo
+        date data
+        string observacoes
+    }
+
+    HOSPEDAGEM {
+        date data_inicio
+        date data_fim
+    }
+
+    SERVICO_LIMPEZA {
+        date data
+        string tipo_servico
+    }
+
+    ATENDENTE {
+        string nome
+        string funcao
+    }
+
+    VETERINARIO {
+        string nome
+        string crmv
+    }
+
+    AGENDAMENTO {
+        date data
+        string tipo_servico
+    }
+
+    NOTA_FISCAL ||--o{ ITEM_NOTA : "contém"
+    NOTA_FISCAL {
+        string numero
+        date data
+        float valor_total
+    }
+
+    CUPOM_FISCAL ||--o{ ITEM_CUPOM : "contém"
+    CUPOM_FISCAL {
+        string numero
+        date data
+        float valor_total
+    }
+
+    ITEM_NOTA {
+        int quantidade
+        float valor_unitario
+    }
+
+    ITEM_CUPOM {
+        int quantidade
+        float valor_unitario
+    }
+
+    PRODUTO {
+        int codigo
+        string nome
+        float valor
+    }
+
+    SERVICO {
+        int codigo
+        string nome
+        float valor
+    }
+
+    CAIXA {
+        date data
+        float saldo
+    }
+
+    CONTAS_PAGAR {
+        date data_vencimento
+        float valor
+    }
+
+    CONTAS_RECEBER {
+        date data_vencimento
+        float valor
+    }
+
+    ITEM_NOTA }|--|| PRODUTO : "referencia"
+    ITEM_CUPOM }|--|| PRODUTO : "referencia"
+    ITEM_NOTA }|--|| SERVICO : "referencia"
+    ITEM_CUPOM }|--|| SERVICO : "referencia"
+
 
 ```
 
-> :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Veja os casos dos atributos "resultados" e "receita", poderiam ter sido modelados de outra forma.
+> :warning: **Atenção:** Quais as modificações necessárias no diagrama acima ? Discussões para o projeto de banco de dados!
 
 [Voltar ao Início](#repositório_projeto_eng_sw)
 
@@ -281,27 +385,60 @@ erDiagram
 
 > :memo: **Dica:** Esta relação é um simplificação das entidades e seus relacionamentos, serve como um princípio para a elaboração de um dicionário de dados.
 
-- **CLIENTE**: Contém informações sobre os clientes da clínica.
-- **ANIMAL**: Contém informações sobre os animais que pertencem aos clientes.
-- **VETERINARIO**: Contém informações sobre os veterinários.
-- **ATENDENTE**: Contém informações sobre os atendentes.
-- **AGENDA**: Contém informações sobre horários disponíveis para atendimento.
-- **ATENDIMENTO**: Registra os atendimentos realizados para os animais.
-- **FICHA**: Contém observações feitas pelo veterinário durante o atendimento.
-- **PRONTUARIO**: Contém anotações adicionais feitas pelo veterinário.
+CLINICA: Entidade central que representa a clínica veterinária e petshop. Contém informações como endereço, telefone, site, nome e CNPJ.
+
+CLIENTE: Representa os clientes da clínica, com informações como nome, telefone, email e endereço.
+
+ANIMAL: Representa os animais atendidos pela clínica, com detalhes como apelido, raça, sexo, altura, peso, cor principal, idade e data de nascimento.
+
+FICHA: Contém os dados básicos do animal, semelhante à entidade ANIMAL, mas focada no cadastro inicial.
+
+PRONTUARIO: Armazena informações médicas do animal, como datas de vacinação, tratamentos médicos, remédios e vacinas contra raiva.
+
+RECEITA: Representa as receitas médicas emitidas pelos veterinários, contendo medicamentos e vacinas.
+
+CIRURGIA: Registra as cirurgias realizadas nos animais, com informações como tipo de cirurgia, data e observações.
+
+HOSPEDAGEM: Representa o serviço de hospedagem oferecido pela clínica, com datas de início e fim.
+
+SERVICO_LIMPEZA: Registra os serviços de limpeza, banho e tosa realizados nos animais.
+
+ATENDENTE: Representa os atendentes da clínica, com informações como nome e função.
+
+VETERINARIO: Representa os veterinários da clínica, com informações como nome e CRMV.
+
+AGENDAMENTO: Representa os agendamentos de serviços, como atendimento médico, limpeza e hospedagem.
+
+NOTA_FISCAL: Representa as notas fiscais emitidas pela clínica, contendo itens de serviços.
+
+CUPOM_FISCAL: Representa os cupons fiscais emitidos pela clínica, contendo itens de produtos.
+
+ITEM_NOTA: Representa os itens de uma nota fiscal, com quantidade e valor unitário.
+
+ITEM_CUPOM: Representa os itens de um cupom fiscal, com quantidade e valor unitário.
+
+PRODUTO: Representa os produtos vendidos pela clínica, como rações especiais.
+
+SERVICO: Representa os serviços oferecidos pela clínica, como limpeza, banho e tosa.
+
+CAIXA: Representa o controle de caixa da clínica, com saldo diário.
+
+CONTAS_PAGAR: Representa as contas a pagar da clínica.
+
+CONTAS_RECEBER: Representa as contas a receber da clínica.
 
 ## 4.2 Relacionamentos
 
-- **CLIENTE** pode ter vários **ANIMAL**s.
-- **ANIMAL** pode receber vários **ATENDIMENTO**s.
-- **VETERINARIO** pode ter várias **AGENDA**s.
-- **AGENDA** pode ter vários **ATENDIMENTO**s.
-- **ATENDENTE** pode realizar vários **ATENDIMENTO**s.
-- **ANIMAL** pode ter uma **FICHA**.
-- **ANIMAL** pode ter um **PRONTUARIO**.
+CLINICA atende CLIENTE e ANIMAL.
 
+CLIENTE possui ANIMAL e realiza AGENDAMENTO.
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+ANIMAL possui FICHA, PRONTUARIO, RECEITA, CIRURGIA, HOSPEDAGEM e utiliza SERVICO_LIMPEZA.
+
+NOTA_FISCAL e CUPOM_FISCAL contêm ITEM_NOTA e ITEM_CUPOM, respectivamente.
+
+ITEM_NOTA e ITEM_CUPOM referenciam PRODUTO e SERVICO.
+
 
 
 ---
@@ -312,72 +449,7 @@ erDiagram
 
 
 ```mermaid
-classDiagram
-    class Cliente {
-        +int id_cliente
-        +string nome
-        +string endereco
-        +string telefone
-    }
 
-    class Animal {
-        +int id_animal
-        +string nome
-        +string tipo
-        +string condicao
-        +string tipo_racao
-        +string habitos
-        +int id_cliente
-    }
-
-    class Veterinario {
-        +int id_veterinario
-        +string nome
-        +string especialidade
-    }
-
-    class Atendente {
-        +int id_atendente
-        +string nome
-    }
-
-    class Agenda {
-        +int id_agenda
-        +date data
-        +time hora
-        +int id_veterinario
-    }
-
-    class Atendimento {
-        +int id_atendimento
-        +date data
-        +time hora
-        +int id_animal
-        +int id_veterinario
-        +int id_atendente
-        +string resultado
-        +string receita
-    }
-
-    class Ficha {
-        +int id_ficha
-        +int id_animal
-        +string observacoes
-    }
-
-    class Prontuario {
-        +int id_prontuario
-        +int id_animal
-        +string anotacoes
-    }
-
-    Cliente "1" -- "0..*" Animal : possui
-    Animal "1" -- "0..*" Atendimento : recebe
-    Veterinario "1" -- "0..*" Agenda : tem
-    Agenda "1" -- "0..*" Atendimento : tem
-    Atendente "1" -- "0..*" Atendimento : realiza
-    Animal "1" -- "0..1" Ficha : possui
-    Animal "1" -- "0..1" Prontuario : possui
 ```
 
 > :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Como este diagrama foi gerado a partir do diagrama ER anterior, apresenta os mesmos problemas. Note que a ferramenta não detectou na descrição do negócio métodos significativos para representá-los neste diagrama.
@@ -386,25 +458,8 @@ classDiagram
 
 ## 5.1. Descrição das Classes e Relacionamentos
 
-- **Cliente**: Contém informações sobre os clientes da clínica. Um cliente pode ter vários animais.
-- **Animal**: Contém informações sobre os animais, como nome, tipo, condição, tipo de ração e hábitos. Um animal pode receber vários atendimentos.
-- **Veterinario**: Contém informações sobre os veterinários, como nome e especialidade. Um veterinário pode ter várias agendas.
-- **Atendente**: Contém informações sobre os atendentes da clínica. Um atendente pode realizar vários atendimentos.
-- **Agenda**: Contém informações sobre os horários disponíveis para atendimento. Cada agenda está associada a um veterinário e pode ter vários atendimentos.
-- **Atendimento**: Registra os atendimentos realizados, incluindo data, hora, resultados e receitas. Cada atendimento está associado a um animal, um veterinário e um atendente.
-- **Ficha**: Contém observações feitas pelo veterinário durante o atendimento. Cada animal pode ter uma ficha.
-- **Prontuario**: Contém anotações adicionais feitas pelo veterinário. Cada animal pode ter um prontuário.
 
 ## 5.2. Relacionamentos
-
-- **Cliente** pode ter vários **Animal**s.
-- **Animal** pode ter vários **Atendimento**s.
-- **Veterinario** pode ter várias **Agenda**s.
-- **Agenda** pode ter vários **Atendimento**s.
-- **Atendente** pode realizar vários **Atendimento**s.
-- **Animal** pode ter uma **Ficha**.
-- **Animal** pode ter um **Prontuario**.
-
 
 
 ---
