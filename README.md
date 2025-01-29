@@ -43,9 +43,9 @@ b) Modelagem e projeto de banco de dados.
   - [10.3. Diagrama de componente](#103-diagrama-de-componente)
 - [11. Protótipo de telas](#11-protótipo-de-telas)
 - [12. Diagrama de navegação de telas](#12-diagrama-de-navegação-de-telas)
-  - [12.1. Exemplo 1, um exemplo qualquer !](#121-exemplo-1-um-exemplo-qualquer-)
-  - [12.2.  Exemplo 2, um exemplo qualquer !](#122--exemplo-2-um-exemplo-qualquer-)
-  - [12.3. Exemplo: menu de navegação entre módulos.](#123-exemplo-menu-de-navegação-entre-módulos)
+  - [12.1. Exemplo 1](#121-exemplo-1)
+  - [12.2.  Exemplo 2](#122--exemplo-2)
+  - [12.3. Outros exemplo... menu de navegação entre módulos.](#123-outros-exemplo-menu-de-navegação-entre-módulos)
   - [12.4. Segunda geração do diagrama, 2ª versão](#124-segunda-geração-do-diagrama-2ª-versão)
 - [13. Pilha tecnológica](#13-pilha-tecnológica)
   - [13.1. Mais algumas modificações](#131-mais-algumas-modificações)
@@ -1127,17 +1127,17 @@ C4Component
 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
 
 
-## 12.1. Exemplo 1, um exemplo qualquer !
+## 12.1. Exemplo 1
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
 
 
-## 12.2.  Exemplo 2, um exemplo qualquer !
+## 12.2.  Exemplo 2
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png)
 
 
-## 12.3. Exemplo: menu de navegação entre módulos.
+## 12.3. Outros exemplo... menu de navegação entre módulos.
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
