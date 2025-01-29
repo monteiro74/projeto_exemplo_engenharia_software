@@ -50,11 +50,11 @@ b) Modelagem e projeto de banco de dados.
 - [13. Pilha tecnológica](#13-pilha-tecnológica)
   - [13.1. Mais algumas modificações](#131-mais-algumas-modificações)
 - [14. Requisitos de sistemas](#14-requisitos-de-sistemas)
-  - [14.1. Requisitos do lado cliente](#141-requisitos-do-lado-cliente)
-  - [14.2. Requisitos do lado servidor](#142-requisitos-do-lado-servidor)
-- [17. Script SQL](#17-script-sql)
+  - [14.1. a) Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB](#141-a-requisitos-de-hardware-e-software-mínimos-para-um-sistema-web-em-php--mariadb)
+  - [14.4. b) Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:](#144-b-requisitos-de-segurança-mínimos-para-um-sistema-web-em-php--mariadb)
+- [15. Script SQL](#15-script-sql)
   - [17.1. Comandos CREATE table](#171-comandos-create-table)
-  - [17.2. Comandos INSERT gerando dados fictícios](#172-comandos-insert-gerando-dados-fictícios)
+  - [15.2. Comandos INSERT gerando dados fictícios](#152-comandos-insert-gerando-dados-fictícios)
     - [17.2.1. Explicação dos dados fictícios](#1721-explicação-dos-dados-fictícios)
 
 
@@ -1339,25 +1339,87 @@ graph TD;
 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 
 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
 
-## 14.1. Requisitos do lado cliente
+## 14.1. a) Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB
 
-1)
+:bulb: **Dica:** Exemplo...
 
-2)
+Hardware:
+Processador (CPU):
 
-3)
+Mínimo: 1 núcleo (para sistemas pequenos ou de baixo tráfego).
+Recomendado: 2 ou mais núcleos (para sistemas com tráfego moderado ou alto).
+Memória RAM:
+Mínimo: 512 MB (para sistemas pequenos ou de desenvolvimento).
+Recomendado: 2 GB ou mais (para produção, dependendo do tráfego e complexidade do sistema).
+Armazenamento (Disco):
+Mínimo: 10 GB (para o sistema operacional, PHP, MariaDB e arquivos do sistema).
+Recomendado: SSD com 20 GB ou mais (para melhor desempenho, especialmente em produção).
+Rede:
+Conexão estável com internet (velocidade mínima de 1 Mbps para sistemas pequenos).
+Software:
+Sistema Operacional:
+Linux (Ubuntu, Debian, CentOS, etc.) ou Windows Server.
+Linux é geralmente preferido para servidores web devido ao desempenho e custo.
+Servidor Web:
+Apache ou Nginx (recomendado para alta performance).
+PHP:
+Versão mínima: PHP 7.4 (recomendado PHP 8.x para melhor desempenho e segurança).
+Extensões necessárias: PDO, MySQLi, OpenSSL, JSON, entre outras.
+Banco de Dados:
+MariaDB (versão mínima: 10.2, recomendado 10.5 ou superior).
+Outros:
+Git (para versionamento de código).
+Composer (para gerenciamento de dependências em PHP).
+
+## 14.4. b) Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:
+
+:bulb: **Dica:** Exemplo...
+
+1. Configurações do Servidor:
+Atualizações: Mantenha o sistema operacional, PHP, MariaDB e o servidor web (Apache/Nginx) sempre atualizados.
+Firewall: Configure um firewall (ex: UFW no Linux) para bloquear portas desnecessárias.
+Permissões de Arquivos: Defina permissões corretas para arquivos e diretórios (ex: 755 para diretórios, 644 para arquivos).
+Desativar Serviços Desnecessários: Desative serviços e módulos não utilizados no servidor.
+
+2. Segurança do PHP:
+Configuração do php.ini:
+Desative display_errors em produção.
+Defina error_reporting para E_ALL em desenvolvimento e desative em produção.
+Limite o tamanho de upload de arquivos (upload_max_filesize).
+Desative funções perigosas como exec, shell_exec, system, etc.
+Use HTTPS: Configure SSL/TLS para criptografar a comunicação entre o cliente e o servidor.
+Validação de Entrada: Sempre valide e sanitize dados de entrada para evitar injeções de SQL e XSS.
+
+3. Segurança do MariaDB:
+Senhas Fortes: Use senhas complexas para usuários do banco de dados.
+Privilégios Mínimos: Conceda apenas as permissões necessárias para cada usuário do banco.
+Backups Automatizados: Configure backups regulares do banco de dados.
+Evite SQL Injection: Use prepared statements com PDO ou MySQLi.
+Remova Usuários Padrão: Remova ou renomeie o usuário root e outros usuários padrão.
+
+4. Segurança da Aplicação:
+Proteção contra XSS (Cross-Site Scripting):
+Use funções como htmlspecialchars para escapar saídas de dados.
+Proteção contra CSRF (Cross-Site Request Forgery):
+Implemente tokens CSRF em formulários.
+Autenticação Segura:
+Use hash seguro para senhas (ex: password_hash no PHP).
+Implemente autenticação de dois fatores (2FA) se possível.
+Limite de Tentativas de Login:
+Implemente bloqueio após várias tentativas falhas de login.
+CORS (Cross-Origin Resource Sharing):
+Configure políticas CORS para restringir acesso a recursos de origens não confiáveis.
+
+5. Monitoramento e Logs:
+
+Logs de Acesso e Erros: Habilite logs no servidor web e no PHP para monitorar atividades suspeitas.
+Ferramentas de Monitoramento: Use ferramentas como Fail2Ban para bloquear IPs maliciosos.
+Auditoria Regular: Revise logs e permissões periodicamente.
+
+6. Backup e Recuperação:
+Backups Automatizados: Configure backups regulares do banco de dados e arquivos do sistema.
 
 
-
-## 14.2. Requisitos do lado servidor
-
-:bulb: **Dica:** Veja o que uma hospedagem web oferece nos planos para hospedar um site !!
-
-1)
-
-2)
-
-3)
 
 
 
@@ -1367,7 +1429,7 @@ graph TD;
 
 
 ---
-# 17. Script SQL
+# 15. Script SQL
 
 > :warning: **Atenção:** No projeto de um software não criamos o banco de dados ainda, pois a fase de projeto é um "visão de futuro"; o exemplo abaixo foi inserido para que exercícios pudessem ser realizados em ferramenta IDE RAD.
 
@@ -1474,7 +1536,7 @@ CREATE TABLE entrevistas (
 );
 ```
 
-## 17.2. Comandos INSERT gerando dados fictícios
+## 15.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
 -- Inserindo clientes
