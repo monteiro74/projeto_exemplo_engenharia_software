@@ -43,22 +43,15 @@ b) Modelagem e projeto de banco de dados.
   - [10.3. Diagrama de componente](#103-diagrama-de-componente)
 - [11. Protótipo de telas](#11-protótipo-de-telas)
 - [12. Diagrama de navegação de telas](#12-diagrama-de-navegação-de-telas)
-  - [12.1. Exemplo 1](#121-exemplo-1)
-  - [12.2.  Exemplo 2](#122--exemplo-2)
-  - [12.3. Editado manualmente](#123-editado-manualmente)
+  - [12.1. Exemplo 1, um exemplo qualquer !](#121-exemplo-1-um-exemplo-qualquer-)
+  - [12.2.  Exemplo 2, um exemplo qualquer !](#122--exemplo-2-um-exemplo-qualquer-)
+  - [12.3. Exemplo: menu de navegação entre módulos.](#123-exemplo-menu-de-navegação-entre-módulos)
   - [12.4. Segunda geração do diagrama, 2ª versão](#124-segunda-geração-do-diagrama-2ª-versão)
 - [13. Pilha tecnológica](#13-pilha-tecnológica)
-  - [13.1. segunda versão](#131-segunda-versão)
+  - [13.1. Mais algumas modificações](#131-mais-algumas-modificações)
 - [14. Requisitos de sistemas](#14-requisitos-de-sistemas)
   - [14.1. Requisitos do lado cliente](#141-requisitos-do-lado-cliente)
   - [14.2. Requisitos do lado servidor](#142-requisitos-do-lado-servidor)
-- [15. Considerações sobre segurança](#15-considerações-sobre-segurança)
-  - [15.1. Lado cliente](#151-lado-cliente)
-  - [15.2. Lado servidor](#152-lado-servidor)
-- [16. Manutenção, instalação e Novas funcionalidades](#16-manutenção-instalação-e-novas-funcionalidades)
-  - [16.1. Instalado no lado servidor](#161-instalado-no-lado-servidor)
-  - [16.2. Manutenção](#162-manutenção)
-  - [16.3. Novas funcionalidades](#163-novas-funcionalidades)
 - [17. Script SQL](#17-script-sql)
   - [17.1. Comandos CREATE table](#171-comandos-create-table)
   - [17.2. Comandos INSERT gerando dados fictícios](#172-comandos-insert-gerando-dados-fictícios)
@@ -1132,22 +1125,17 @@ C4Component
 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
 
 
-## 12.1. Exemplo 1
+## 12.1. Exemplo 1, um exemplo qualquer !
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
 
 
-## 12.2.  Exemplo 2
+## 12.2.  Exemplo 2, um exemplo qualquer !
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png)
 
 
-> :warning: **Atenção:** Veja diferença entre os diagramas acima e o que a ferrementa de IA produziu abaixo! Dependendo da complexidade e quantidade de formulários uma abordagem contendo apenas os nomes de formulários pode reduzir signficativamente o espaço dos diagramas nos projetos. 
-
-> :warning: **Atenção:** Diagramas gerados por IA podem conter erros, veja o caso abaixo temos um form chamado "entrevista com veterinário", entre outros. 
-
-
-## 12.3. Editado manualmente
+## 12.3. Exemplo: menu de navegação entre módulos.
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
@@ -1183,7 +1171,7 @@ graph TD;
 
 ## 12.4. Segunda geração do diagrama, 2ª versão
 
-> :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
+> :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login.
 
 ```mermaid
 graph TD
@@ -1281,7 +1269,7 @@ graph TD;
 ```
 
 
-## 13.1. segunda versão
+## 13.1. Mais algumas modificações
 
 
 ```mermaid
@@ -1343,7 +1331,11 @@ graph TD;
 ---
 # 14. Requisitos de sistemas
 
-:bulb: **Dica:** É uma parte importante do projeto técnico porque: 1) permite projetar o mínimo requisito de hardware e software necessário para que o software possa funcionar com desempenho satisfatório. 2) Permitirá explicitar ao PO detalhes como integração de sistemas. 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
+:bulb: **Dica:** É uma parte importante do projeto técnico porque: 
+1) permite projetar o mínimo requisito de hardware e software necessário para que o software possa funcionar com desempenho satisfatório. 
+2) Permitirá explicitar ao PO detalhes como integração de sistemas. 
+3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 
+4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
 
 ## 14.1. Requisitos do lado cliente
 
@@ -1364,99 +1356,6 @@ graph TD;
 2)
 
 3)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-# 15. Considerações sobre segurança
-
-:bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 
-1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 
-2) Ajuda a prevenir contra ataques cibernéticos. 
-3) Torna o projeto do software compatível com leis e regulamentos. 
-4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 
-5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
-
-
-## 15.1. Lado cliente
-
-Regras de senha
-catcha, qtda min. caracteres, caracteres especiais, etc...
-autenticação de 2 fatores
-recuperação de senha com email
-código no email
-anti vírus
-
-## 15.2. Lado servidor
-
-Sugerir Linux ou Windows ??
-
-Sugestão ?? Política de backup de aplicação e banco ?? 1x/mês 1 full backup, 1x a cada 15 dias 1 full backup, no final de cada dia um backup incremental
-
-o admin do sistema não acessa dados do usuário!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-# 16. Manutenção, instalação e Novas funcionalidades
-
-:bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 
-1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 
-2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 
-3) É uma ferramenta que auxilia na elaboração do plano de continguência. 
-4) Detalha procedimentos pós-instalação. 
-5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 
-6) Poderá ter critérios para backup e restore. 
-7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
-
-
-## 16.1. Instalado no lado servidor 
-
-## 16.2. Manutenção
-
-## 16.3. Novas funcionalidades
-
-1. formalização do pedido
-2. cliente não dá palpite em beleza de tela
-3. decidir sob 3 critérios:
-a) equipe tem tempo ?
-b) é economicamente viável ?
-c) é tecnológicamente viável ?
-
-
-
 
 
 
