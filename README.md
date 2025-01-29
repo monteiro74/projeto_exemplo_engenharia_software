@@ -41,7 +41,6 @@ b) Modelagem e projeto de banco de dados.
   - [10.1. Diagrama de contexto](#101-diagrama-de-contexto)
   - [10.2. Diagrama de container](#102-diagrama-de-container)
   - [10.3. Diagrama de componente](#103-diagrama-de-componente)
-  - [10.4. Diagrama de código](#104-diagrama-de-código)
 - [11. Protótipo de telas](#11-protótipo-de-telas)
 - [12. Diagrama de navegação de telas](#12-diagrama-de-navegação-de-telas)
   - [12.1. Exemplo 1](#121-exemplo-1)
@@ -1023,81 +1022,69 @@ e capacitados.
 ## 10.1. Diagrama de contexto
 
 ```mermaid
-%% Diagrama de Contexto
 C4Context
-  title Diagrama de Contexto - Petshop e Clínica Veterinária
-  Person(cliente, "Cliente", "Pessoa que agenda serviços para seu pet")
-  Person(atendente, "Atendente", "Funcionário que gerencia a recepção e organização da clínica")
-  Person(veterinario, "Veterinário", "Médico responsável pelo atendimento dos animais")
-  System(clinica_sistema, "Sistema da Clínica", "Sistema interno para gestão de clientes, animais, agenda e financeiro")
-  System_Ext(whatsapp, "WhatsApp", "Canal de comunicação com os clientes")
-  System_Ext(telegram, "Telegram", "Outro canal de comunicação com os clientes")
-  
-  Rel(cliente, clinica_sistema, "Agendamento e informações sobre o pet")
-  Rel(atendente, clinica_sistema, "Gerencia clientes e agenda")
-  Rel(veterinario, clinica_sistema, "Atualiza prontuários e realiza atendimentos")
-  Rel(clinica_sistema, whatsapp, "Envia notificações e confirmações")
-  Rel(clinica_sistema, telegram, "Envia notificações e confirmações")
+    title Diagrama de Contexto - Petshop e Clínica Veterinária
+
+    Person(cliente, "Cliente", "Responsável pelo animal, agenda serviços e recebe notificações.")
+    Person(atendente, "Atendente", "Responsável por receber clientes, agendar serviços e gerenciar filas.")
+    Person(veterinario, "Veterinário", "Realiza consultas, exames e prescreve tratamentos.")
+    System(petshop, "Sistema da Petshop", "Gerencia clientes, animais, agendamentos, serviços financeiros e notificações.")
+    System_Ext(whatsapp, "WhatsApp", "Aplicativo de mensagens para comunicação com clientes.")
+    System_Ext(telegram, "Telegram", "Aplicativo de mensagens para comunicação com clientes.")
+    System_Ext(email, "Email", "Sistema de email para notificações.")
+
+    Rel(cliente, petshop, "Usa o sistema para agendar serviços, receber notificações e consultar informações.")
+    Rel(atendente, petshop, "Usa o sistema para gerenciar agendamentos, filas e cadastros.")
+    Rel(veterinario, petshop, "Usa o sistema para registrar consultas, exames e prescrições.")
+    Rel(petshop, whatsapp, "Envia notificações e mensagens.")
+    Rel(petshop, telegram, "Envia notificações e mensagens.")
+    Rel(petshop, email, "Envia notificações por email.")
 ```
 
 
 ## 10.2. Diagrama de container
 
 ```mermaid
-%% Diagrama de Container
 C4Container
-  title Diagrama de Contêiner - Petshop e Clínica Veterinária
-  Person(cliente, "Cliente")
-  Container_Boundary(clinica_sistema, "Sistema da Clínica") {
-    Container(web_app, "Aplicação Web", "Python/Streamlit", "Interface para gestão")
-    Container(database, "Banco de Dados", "MySQL", "Armazena informações da clínica")
-    Container(whatsapp_api, "API WhatsApp", "Twilio API", "Envia notificações para clientes")
-  }
-  cliente -> web_app : "Agendamento e consultas"
-  web_app -> database : "Armazena dados do cliente, animal e agenda"
-  web_app -> whatsapp_api : "Envia notificações"
+    title Diagrama de Container - Petshop e Clínica Veterinária
+
+    Container(frontend, "Aplicação Web", "React", "Interface para clientes e atendentes.")
+    Container(backend, "API Backend", "Node.js", "Lógica de negócio e integrações.")
+    Container(database, "Banco de Dados", "PostgreSQL", "Armazena dados de clientes, animais, agendamentos, etc.")
+    Container(messaging, "Serviço de Mensagens", "Twilio/WhatsApp API", "Envio de notificações via WhatsApp e Telegram.")
+    Container(email_service, "Serviço de Email", "SendGrid", "Envio de notificações por email.")
+    Container(financeiro, "Sistema Financeiro", "Python", "Gerenciamento de caixa, contas a pagar/receber e emissão de notas fiscais.")
+
+    Rel(frontend, backend, "Realiza chamadas HTTP para processar dados.")
+    Rel(backend, database, "Armazena e recupera dados.")
+    Rel(backend, messaging, "Envia notificações via WhatsApp e Telegram.")
+    Rel(backend, email_service, "Envia notificações por email.")
+    Rel(backend, financeiro, "Integra-se para emissão de notas fiscais e gestão financeira.")
+
 ```
 
 ## 10.3. Diagrama de componente
 
 ```mermaid
-%% Diagrama de Componente
 C4Component
-  title Diagrama de Componente - Sistema da Clínica
-  Container(web_app, "Aplicação Web", "Python/Streamlit")
-  Component(agenda_servico, "Módulo de Agendamento", "Gerencia marcação de horários")
-  Component(prontuario_servico, "Módulo de Prontuário", "Registra informações médicas dos animais")
-  Component(financeiro_servico, "Módulo Financeiro", "Gerencia pagamentos e notas fiscais")
-  Component(notificacao_servico, "Módulo de Notificações", "Envia mensagens para clientes")
-  
-  web_app -> agenda_servico : "Criação e atualização de agendamentos"
-  web_app -> prontuario_servico : "Registro de exames e atendimentos"
-  web_app -> financeiro_servico : "Geração de notas fiscais e recebimentos"
-  web_app -> notificacao_servico : "Envio de confirmações e lembretes"
+    title Diagrama de Componente - Petshop e Clínica Veterinária
+
+    Component(clientes, "Gestão de Clientes", "Gerencia cadastros de clientes e animais.")
+    Component(agendamentos, "Gestão de Agendamentos", "Gerencia agendamentos de consultas, hospedagem e serviços.")
+    Component(prontuarios, "Gestão de Prontuários", "Armazena e gerencia prontuários médicos dos animais.")
+    Component(financeiro, "Gestão Financeira", "Gerencia caixa, contas a pagar/receber e emissão de notas fiscais.")
+    Component(notificacoes, "Serviço de Notificações", "Envia notificações via WhatsApp, Telegram e email.")
+    Component(produtos, "Gestão de Produtos", "Gerencia produtos (rações, medicamentos, etc.).")
+    Component(servicos, "Gestão de Serviços", "Gerencia serviços (banho, tosa, cirurgias, etc.).")
+
+    Rel(clientes, agendamentos, "Usa para agendar serviços.")
+    Rel(agendamentos, prontuarios, "Atualiza prontuários após consultas.")
+    Rel(prontuarios, financeiro, "Gera receitas e notas fiscais.")
+    Rel(financeiro, notificacoes, "Envia notificações de pagamentos e serviços concluídos.")
+    Rel(produtos, financeiro, "Vincula produtos a notas fiscais.")
+    Rel(servicos, financeiro, "Vincula serviços a cupons fiscais.")
+
 ```
-
-## 10.4. Diagrama de código
-
-```mermaid
-%% Diagrama de Código
-C4Code
-  title Diagrama de Código - Módulo de Prontuário
-  Component_Class(ProntuarioService, "ProntuarioService", "Gerencia prontuários")
-  Class(Prontuario) {
-    +id: int
-    +animal_id: int
-    +data_atendimento: date
-    +descricao: text
-  }
-  Class(Animal) {
-    +id: int
-    +nome: string
-    +raca: string
-  }
-  ProntuarioService --> Prontuario : "Cria e gerencia registros"
-  Prontuario --> Animal : "Cada prontuário pertence a um animal"
-```
-
 
 
 
@@ -1137,14 +1124,17 @@ C4Code
 # 12. Diagrama de navegação de telas
 
 
-:bulb: **Dica:** São importantes porque: 1) Permitem a visualização do fluxo do usuário, mostrando o caminho que o usuário deve percorrer ao utilizar o sistema. 2) Facilitam o design da interface, ajudam o PO e o Dev a alterar componentes (controles visuais) durante as Sprints. 3) Uma variação do item 2, é que a equipe toda tem uma visão geral da navegação entre interfaces (formulários) com o usuário. Inclusive os stakeholders. 4) Possibilita identificar fluxos quebrados ou incompletos e telas "perdidas" no sistema. 5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
-
+:bulb: **Dica:** São importantes porque: 
+1) Permitem a visualização do fluxo do usuário, mostrando o caminho que o usuário deve percorrer ao utilizar o sistema. 
+2) Facilitam o design da interface, ajudam o PO e o Dev a alterar componentes (controles visuais) durante as Sprints. 
+3) Uma variação do item 2, é que a equipe toda tem uma visão geral da navegação entre interfaces (formulários) com o usuário. Inclusive os stakeholders. 
+4) Possibilita identificar fluxos quebrados ou incompletos e telas "perdidas" no sistema. 
+5) Permite o suporte à usabilidade e acessibilidade auxiliam a visualização e fluxo de navegação seja acessível para todos.
 
 
 ## 12.1. Exemplo 1
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
-
 
 
 ## 12.2.  Exemplo 2
