@@ -777,9 +777,8 @@ Como cliente, quero realizar meu cadastro informando meu nome, telefone, email e
 para que eu possa acessar os serviços oferecidos pela clínica de forma personalizada.
 ```
 
-```
-Como cliente, quero cadastrar meus animais informando nome, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para que a clínica tenha um histórico completo de cada animal.
-```
+:bulb: **Dica:** Como cliente, quero cadastrar meus animais informando nome, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para que a clínica tenha um histórico completo de cada animal.
+
 
 ```
 Como cliente, quero informar as condições de saúde do meu animal na chegada (se está bem de saúde, alimentação, sono, etc.), para que o veterinário tenha informações atualizadas para o atendimento.
