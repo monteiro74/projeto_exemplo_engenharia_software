@@ -818,7 +818,8 @@ horários disponíveis no momento, para garantir que o cliente será atendido as
 
 ```
 Como atendente, quero acompanhar o cliente e seu animal até a sala do veterinário no horário 
-marcado ou quando chamado, para garantir uma boa experiência para o cliente e organização no atendimento.
+marcado ou quando chamado, para garantir uma boa experiência para o cliente e organização 
+no atendimento.
 ```
 
 ## 7.3. Gestão de Fichas e Prontuários
@@ -909,8 +910,8 @@ venda de produtos como rações e acessórios.
 ## 7.8. Estrutura Interna e Organização
 
 ```
-Como gerente, quero consultar os dados cadastrais da clínica (endereço, telefone, site, nome e CNPJ), 
-para manter as informações acessíveis para clientes e parceiros.
+Como gerente, quero consultar os dados cadastrais da clínica (endereço, telefone, site, 
+nome e CNPJ), para manter as informações acessíveis para clientes e parceiros.
 ```
 
 ```
@@ -937,8 +938,9 @@ cupom), para detalhar as vendas realizadas na petshop.
 ## 7.9. Estrutura da Equipe
 
 ```
-Como cliente, quero saber que há atendentes para recepção, limpeza e médicos veterinários disponíveis,
- para confiar que o atendimento será realizado por profissionais organizados e capacitados.
+Como cliente, quero saber que há atendentes para recepção, limpeza e médicos veterinários 
+disponíveis, para confiar que o atendimento será realizado por profissionais organizados 
+e capacitados.
 ```
 
 
