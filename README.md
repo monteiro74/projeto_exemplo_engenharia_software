@@ -375,9 +375,7 @@ erDiagram
 
 > :warning: **Atenção:** Quais as modificações necessárias no diagrama acima ? Discussões para o projeto de banco de dados!
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
-[início](#sumário)
 
 ## 4.1 Descrição das Entidades e Relacionamentos
 
@@ -468,7 +466,11 @@ ITEM_NOTA e ITEM_CUPOM referenciam PRODUTO e SERVICO.
 # 5. Diagrama de classe
 
 
-> :memo: **Dica:** O diagrama de classes é importante neste projeto porque... 1) Modela a estrutura do sistema. 2) Facilita a comunicação entre os devs. 3) Organiza a lógica do negócio pois diferente do modelo ER, este diagrama poderá ter uma relação de métodos. 4) Ajuda na reutilização de código. 
+> :memo: **Dica:** O diagrama de classes é importante neste projeto porque... 
+> 1) Modela a estrutura do sistema. 
+> 2) Facilita a comunicação entre os devs. 
+> 3) Organiza a lógica do negócio pois diferente do modelo ER, este diagrama poderá ter uma relação de métodos. 
+> 4) Ajuda na reutilização de código. 
 
 
 ```mermaid
@@ -767,7 +769,13 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 
 
 
-:bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque... 1) Foco nas necessidades do usuário. 2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 3) Promovem entregas incrementais (cada entrega por ser uma entrega). 4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega). 5) É uma ferramenta mais próxima da realidade do usuário. 6) Histórias de usuário não fazem parte da UML, é um texto!
+:bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque: 
+1) Foco nas necessidades do usuário. 
+2) Facilitam a comunicação com a equipe (lembrando que equipes crum tem 3 personagens!!). 
+3) Promovem entregas incrementais (cada entrega por ser uma entrega).
+4) Facilitam a definição de critérios de aceitação (o usuário especifica o que ele considera como critério para dizer que um módulo esta pronto para entrega). 
+5) É uma ferramenta mais próxima da realidade do usuário. 
+6) Histórias de usuário não fazem parte da UML, é um texto!
 
 
 ## 7.1. Cadastro e Gestão de Clientes e Animais
