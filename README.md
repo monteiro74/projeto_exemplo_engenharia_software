@@ -55,7 +55,7 @@ b) Modelagem e projeto de banco de dados.
 - [15. Script SQL](#15-script-sql)
   - [15.1. Comandos CREATE table](#151-comandos-create-table)
   - [15.2. Comandos INSERT gerando dados fictícios](#152-comandos-insert-gerando-dados-fictícios)
-    - [17.2.1. Explicação dos dados fictícios](#1721-explicação-dos-dados-fictícios)
+    - [15.2.1. Explicação dos dados fictícios](#1521-explicação-dos-dados-fictícios)
 
 
 
@@ -203,8 +203,6 @@ Neste estudo de caso:
 
 
 ```mermaid
-
-
 erDiagram
     CLINICA ||--o{ CLIENTE : "atende"
     CLINICA ||--o{ ANIMAL : "atende"
@@ -1440,6 +1438,220 @@ Backups Automatizados: Configure backups regulares do banco de dados e arquivos 
 
 ```SQL
 
+-- Tabela CLINICA
+CREATE TABLE CLINICA (
+    id_clinica INT AUTO_INCREMENT PRIMARY KEY,
+    endereco VARCHAR(255) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    site VARCHAR(100),
+    nome VARCHAR(100) NOT NULL,
+    cnpj VARCHAR(18) NOT NULL UNIQUE
+);
+
+-- Tabela CLIENTE
+CREATE TABLE CLIENTE (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    email VARCHAR(100),
+    endereco VARCHAR(255),
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela ANIMAL
+CREATE TABLE ANIMAL (
+    id_animal INT AUTO_INCREMENT PRIMARY KEY,
+    apelido VARCHAR(100) NOT NULL,
+    raca VARCHAR(50),
+    sexo CHAR(1),
+    altura FLOAT,
+    peso FLOAT,
+    cor_principal VARCHAR(50),
+    idade INT,
+    data_nascimento DATE,
+    id_cliente INT,
+    FOREIGN KEY (id_cliente) REFERENCES CLIENTE(id_cliente)
+);
+
+-- Tabela FICHA
+CREATE TABLE FICHA (
+    id_ficha INT AUTO_INCREMENT PRIMARY KEY,
+    nome_responsavel VARCHAR(100) NOT NULL,
+    apelido VARCHAR(100),
+    raca VARCHAR(50),
+    sexo CHAR(1),
+    altura FLOAT,
+    peso FLOAT,
+    cor_principal VARCHAR(50),
+    idade INT,
+    data_nascimento DATE,
+    id_animal INT,
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela PRONTUARIO
+CREATE TABLE PRONTUARIO (
+    id_prontuario INT AUTO_INCREMENT PRIMARY KEY,
+    data_vacinacao DATE,
+    vacinas_aplicadas TEXT,
+    tratamentos_medicos TEXT,
+    remedios TEXT,
+    vacina_raiva VARCHAR(100),
+    id_animal INT,
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela RECEITA
+CREATE TABLE RECEITA (
+    id_receita INT AUTO_INCREMENT PRIMARY KEY,
+    medicamentos TEXT,
+    vacinas TEXT,
+    id_animal INT,
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela CIRURGIA
+CREATE TABLE CIRURGIA (
+    id_cirurgia INT AUTO_INCREMENT PRIMARY KEY,
+    tipo VARCHAR(100),
+    data DATE,
+    observacoes TEXT,
+    id_animal INT,
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela HOSPEDAGEM
+CREATE TABLE HOSPEDAGEM (
+    id_hospedagem INT AUTO_INCREMENT PRIMARY KEY,
+    data_inicio DATE,
+    data_fim DATE,
+    id_animal INT,
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela SERVICO_LIMPEZA
+CREATE TABLE SERVICO_LIMPEZA (
+    id_servico_limpeza INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE,
+    tipo_servico VARCHAR(100),
+    id_animal INT,
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela ATENDENTE
+CREATE TABLE ATENDENTE (
+    id_atendente INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    funcao VARCHAR(100),
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela VETERINARIO
+CREATE TABLE VETERINARIO (
+    id_veterinario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    crmv VARCHAR(20) NOT NULL UNIQUE,
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela AGENDAMENTO
+CREATE TABLE AGENDAMENTO (
+    id_agendamento INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE,
+    tipo_servico VARCHAR(100),
+    id_cliente INT,
+    id_animal INT,
+    FOREIGN KEY (id_cliente) REFERENCES CLIENTE(id_cliente),
+    FOREIGN KEY (id_animal) REFERENCES ANIMAL(id_animal)
+);
+
+-- Tabela NOTA_FISCAL
+CREATE TABLE NOTA_FISCAL (
+    id_nota_fiscal INT AUTO_INCREMENT PRIMARY KEY,
+    numero VARCHAR(50) NOT NULL UNIQUE,
+    data DATE,
+    valor_total FLOAT,
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela CUPOM_FISCAL
+CREATE TABLE CUPOM_FISCAL (
+    id_cupom_fiscal INT AUTO_INCREMENT PRIMARY KEY,
+    numero VARCHAR(50) NOT NULL UNIQUE,
+    data DATE,
+    valor_total FLOAT,
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela ITEM_NOTA
+CREATE TABLE ITEM_NOTA (
+    id_item_nota INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT,
+    valor_unitario FLOAT,
+    id_nota_fiscal INT,
+    id_produto INT,
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NOTA_FISCAL(id_nota_fiscal),
+    FOREIGN KEY (id_produto) REFERENCES PRODUTO(id_produto)
+);
+
+-- Tabela ITEM_CUPOM
+CREATE TABLE ITEM_CUPOM (
+    id_item_cupom INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT,
+    valor_unitario FLOAT,
+    id_cupom_fiscal INT,
+    id_servico INT,
+    FOREIGN KEY (id_cupom_fiscal) REFERENCES CUPOM_FISCAL(id_cupom_fiscal),
+    FOREIGN KEY (id_servico) REFERENCES SERVICO(id_servico)
+);
+
+-- Tabela PRODUTO
+CREATE TABLE PRODUTO (
+    id_produto INT AUTO_INCREMENT PRIMARY KEY,
+    codigo INT NOT NULL UNIQUE,
+    nome VARCHAR(100) NOT NULL,
+    valor FLOAT
+);
+
+-- Tabela SERVICO
+CREATE TABLE SERVICO (
+    id_servico INT AUTO_INCREMENT PRIMARY KEY,
+    codigo INT NOT NULL UNIQUE,
+    nome VARCHAR(100) NOT NULL,
+    valor FLOAT
+);
+
+-- Tabela CAIXA
+CREATE TABLE CAIXA (
+    id_caixa INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE,
+    saldo FLOAT,
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela CONTAS_PAGAR
+CREATE TABLE CONTAS_PAGAR (
+    id_conta_pagar INT AUTO_INCREMENT PRIMARY KEY,
+    data_vencimento DATE,
+    valor FLOAT,
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
+
+-- Tabela CONTAS_RECEBER
+CREATE TABLE CONTAS_RECEBER (
+    id_conta_receber INT AUTO_INCREMENT PRIMARY KEY,
+    data_vencimento DATE,
+    valor FLOAT,
+    id_clinica INT,
+    FOREIGN KEY (id_clinica) REFERENCES CLINICA(id_clinica)
+);
 
 ```
 
@@ -1450,7 +1662,7 @@ Backups Automatizados: Configure backups regulares do banco de dados e arquivos 
 ```
 
 
-### 17.2.1. Explicação dos dados fictícios
+### 15.2.1. Explicação dos dados fictícios
 
 * Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
 * Animais: Rex (cachorro), Mimi (gato) e Bolinha (cachorro) são os animais dos clientes.
