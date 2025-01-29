@@ -50,8 +50,8 @@ b) Modelagem e projeto de banco de dados.
 - [13. Pilha tecnológica](#13-pilha-tecnológica)
   - [13.1. Mais algumas modificações](#131-mais-algumas-modificações)
 - [14. Requisitos de sistemas](#14-requisitos-de-sistemas)
-  - [14.1. a) Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB](#141-a-requisitos-de-hardware-e-software-mínimos-para-um-sistema-web-em-php--mariadb)
-  - [14.4. b) Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:](#144-b-requisitos-de-segurança-mínimos-para-um-sistema-web-em-php--mariadb)
+  - [14.1. Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB](#141-requisitos-de-hardware-e-software-mínimos-para-um-sistema-web-em-php--mariadb)
+  - [14.4. Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:](#144-requisitos-de-segurança-mínimos-para-um-sistema-web-em-php--mariadb)
 - [15. Script SQL](#15-script-sql)
   - [17.1. Comandos CREATE table](#171-comandos-create-table)
   - [15.2. Comandos INSERT gerando dados fictícios](#152-comandos-insert-gerando-dados-fictícios)
@@ -1339,7 +1339,7 @@ graph TD;
 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 
 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
 
-## 14.1. a) Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB
+## 14.1. Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB
 
 :bulb: **Dica:** Exemplo...
 
@@ -1371,7 +1371,7 @@ Outros:
 Git (para versionamento de código).
 Composer (para gerenciamento de dependências em PHP).
 
-## 14.4. b) Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:
+## 14.4. Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:
 
 :bulb: **Dica:** Exemplo...
 
