@@ -47,7 +47,7 @@ b) Modelagem e projeto de banco de dados.
   - [12.1. Exemplo 1](#121-exemplo-1)
   - [12.2.  Exemplo 2](#122--exemplo-2)
   - [12.3. Editado manualmente](#123-editado-manualmente)
-  - [12.4. Segunda geração do diagrama](#124-segunda-geração-do-diagrama)
+  - [12.4. Segunda geração do diagrama, 2ª versão](#124-segunda-geração-do-diagrama-2ª-versão)
 - [13. Pilha tecnológica](#13-pilha-tecnológica)
   - [13.1. segunda versão](#131-segunda-versão)
 - [14. Requisitos de sistemas](#14-requisitos-de-sistemas)
@@ -57,7 +57,7 @@ b) Modelagem e projeto de banco de dados.
   - [15.1. Lado cliente](#151-lado-cliente)
   - [15.2. Lado servidor](#152-lado-servidor)
 - [16. Manutenção, instalação e Novas funcionalidades](#16-manutenção-instalação-e-novas-funcionalidades)
-  - [16.1. instalado no lado servidor](#161-instalado-no-lado-servidor)
+  - [16.1. Instalado no lado servidor](#161-instalado-no-lado-servidor)
   - [16.2. Manutenção](#162-manutenção)
   - [16.3. Novas funcionalidades](#163-novas-funcionalidades)
 - [17. Script SQL](#17-script-sql)
@@ -772,25 +772,43 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 
 ## 7.1. Cadastro e Gestão de Clientes e Animais
 
+```
 Como cliente, quero realizar meu cadastro informando meu nome, telefone, email e endereço, para que eu possa acessar os serviços oferecidos pela clínica de forma personalizada.
+```
 
+```
 Como cliente, quero cadastrar meus animais informando nome, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para que a clínica tenha um histórico completo de cada animal.
+```
 
+```
 Como cliente, quero informar as condições de saúde do meu animal na chegada (se está bem de saúde, alimentação, sono, etc.), para que o veterinário tenha informações atualizadas para o atendimento.
+```
 
+```
 Como cliente, quero informar o tipo de ração que meu animal consome regularmente, para que a clínica possa oferecer recomendações adequadas, caso necessário.
+```
 
+```
 Como cliente, quero registrar os hábitos do meu animal (como horários de sono, alimentação, exercícios e cirurgias anteriores), para que o veterinário tenha um histórico mais detalhado para análises futuras.
+```
 
 ## 7.2. Atendimento e Agendamentos
 
+```
 Como cliente, quero agendar um horário para o atendimento do meu animal com o veterinário, para evitar filas e garantir um atendimento no horário combinado.
+```
 
+```
 Como atendente, quero verificar na agenda os horários disponíveis para atendimento com o veterinário, para organizar os agendamentos e minimizar conflitos de horários.
+```
 
+```
 Como atendente, quero registrar o cliente e seu animal na fila de espera, caso não haja horários disponíveis no momento, para garantir que o cliente será atendido assim que possível.
+```
 
+```
 Como atendente, quero acompanhar o cliente e seu animal até a sala do veterinário no horário marcado ou quando chamado, para garantir uma boa experiência para o cliente e organização no atendimento.
+```
 
 ## 7.3. Gestão de Fichas e Prontuários
 
@@ -1024,7 +1042,7 @@ graph TD;
 ```
 
 
-## 12.4. Segunda geração do diagrama
+## 12.4. Segunda geração do diagrama, 2ª versão
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
@@ -1285,7 +1303,7 @@ o admin do sistema não acessa dados do usuário!
 7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
 
 
-## 16.1. instalado no lado servidor 
+## 16.1. Instalado no lado servidor 
 
 ## 16.2. Manutenção
 
