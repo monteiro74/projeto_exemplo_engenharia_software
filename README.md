@@ -1411,7 +1411,6 @@ CORS (Cross-Origin Resource Sharing):
 Configure políticas CORS para restringir acesso a recursos de origens não confiáveis.
 
 5. Monitoramento e Logs:
-
 Logs de Acesso e Erros: Habilite logs no servidor web e no PHP para monitorar atividades suspeitas.
 Ferramentas de Monitoramento: Use ferramentas como Fail2Ban para bloquear IPs maliciosos.
 Auditoria Regular: Revise logs e permissões periodicamente.
