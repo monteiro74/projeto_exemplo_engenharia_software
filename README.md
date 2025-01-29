@@ -755,6 +755,8 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 > 4) Ajuda a priorizar funcionalidades, pois o usuário pode decidir qual caso de uso ele acha mais importante desenvolver primeiro. 
 > 5) Os balões nos casos de uso poderão se transformar em códigos no sistema. 
 
+![https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png](https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png)
+
 
 <img src="https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png" alt="casos de uso" width="400"/>
 
