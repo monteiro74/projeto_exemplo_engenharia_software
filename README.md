@@ -1658,9 +1658,111 @@ CREATE TABLE CONTAS_RECEBER (
 ## 15.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
+-- Inserindo dados na tabela CLINICA
+INSERT INTO CLINICA (endereco, telefone, site, nome, cnpj) VALUES
+('Rua das Rosas, 123', '(11) 99999-00000', 'localhost', 'Clínica F', '12.345.68/001-90'),
+('Avenida Central, 456', '(11) 99999-1111', 'localhost', 'Saúde A', '98.765.32/001-11');
 
+-- Inserindo dados na tabela CLIENTE
+INSERT INTO CLIENTE (nome, telefone, email, endereco, id_clinica) VALUES
+('Carlos Silva', '(11) 99999-9999', 'c@localhost', 'Rua das Palm, 55', 1),
+('Mariana Souza', '(11) 11111-9999', 'm@localhost', 'Avenida BR, 200', 2);
+
+-- Inserindo dados na tabela ANIMAL
+INSERT INTO ANIMAL (apelido, raca, sexo, altura, peso, cor_principal, idade, data_nascimento, id_cliente) VALUES
+('Rex', 'Labrador', 'M', 0.6, 25.0, 'Dourado', 5, '2018-07-15', 1),
+('Mia', 'Persa', 'F', 0.3, 4.5, 'Branco', 3, '2020-02-10', 2);
+
+-- Inserindo dados na tabela FICHA
+INSERT INTO FICHA (nome_responsavel, apelido, raca, sexo, altura, peso, cor_principal, idade, data_nascimento, id_animal) VALUES
+('Carlos Silva', 'Rex', 'Labrador', 'M', 0.6, 25.0, 'Dourado', 5, '2018-07-15', 1),
+('Mariana Souza', 'Mia', 'Persa', 'F', 0.3, 4.5, 'Branco', 3, '2020-02-10', 2);
+
+-- Inserindo dados na tabela PRONTUARIO
+INSERT INTO PRONTUARIO (data_vacinacao, vacinas_aplicadas, tratamentos_medicos, remedios, vacina_raiva, id_animal) VALUES
+('2023-05-10', 'Vacina V10', 'Antibiótico para infecção de pele', 'Cefalexina', 'Sim', 1),
+('2023-06-20', 'Vacina Tríplice Felina', 'Vermífugo', 'Albendazol', 'Sim', 2);
+
+-- Inserindo dados na tabela RECEITA
+INSERT INTO RECEITA (medicamentos, vacinas, id_animal) VALUES
+('Antibiótico e anti-inflamatório', 'Vacina V10', 1),
+('Vermífugo e probiótico', 'Vacina Tríplice Felina', 2);
+
+-- Inserindo dados na tabela CIRURGIA
+INSERT INTO CIRURGIA (tipo, data, observacoes, id_animal) VALUES
+('Castracao', '2023-08-12', 'Castrado com sucesso', 1),
+('Extração dentária', '2023-09-05', 'Dente comprometido removido', 2);
+
+-- Inserindo dados na tabela HOSPEDAGEM
+INSERT INTO HOSPEDAGEM (data_inicio, data_fim, id_animal) VALUES
+('2023-12-01', '2023-12-10', 1),
+('2023-12-15', '2023-12-20', 2);
+
+-- Inserindo dados na tabela SERVICO_LIMPEZA
+INSERT INTO SERVICO_LIMPEZA (data, tipo_servico, id_animal) VALUES
+('2023-11-20', 'Banho e tosa', 1),
+('2023-11-22', 'Corte de unhas', 2);
+
+-- Inserindo dados na tabela ATENDENTE
+INSERT INTO ATENDENTE (nome, funcao, id_clinica) VALUES
+('Ana Paula', 'Recepcionista', 1),
+('João Mendes', 'Auxiliar Administrativo', 2);
+
+-- Inserindo dados na tabela VETERINARIO
+INSERT INTO VETERINARIO (nome, crmv, id_clinica) VALUES
+('Dr. Pedro Lima', 'SP-12345', 1),
+('Dra. Camila Rocha', 'RJ-67890', 2);
+
+-- Inserindo dados na tabela AGENDAMENTO
+INSERT INTO AGENDAMENTO (data, tipo_servico, id_cliente, id_animal) VALUES
+('2023-12-05', 'Consulta Veterinária', 1, 1),
+('2023-12-10', 'Vacinação', 2, 2);
+
+-- Inserindo dados na tabela NOTA_FISCAL
+INSERT INTO NOTA_FISCAL (numero, data, valor_total, id_clinica) VALUES
+('NF123456', '2023-11-30', 250.00, 1),
+('NF654321', '2023-12-01', 180.00, 2);
+
+-- Inserindo dados na tabela CUPOM_FISCAL
+INSERT INTO CUPOM_FISCAL (numero, data, valor_total, id_clinica) VALUES
+('CF98765', '2023-11-28', 80.00, 1),
+('CF56789', '2023-12-02', 120.00, 2);
+
+-- Inserindo dados na tabela PRODUTO
+INSERT INTO PRODUTO (codigo, nome, valor) VALUES
+(1001, 'Ração Premium', 120.00),
+(1002, 'Brinquedo de borracha', 35.00);
+
+-- Inserindo dados na tabela SERVICO
+INSERT INTO SERVICO (codigo, nome, valor) VALUES
+(2001, 'Consulta Veterinária', 100.00),
+(2002, 'Vacinação', 80.00);
+
+-- Inserindo dados na tabela ITEM_NOTA
+INSERT INTO ITEM_NOTA (quantidade, valor_unitario, id_nota_fiscal, id_produto) VALUES
+(2, 120.00, 1, 1),
+(1, 35.00, 2, 2);
+
+-- Inserindo dados na tabela ITEM_CUPOM
+INSERT INTO ITEM_CUPOM (quantidade, valor_unitario, id_cupom_fiscal, id_servico) VALUES
+(1, 100.00, 1, 1),
+(1, 80.00, 2, 2);
+
+-- Inserindo dados na tabela CAIXA
+INSERT INTO CAIXA (data, saldo, id_clinica) VALUES
+('2023-12-01', 5000.00, 1),
+('2023-12-02', 3000.00, 2);
+
+-- Inserindo dados na tabela CONTAS_PAGAR
+INSERT INTO CONTAS_PAGAR (data_vencimento, valor, id_clinica) VALUES
+('2023-12-15', 1500.00, 1),
+('2023-12-20', 2000.00, 2);
+
+-- Inserindo dados na tabela CONTAS_RECEBER
+INSERT INTO CONTAS_RECEBER (data_vencimento, valor, id_clinica) VALUES
+('2023-12-10', 2500.00, 1),
+('2023-12-18', 1800.00, 2);
 ```
-
 
 ### 15.2.1. Explicação dos dados fictícios
 
