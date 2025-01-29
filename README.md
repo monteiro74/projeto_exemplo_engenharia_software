@@ -2,8 +2,7 @@
 
 Repositório usado nas disciplinas de:
 
-a) Engenharia de Software e,
-
+a) Engenharia de Software e,<br>
 b) Modelagem e projeto de banco de dados.
 
 ---
@@ -61,10 +60,10 @@ b) Modelagem e projeto de banco de dados.
   - [16.1. instalado no lado servidor](#161-instalado-no-lado-servidor)
   - [16.2. Manutenção](#162-manutenção)
   - [16.3. Novas funcionalidades](#163-novas-funcionalidades)
-- [18. Script SQL](#18-script-sql)
-  - [18.1. Comandos CREATE table](#181-comandos-create-table)
-  - [18.2. Comandos INSERT gerando dados fictícios](#182-comandos-insert-gerando-dados-fictícios)
-    - [18.2.1. Explicação dos dados fictícios](#1821-explicação-dos-dados-fictícios)
+- [17. Script SQL](#17-script-sql)
+  - [17.1. Comandos CREATE table](#171-comandos-create-table)
+  - [17.2. Comandos INSERT gerando dados fictícios](#172-comandos-insert-gerando-dados-fictícios)
+    - [17.2.1. Explicação dos dados fictícios](#1721-explicação-dos-dados-fictícios)
 
 
 ---
@@ -445,6 +444,26 @@ ITEM_NOTA e ITEM_CUPOM referenciam PRODUTO e SERVICO.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 # 5. Diagrama de classe
 
@@ -647,7 +666,9 @@ classDiagram
 
 > :warning: **Atenção:** Repare que os código gerados por ferramentas poderão conter erros! Como este diagrama foi gerado a partir do diagrama ER anterior, apresenta os mesmos problemas. Note que a ferramenta não detectou na descrição do negócio métodos significativos para representá-los neste diagrama.
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
 
 ## 5.1. Descrição das Classes e Relacionamentos
 
@@ -708,6 +729,20 @@ NotaFiscal e CupomFiscal contêm ItemNota e ItemCupom, respectivamente.
 
 ItemNota e ItemCupom referenciam Produto e Servico.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 # 6. Casos de uso
 
@@ -720,6 +755,12 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 
 
 <img src="https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGD3TCL67JGVEPT3NGZ4ZLWNA" alt="casos de uso" width="400"/>
+
+
+
+
+
+
 
 
 # 7. Histórias de usuário
@@ -807,47 +848,91 @@ Como sistema, quero registrar itens nos cupons fiscais (vinculando produtos e se
 Como cliente, quero saber que há atendentes para recepção, limpeza e médicos veterinários disponíveis, para confiar que o atendimento será realizado por profissionais organizados e capacitados.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 # 8. Diagrama de componentes
 
 
-:bulb: **Dica:** Diagramas de componentes são importantes no projeto técnico porque... 1) Visualização da arquitetura do sistema. 2) Explica a modularidade do projeto. 3) Apresenta casos de modularidade dos componentes do sistema. 4) Permite identificar peças críticas do projeto.
-
+:bulb: **Dica:** Diagramas de componentes são importantes no projeto técnico porque: 
+1) Visualização da arquitetura do sistema. 
+2) Explica a modularidade do projeto. 
+3) Apresenta casos de modularidade dos componentes do sistema. 
+4) Permite identificar peças críticas do projeto.
 
 ![Diagrama de componentes](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_componentes2.png)
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
 # 9. Diagrama de implantação
 
 
-:bulb: **Dica:** Diagramas de implantação são importantes no projeto técnico porque... 1) Permite visualizar o planejamento de instalação do sistema no parque de máquinas. 2) Permite identificar hardwa e software que serão necessários adquirir e organizar. 3) Ajuda no projeto de infra e segurança de rede. 4) Possibilida a visualização do parque computacional (incluindo hardware e software). 5) Permite identificar qual componente de software estará instalado em qual nó.
+:bulb: **Dica:** Diagramas de implantação são importantes no projeto técnico porque: 
+1) Permite visualizar o planejamento de instalação do sistema no parque de máquinas. 
+2) Permite identificar hardwa e software que serão necessários adquirir e organizar. 
+3) Ajuda no projeto de infra e segurança de rede.
+4) Possibilida a visualização do parque computacional (incluindo hardware e software). 
+5) Permite identificar qual componente de software estará instalado em qual nó.
 
 
 ![Diagrama de implantação](https://github.com/monteiro74/emiliano_monteiro2024/blob/main/diagrama_implantacao2.png)
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 # 10. Diagramas C4
 
-
-
 ## 10.1. Diagrama de contexto
-
-```
-cole aqui !
-```
 
 ## 10.2. Diagrama de container
 
-
 ## 10.3. Diagrama de componente
 
-
 ## 10.4. Diagrama de código
+
+
+
+
+
 
 
 
@@ -855,7 +940,12 @@ cole aqui !
 ---
 # 11. Protótipo de telas
 
-:bulb: **Dica:** É uma etapa importante do projeto porque: 1) Permite a visualização clara do design (UX/IX) e sua representação visual do que será entregue em diferentes formatos até a utilização dos controles (visuais) reais para o usuário testar a tela. 2) Facilitam ajustes antecipados: Com protótipos é possível testar antes de "entrar em produção". 3) Permite que o usuário possa "se manifestar" antecipadamente para a equipe e comentar o que deseja e o que deve conter ou não nos formulários. 4) Testam a experiência do usuário quanto a velocidade de acesso, facilidade de uso, compreensão do que deve fazer nas telas e o que deve acionar. 5) Auxiliam na definição de requisitos técnicos que ainda não foram percebidos pelos Devs.
+:bulb: **Dica:** É uma etapa importante do projeto porque: 
+1) Permite a visualização clara do design (UX/IX) e sua representação visual do que será entregue em diferentes formatos até a utilização dos controles (visuais) reais para o usuário testar a tela. 
+2) Facilitam ajustes antecipados: Com protótipos é possível testar antes de "entrar em produção". 
+3) Permite que o usuário possa "se manifestar" antecipadamente para a equipe e comentar o que deseja e o que deve conter ou não nos formulários. 
+4) Testam a experiência do usuário quanto a velocidade de acesso, facilidade de uso, compreensão do que deve fazer nas telas e o que deve acionar. 
+5) Auxiliam na definição de requisitos técnicos que ainda não foram percebidos pelos Devs.
 
 
 :bulb: **Dica:** Diferenças entre Wireframe x Mockup x Prototipação... 
@@ -870,7 +960,7 @@ cole aqui !
 | $  | $$ | $$$ |
 | Exemplos de softwares: Balsamiq, Adobe XD, Evolus, UXpin  | Exemplos de software: InVision, Moqups, Photoshop, Evolus | Exemplos de softwares: FlutterFlow, Mockplus, Adobe XD, Android Studio, Embarcadero Delphi, MS Xamarin, Scriptcase. |
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
 
 
 
@@ -888,7 +978,7 @@ cole aqui !
 
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
 
 ## 12.2.  Exemplo 2
 
@@ -931,10 +1021,8 @@ graph TD;
     M --> Q[Entrevista com Veterinário]
     Q --> R[Registrar Observações]
     R --> S[Finalizar Atendimento]
-
 ```
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 12.4. Segunda geração do diagrama
 
@@ -966,7 +1054,14 @@ graph TD
 
 ```
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
+
+
 
 
 
@@ -974,7 +1069,13 @@ graph TD
 # 13. Pilha tecnológica
 
 
-:bulb: **Dica:** Esta parte do projeto técnico é importante porque: 1) Permite que o projeto seja compatível com os requisitos técnicos e com as funcionalidades esperados pelo usuário. 2) Possibilita que equipamentos e software sejam especificados antecipadamente possibilitando estudo prévio sobre custo, desempenho e escalabilidade. 3) Possibilitará futuras operações de manutenção. 4) Poderá ajudar na definição de requisitos de segurança e velocidade. 5) Permite que seja feita uma projeção e planejamento de compatibilidade tecnológica na fase de projeto com o que existe atualmente na estrutura da empresa.
+:bulb: **Dica:** Esta parte do projeto técnico é importante porque: 
+1) Permite que o projeto seja compatível com os requisitos técnicos e com as funcionalidades esperados pelo usuário. 
+2) Possibilita que equipamentos e software sejam especificados antecipadamente possibilitando estudo prévio sobre custo, desempenho e escalabilidade. 
+3) Possibilitará futuras operações de manutenção. 
+4) Poderá ajudar na definição de requisitos de segurança e velocidade. 
+5) Permite que seja feita uma projeção e planejamento de compatibilidade tecnológica na fase de projeto com o que existe atualmente na estrutura da empresa.
+
 
 ```mermaid
 graph TD;
@@ -1022,7 +1123,6 @@ graph TD;
     K --> K1[Markdown]
 ```
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
 ## 13.1. segunda versão
 
@@ -1074,7 +1174,12 @@ graph TD;
 
 ```
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
 
 
 
@@ -1103,14 +1208,36 @@ graph TD;
 
 3)
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ---
 # 15. Considerações sobre segurança
 
-:bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 2) Ajuda a prevenir contra ataques cibernéticos. 3) Torna o projeto do software compatível com leis e regulamentos. 4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
+:bulb: **Dica:** Definir previamente requisitos de segurança é um aspecto importante porque: 
+1) Permite que sejam elaborados funcionalidades e detalhes para proteção de dados sensíveis. 
+2) Ajuda a prevenir contra ataques cibernéticos. 
+3) Torna o projeto do software compatível com leis e regulamentos. 
+4) É uma garantia de que o sistema funcionará de forma correta e íntegra. 
+5) Possibilita que o PO e os usuários tenha confiança no software. 6) Poderá minimizar prejuízos financeiros.
+
 
 ## 15.1. Lado cliente
 
@@ -1129,14 +1256,33 @@ Sugestão ?? Política de backup de aplicação e banco ?? 1x/mês 1 full backup
 
 o admin do sistema não acessa dados do usuário!
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ---
 # 16. Manutenção, instalação e Novas funcionalidades
 
-:bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 3) É uma ferramenta que auxilia na elaboração do plano de continguência. 4) Detalha procedimentos pós-instalação. 5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 6) Poderá ter critérios para backup e restore. 7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
+:bulb: **Dica:** Nesta parte do projeto poderão estar aqui: 
+1) detalhes específicos para instalação do software como a instalação em conjunto com outras bibliotecas de terceiros, instalação em lojas de aplicativos. 
+2) Detalhes de manutenção como operações especiais de monitoração, rodízio de backup, detalhes sobre segurança que devem ser observados com constância, testes de comunicação e alertas que deve ser observados se estão sendo gerados e entregues. 
+3) É uma ferramenta que auxilia na elaboração do plano de continguência. 
+4) Detalha procedimentos pós-instalação. 
+5) Detalha o que deve ser monitorado no lado cliente e servidor, por exemplo a quantidade de logs gerados e seu armazenamento. 
+6) Poderá ter critérios para backup e restore. 
+7) detalhar formulários para o usuário solicitar suporte, formas de solicitação de suporte e critérios de atendimento.
 
 
 ## 16.1. instalado no lado servidor 
@@ -1152,20 +1298,26 @@ a) equipe tem tempo ?
 b) é economicamente viável ?
 c) é tecnológicamente viável ?
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
+
+
+
+
+
+
+
 
 
 
 ---
-# 18. Script SQL
+# 17. Script SQL
 
 > :warning: **Atenção:** No projeto de um software não criamos o banco de dados ainda, pois a fase de projeto é um "visão de futuro"; o exemplo abaixo foi inserido para que exercícios pudessem ser realizados em ferramenta IDE RAD.
 
 > :warning: **Atenção:** Em alguns projetos com necessidades específicas, como prototipar telas e navegação usando o Scriptcase é necessário ter um banco de dados com uma quantidade mínima de tabelas; ou em situações em que o projeto de software irá realizar uma atualização de um software legado, pode ser necessário trazer detalhes técnicos do banco ou outras partes.
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 18.1. Comandos CREATE table
+
+## 17.1. Comandos CREATE table
 
 ```SQL
 
@@ -1263,9 +1415,8 @@ CREATE TABLE entrevistas (
     FOREIGN KEY (id_atendimento) REFERENCES atendimentos(id_atendimento)
 );
 ```
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
-## 18.2. Comandos INSERT gerando dados fictícios
+## 17.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
 -- Inserindo clientes
@@ -1323,9 +1474,8 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 
 ```
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
-### 18.2.1. Explicação dos dados fictícios
+### 17.2.1. Explicação dos dados fictícios
 
 * Clientes: João, Maria e Carlos são clientes da clínica, cada um com informações de contato.
 * Animais: Rex (cachorro), Mimi (gato) e Bolinha (cachorro) são os animais dos clientes.
@@ -1337,5 +1487,4 @@ INSERT INTO entrevistas (id_atendimento, observacoes) VALUES
 * Fila de espera: Fila de clientes e animais aguardando atendimento.
 * Entrevistas: Observações feitas durante a entrevista entre veterinário e dono do animal.
 
-[Voltar ao Início](#repositório_projeto_eng_sw)
 
