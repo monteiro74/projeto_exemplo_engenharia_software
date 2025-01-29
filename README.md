@@ -761,10 +761,10 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 <img src="https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png" alt="casos de uso" width="400"/>
 
 
-[https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGE4G3GRTPB7EVIDN2Z4ZVTHA](https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGE4G3GRTPB7EVIDN2Z4ZVTHA)
+![https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGE4G3GRTPB7EVIDN2Z4ZVTHA](https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGE4G3GRTPB7EVIDN2Z4ZVTHA)
 
 
-
+![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v1.png)
 
 
 # 7. Histórias de usuário
