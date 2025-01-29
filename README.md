@@ -773,7 +773,8 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 ## 7.1. Cadastro e Gestão de Clientes e Animais
 
 ```
-Como cliente, quero realizar meu cadastro informando meu nome, telefone, email e endereço, para que eu possa acessar os serviços oferecidos pela clínica de forma personalizada.
+Como cliente, quero realizar meu cadastro informando meu nome, telefone, email e endereço, 
+para que eu possa acessar os serviços oferecidos pela clínica de forma personalizada.
 ```
 
 ```
