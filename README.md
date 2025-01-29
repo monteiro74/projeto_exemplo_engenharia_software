@@ -53,7 +53,7 @@ b) Modelagem e projeto de banco de dados.
   - [14.1. Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB](#141-requisitos-de-hardware-e-software-mínimos-para-um-sistema-web-em-php--mariadb)
   - [14.4. Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:](#144-requisitos-de-segurança-mínimos-para-um-sistema-web-em-php--mariadb)
 - [15. Script SQL](#15-script-sql)
-  - [17.1. Comandos CREATE table](#171-comandos-create-table)
+  - [15.1. Comandos CREATE table](#151-comandos-create-table)
   - [15.2. Comandos INSERT gerando dados fictícios](#152-comandos-insert-gerando-dados-fictícios)
     - [17.2.1. Explicação dos dados fictícios](#1721-explicação-dos-dados-fictícios)
 
@@ -1436,7 +1436,7 @@ Backups Automatizados: Configure backups regulares do banco de dados e arquivos 
 
 
 
-## 17.1. Comandos CREATE table
+## 15.1. Comandos CREATE table
 
 ```SQL
 
