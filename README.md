@@ -777,94 +777,165 @@ Como cliente, quero realizar meu cadastro informando meu nome, telefone, email e
 para que eu possa acessar os serviços oferecidos pela clínica de forma personalizada.
 ```
 
-:bulb: **Dica:** Como cliente, quero cadastrar meus animais informando nome, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para que a clínica tenha um histórico completo de cada animal.
-
-
 ```
-Como cliente, quero informar as condições de saúde do meu animal na chegada (se está bem de saúde, alimentação, sono, etc.), para que o veterinário tenha informações atualizadas para o atendimento.
+Como cliente, quero cadastrar meus animais informando nome, raça, sexo, altura, peso, cor 
+principal, idade e data de nascimento, para que a clínica tenha um histórico completo de cada animal.
 ```
 
 ```
-Como cliente, quero informar o tipo de ração que meu animal consome regularmente, para que a clínica possa oferecer recomendações adequadas, caso necessário.
+Como cliente, quero informar as condições de saúde do meu animal na chegada (se está bem 
+de saúde, alimentação, sono, etc.), para que o veterinário tenha informações atualizadas 
+para o atendimento.
 ```
 
 ```
-Como cliente, quero registrar os hábitos do meu animal (como horários de sono, alimentação, exercícios e cirurgias anteriores), para que o veterinário tenha um histórico mais detalhado para análises futuras.
+Como cliente, quero informar o tipo de ração que meu animal consome regularmente, para 
+que a clínica possa oferecer recomendações adequadas, caso necessário.
+```
+
+```
+Como cliente, quero registrar os hábitos do meu animal (como horários de sono, alimentação, 
+exercícios e cirurgias anteriores), para que o veterinário tenha um histórico mais 
+detalhado para análises futuras.
 ```
 
 ## 7.2. Atendimento e Agendamentos
 
 ```
-Como cliente, quero agendar um horário para o atendimento do meu animal com o veterinário, para evitar filas e garantir um atendimento no horário combinado.
+Como cliente, quero agendar um horário para o atendimento do meu animal com o veterinário, 
+para evitar filas e garantir um atendimento no horário combinado.
 ```
 
 ```
-Como atendente, quero verificar na agenda os horários disponíveis para atendimento com o veterinário, para organizar os agendamentos e minimizar conflitos de horários.
+Como atendente, quero verificar na agenda os horários disponíveis para atendimento com o 
+veterinário, para organizar os agendamentos e minimizar conflitos de horários.
 ```
 
 ```
-Como atendente, quero registrar o cliente e seu animal na fila de espera, caso não haja horários disponíveis no momento, para garantir que o cliente será atendido assim que possível.
+Como atendente, quero registrar o cliente e seu animal na fila de espera, caso não haja 
+horários disponíveis no momento, para garantir que o cliente será atendido assim que possível.
 ```
 
 ```
-Como atendente, quero acompanhar o cliente e seu animal até a sala do veterinário no horário marcado ou quando chamado, para garantir uma boa experiência para o cliente e organização no atendimento.
+Como atendente, quero acompanhar o cliente e seu animal até a sala do veterinário no horário 
+marcado ou quando chamado, para garantir uma boa experiência para o cliente e organização no atendimento.
 ```
 
 ## 7.3. Gestão de Fichas e Prontuários
 
-Como sistema, quero criar fichas para cada animal atendido contendo dados como nome do responsável, apelido, raça, sexo, altura, peso, cor principal, idade e data de nascimento, para manter registros completos e organizados sobre cada animal.
+```
+Como sistema, quero criar fichas para cada animal atendido contendo dados como nome do 
+responsável, apelido, raça, sexo, altura, peso, cor principal, idade e data de nascimento, 
+para manter registros completos e organizados sobre cada animal.
+```
 
-Como veterinário, quero registrar no prontuário do animal informações como datas de vacinação, vacinas aplicadas, tratamentos médicos e medicamentos prescritos, para manter um histórico detalhado e confiável do animal.
+```
+Como veterinário, quero registrar no prontuário do animal informações como datas de vacinação, 
+vacinas aplicadas, tratamentos médicos e medicamentos prescritos, para manter um histórico 
+detalhado e confiável do animal.
+```
 
-Como veterinário, quero registrar no prontuário observações e resultados de exames realizados no animal durante o atendimento, para documentar as condições do animal e embasar futuras consultas ou tratamentos.
+```
+Como veterinário, quero registrar no prontuário observações e resultados de exames realizados
+no animal durante o atendimento, para documentar as condições do animal e embasar futuras consultas ou tratamentos.
+```
 
 ## 7.4. Receitas e Medicamentos
 
-Como veterinário, quero emitir receitas contendo os medicamentos ou vacinas necessários para o tratamento do animal, para orientar o cliente sobre os cuidados e ações a serem tomados após o atendimento.
+```
+Como veterinário, quero emitir receitas contendo os medicamentos ou vacinas necessários para o 
+tratamento do animal, para orientar o cliente sobre os cuidados e ações a serem tomados após o atendimento.
+```
 
 ## 7.5. Serviços de Limpeza, Hospedagem e Produtos
 
-Como cliente, quero contratar serviços de limpeza como banho e tosa para meu animal, para mantê-lo higienizado e bem cuidado.
+```
+Como cliente, quero contratar serviços de limpeza como banho e tosa para meu animal, 
+para mantê-lo higienizado e bem cuidado.
+```
 
-Como cliente, quero contratar serviços de hospedagem para meu animal com duração de até uma semana, para que ele tenha um local seguro enquanto estou ausente.
+```
+Como cliente, quero contratar serviços de hospedagem para meu animal com duração de até uma semana, 
+para que ele tenha um local seguro enquanto estou ausente.
+```
 
-Como atendente, quero verificar a disponibilidade na agenda para serviços de hospedagem antes de confirmar o agendamento, para evitar conflitos de reserva e garantir a organização do espaço.
+```
+Como atendente, quero verificar a disponibilidade na agenda para serviços de hospedagem antes de 
+confirmar o agendamento, para evitar conflitos de reserva e garantir a organização do espaço.
+```
 
-Como cliente, quero comprar rações especiais para meu animal diretamente na clínica, para facilitar o acesso a produtos que atendam às necessidades específicas dele.
+```
+Como cliente, quero comprar rações especiais para meu animal diretamente na clínica, para facilitar 
+o acesso a produtos que atendam às necessidades específicas dele.
+```
 
 ## 7.6. Comunicação com Clientes
 
-Como sistema, quero enviar mensagens via WhatsApp ou Telegram para confirmar agendamentos de serviços e consultas, para garantir que o cliente esteja ciente da data e horário marcado.
+```
+Como sistema, quero enviar mensagens via WhatsApp ou Telegram para confirmar agendamentos de serviços 
+e consultas, para garantir que o cliente esteja ciente da data e horário marcado.
+```
 
-Como sistema, quero enviar notificações via email e aplicativos de mensagens para informar o cliente quando um serviço for concluído, para que ele saiba quando buscar o animal ou finalizar a compra.
+```
+Como sistema, quero enviar notificações via email e aplicativos de mensagens para informar o cliente 
+quando um serviço for concluído, para que ele saiba quando buscar o animal ou finalizar a compra.
+```
 
 ## 7.7. Gestão Financeira e Fiscal
 
-Como atendente, quero registrar os valores recebidos no caixa diariamente, para controlar o fluxo financeiro da clínica de forma organizada.
+```
+Como atendente, quero registrar os valores recebidos no caixa diariamente, para controlar o fluxo 
+financeiro da clínica de forma organizada.
+```
+```
+Como sistema, quero gerenciar contas a pagar e a receber em tabelas separadas, para monitorar as 
+finanças e identificar rapidamente despesas e receitas.
+```
 
-Como sistema, quero gerenciar contas a pagar e a receber em tabelas separadas, para monitorar as finanças e identificar rapidamente despesas e receitas.
+```
+Como sistema, quero emitir notas fiscais de serviços prestados (consultas, hospedagem, limpeza), 
+para atender às exigências legais e documentar as operações da clínica.
+```
 
-Como sistema, quero emitir notas fiscais de serviços prestados (consultas, hospedagem, limpeza), para atender às exigências legais e documentar as operações da clínica.
-
-Como sistema, quero emitir cupons fiscais para os produtos vendidos na petshop, para formalizar a venda de produtos como rações e acessórios.
+```
+Como sistema, quero emitir cupons fiscais para os produtos vendidos na petshop, para formalizar a 
+venda de produtos como rações e acessórios.
+```
 
 ## 7.8. Estrutura Interna e Organização
 
-Como gerente, quero consultar os dados cadastrais da clínica (endereço, telefone, site, nome e CNPJ), para manter as informações acessíveis para clientes e parceiros.
+```
+Como gerente, quero consultar os dados cadastrais da clínica (endereço, telefone, site, nome e CNPJ), 
+para manter as informações acessíveis para clientes e parceiros.
+```
 
-Como sistema, quero registrar produtos com código, nome e valor no estoque, para organizar o inventário e facilitar a venda.
+```
+Como sistema, quero registrar produtos com código, nome e valor no estoque, para organizar o 
+inventário e facilitar a venda.
+```
 
-Como sistema, quero cadastrar serviços com código, nome e valor, para organizar a tabela de serviços oferecidos pela clínica.
+```
+Como sistema, quero cadastrar serviços com código, nome e valor, para organizar a tabela de 
+serviços oferecidos pela clínica.
 Integração com Notas e Cupons Fiscais
+```
 
-Como sistema, quero registrar itens nas notas fiscais (vinculando produtos e serviços ao código da nota), para detalhar todas as transações de forma clara e organizada.
+```
+Como sistema, quero registrar itens nas notas fiscais (vinculando produtos e serviços ao código da 
+nota), para detalhar todas as transações de forma clara e organizada.
+```
 
-Como sistema, quero registrar itens nos cupons fiscais (vinculando produtos e serviços ao código do cupom), para detalhar as vendas realizadas na petshop.
+```
+Como sistema, quero registrar itens nos cupons fiscais (vinculando produtos e serviços ao código do 
+cupom), para detalhar as vendas realizadas na petshop.
+```
 
 ## 7.9. Estrutura da Equipe
 
-Como cliente, quero saber que há atendentes para recepção, limpeza e médicos veterinários disponíveis, para confiar que o atendimento será realizado por profissionais organizados e capacitados.
-
+```
+Como cliente, quero saber que há atendentes para recepção, limpeza e médicos veterinários disponíveis,
+ para confiar que o atendimento será realizado por profissionais organizados e capacitados.
+```
 
 
 
