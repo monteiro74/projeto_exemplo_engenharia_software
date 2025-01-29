@@ -759,13 +759,11 @@ ItemNota e ItemCupom referenciam Produto e Servico.
 <img src="https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png" width="550" height="1500" />
 
 
-![https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGE4G3GRTPB7EVIDN2Z4ZVTHA](https://raw.githubusercontent.com/monteiro74/projeto_exemplo_engenharia_software/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACYKCGSGE4G3GRTPB7EVIDN2Z4ZVTHA)
+
 
 
 
 # 7. Histórias de usuário
-
-
 
 :bulb: **Dica:** Histórias de usuários são importantes no projeto técnico porque: 
 1) Foco nas necessidades do usuário. 
@@ -1024,13 +1022,81 @@ e capacitados.
 
 ## 10.1. Diagrama de contexto
 
+```mermaid
+%% Diagrama de Contexto
+C4Context
+  title Diagrama de Contexto - Petshop e Clínica Veterinária
+  Person(cliente, "Cliente", "Pessoa que agenda serviços para seu pet")
+  Person(atendente, "Atendente", "Funcionário que gerencia a recepção e organização da clínica")
+  Person(veterinario, "Veterinário", "Médico responsável pelo atendimento dos animais")
+  System(clinica_sistema, "Sistema da Clínica", "Sistema interno para gestão de clientes, animais, agenda e financeiro")
+  System_Ext(whatsapp, "WhatsApp", "Canal de comunicação com os clientes")
+  System_Ext(telegram, "Telegram", "Outro canal de comunicação com os clientes")
+  
+  Rel(cliente, clinica_sistema, "Agendamento e informações sobre o pet")
+  Rel(atendente, clinica_sistema, "Gerencia clientes e agenda")
+  Rel(veterinario, clinica_sistema, "Atualiza prontuários e realiza atendimentos")
+  Rel(clinica_sistema, whatsapp, "Envia notificações e confirmações")
+  Rel(clinica_sistema, telegram, "Envia notificações e confirmações")
+```
+
+
 ## 10.2. Diagrama de container
+
+```mermaid
+%% Diagrama de Container
+C4Container
+  title Diagrama de Contêiner - Petshop e Clínica Veterinária
+  Person(cliente, "Cliente")
+  Container_Boundary(clinica_sistema, "Sistema da Clínica") {
+    Container(web_app, "Aplicação Web", "Python/Streamlit", "Interface para gestão")
+    Container(database, "Banco de Dados", "MySQL", "Armazena informações da clínica")
+    Container(whatsapp_api, "API WhatsApp", "Twilio API", "Envia notificações para clientes")
+  }
+  cliente -> web_app : "Agendamento e consultas"
+  web_app -> database : "Armazena dados do cliente, animal e agenda"
+  web_app -> whatsapp_api : "Envia notificações"
+```
 
 ## 10.3. Diagrama de componente
 
+```mermaid
+%% Diagrama de Componente
+C4Component
+  title Diagrama de Componente - Sistema da Clínica
+  Container(web_app, "Aplicação Web", "Python/Streamlit")
+  Component(agenda_servico, "Módulo de Agendamento", "Gerencia marcação de horários")
+  Component(prontuario_servico, "Módulo de Prontuário", "Registra informações médicas dos animais")
+  Component(financeiro_servico, "Módulo Financeiro", "Gerencia pagamentos e notas fiscais")
+  Component(notificacao_servico, "Módulo de Notificações", "Envia mensagens para clientes")
+  
+  web_app -> agenda_servico : "Criação e atualização de agendamentos"
+  web_app -> prontuario_servico : "Registro de exames e atendimentos"
+  web_app -> financeiro_servico : "Geração de notas fiscais e recebimentos"
+  web_app -> notificacao_servico : "Envio de confirmações e lembretes"
+```
+
 ## 10.4. Diagrama de código
 
-
+```mermaid
+%% Diagrama de Código
+C4Code
+  title Diagrama de Código - Módulo de Prontuário
+  Component_Class(ProntuarioService, "ProntuarioService", "Gerencia prontuários")
+  Class(Prontuario) {
+    +id: int
+    +animal_id: int
+    +data_atendimento: date
+    +descricao: text
+  }
+  Class(Animal) {
+    +id: int
+    +nome: string
+    +raca: string
+  }
+  ProntuarioService --> Prontuario : "Cria e gerencia registros"
+  Prontuario --> Animal : "Cada prontuário pertence a um animal"
+```
 
 
 
