@@ -837,14 +837,16 @@ detalhado e confiável do animal.
 
 ```
 Como veterinário, quero registrar no prontuário observações e resultados de exames realizados
-no animal durante o atendimento, para documentar as condições do animal e embasar futuras consultas ou tratamentos.
+no animal durante o atendimento, para documentar as condições do animal e embasar futuras 
+consultas ou tratamentos.
 ```
 
 ## 7.4. Receitas e Medicamentos
 
 ```
-Como veterinário, quero emitir receitas contendo os medicamentos ou vacinas necessários para o 
-tratamento do animal, para orientar o cliente sobre os cuidados e ações a serem tomados após o atendimento.
+Como veterinário, quero emitir receitas contendo os medicamentos ou vacinas necessários 
+para o tratamento do animal, para orientar o cliente sobre os cuidados e ações a 
+serem tomados após o atendimento.
 ```
 
 ## 7.5. Serviços de Limpeza, Hospedagem e Produtos
@@ -855,8 +857,8 @@ para mantê-lo higienizado e bem cuidado.
 ```
 
 ```
-Como cliente, quero contratar serviços de hospedagem para meu animal com duração de até uma semana, 
-para que ele tenha um local seguro enquanto estou ausente.
+Como cliente, quero contratar serviços de hospedagem para meu animal com duração de 
+até uma semana, para que ele tenha um local seguro enquanto estou ausente.
 ```
 
 ```
@@ -865,20 +867,22 @@ confirmar o agendamento, para evitar conflitos de reserva e garantir a organiza�
 ```
 
 ```
-Como cliente, quero comprar rações especiais para meu animal diretamente na clínica, para facilitar 
-o acesso a produtos que atendam às necessidades específicas dele.
+Como cliente, quero comprar rações especiais para meu animal diretamente na clínica, para 
+facilitar o acesso a produtos que atendam às necessidades específicas dele.
 ```
 
 ## 7.6. Comunicação com Clientes
 
 ```
-Como sistema, quero enviar mensagens via WhatsApp ou Telegram para confirmar agendamentos de serviços 
-e consultas, para garantir que o cliente esteja ciente da data e horário marcado.
+Como sistema, quero enviar mensagens via WhatsApp ou Telegram para confirmar 
+agendamentos de serviços e consultas, para garantir que o cliente esteja ciente da 
+data e horário marcado.
 ```
 
 ```
-Como sistema, quero enviar notificações via email e aplicativos de mensagens para informar o cliente 
-quando um serviço for concluído, para que ele saiba quando buscar o animal ou finalizar a compra.
+Como sistema, quero enviar notificações via email e aplicativos de mensagens para 
+informar o cliente quando um serviço for concluído, para que ele saiba quando buscar 
+o animal ou finalizar a compra.
 ```
 
 ## 7.7. Gestão Financeira e Fiscal
