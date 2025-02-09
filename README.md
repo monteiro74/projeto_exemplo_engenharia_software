@@ -1135,7 +1135,7 @@ C4Component
 ![https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png](https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png)
 
 
-<img src="https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png" alt="drawing" width="200"/>
+<img src="https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png" alt="drawing" width="400"/>
 
 
 ## 12.3. Outros exemplo... menu de navegação entre módulos.
