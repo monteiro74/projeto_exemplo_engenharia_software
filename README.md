@@ -1132,7 +1132,7 @@ C4Component
 
 ## 12.2.  Exemplo 1
 
-<img src="https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png" alt="drawing" width="800"/>
+<img src="https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png" alt="drawing" width="700"/>
 
 
 ## 12.3. Outros exemplo... menu de navegação entre módulos.
