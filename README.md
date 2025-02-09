@@ -44,14 +44,12 @@ b) Modelagem e projeto de banco de dados.
 - [11. Protótipo de telas](#11-protótipo-de-telas)
   - [11.1. Exemplo de formulário](#111-exemplo-de-formulário)
 - [12. Diagrama de navegação de telas](#12-diagrama-de-navegação-de-telas)
-  - [12.2.  Exemplo 1](#122--exemplo-1)
-  - [12.3. Outros exemplo... menu de navegação entre módulos.](#123-outros-exemplo-menu-de-navegação-entre-módulos)
-  - [12.4. Segunda geração do diagrama, 2ª versão](#124-segunda-geração-do-diagrama-2ª-versão)
+  - [12.1.  Exemplo 1](#121--exemplo-1)
+  - [12.2. Outros exemplo... menu de navegação entre módulos.](#122-outros-exemplo-menu-de-navegação-entre-módulos)
+  - [12.3. Segunda geração do diagrama, 2ª versão](#123-segunda-geração-do-diagrama-2ª-versão)
 - [13. Pilha tecnológica](#13-pilha-tecnológica)
   - [13.1. Mais algumas modificações](#131-mais-algumas-modificações)
 - [14. Requisitos de sistemas](#14-requisitos-de-sistemas)
-  - [14.1. Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB](#141-requisitos-de-hardware-e-software-mínimos-para-um-sistema-web-em-php--mariadb)
-  - [14.4. Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:](#144-requisitos-de-segurança-mínimos-para-um-sistema-web-em-php--mariadb)
 - [15. Script SQL](#15-script-sql)
   - [15.1. Comandos CREATE table](#151-comandos-create-table)
   - [15.2. Comandos INSERT gerando dados fictícios](#152-comandos-insert-gerando-dados-fictícios)
@@ -1130,12 +1128,12 @@ C4Component
 
 
 
-## 12.2.  Exemplo 1
+## 12.1.  Exemplo 1
 
 <img src="https://raw.githubusercontent.com/monteiro74/prototipacao_flutterflow1/main/imagens/Diagrama_v2.png" alt="drawing" width="700"/>
 
 
-## 12.3. Outros exemplo... menu de navegação entre módulos.
+## 12.2. Outros exemplo... menu de navegação entre módulos.
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login, a IA não levou em consideração esse formulário ou não estava na especificação que foi passada.
 
@@ -1169,7 +1167,7 @@ graph TD;
 ```
 
 
-## 12.4. Segunda geração do diagrama, 2ª versão
+## 12.3. Segunda geração do diagrama, 2ª versão
 
 > :warning: **Atenção:** Neste diagrama tivemos que alterar o código gerado para conter a tela de login.
 
@@ -1336,91 +1334,6 @@ graph TD;
 2) Permitirá explicitar ao PO detalhes como integração de sistemas. 
 3) Possibilitará identificar incompatibilidades com softwares que já estão operando hoje. 
 4) A equipe de suporte saberá antecipadamente que para instalar o software o ambiente deverá ter estes requisitos mínimos para funcionar.
-
-## 14.1. Requisitos de hardware e software mínimos para um sistema web em PHP + MariaDB
-
-:bulb: **Dica:** Exemplo...
-
-Hardware:
-Processador (CPU):
-
-Mínimo: 1 núcleo (para sistemas pequenos ou de baixo tráfego).
-Recomendado: 2 ou mais núcleos (para sistemas com tráfego moderado ou alto).
-Memória RAM:
-Mínimo: 512 MB (para sistemas pequenos ou de desenvolvimento).
-Recomendado: 2 GB ou mais (para produção, dependendo do tráfego e complexidade do sistema).
-Armazenamento (Disco):
-Mínimo: 10 GB (para o sistema operacional, PHP, MariaDB e arquivos do sistema).
-Recomendado: SSD com 20 GB ou mais (para melhor desempenho, especialmente em produção).
-Rede:
-Conexão estável com internet (velocidade mínima de 1 Mbps para sistemas pequenos).
-Software:
-Sistema Operacional:
-Linux (Ubuntu, Debian, CentOS, etc.) ou Windows Server.
-Linux é geralmente preferido para servidores web devido ao desempenho e custo.
-Servidor Web:
-Apache ou Nginx (recomendado para alta performance).
-PHP:
-Versão mínima: PHP 7.4 (recomendado PHP 8.x para melhor desempenho e segurança).
-Extensões necessárias: PDO, MySQLi, OpenSSL, JSON, entre outras.
-Banco de Dados:
-MariaDB (versão mínima: 10.2, recomendado 10.5 ou superior).
-Outros:
-Git (para versionamento de código).
-Composer (para gerenciamento de dependências em PHP).
-
-## 14.4. Requisitos de segurança mínimos para um sistema web em PHP + MariaDB:
-
-:bulb: **Dica:** Exemplo...
-
-1. Configurações do Servidor:
-Atualizações: Mantenha o sistema operacional, PHP, MariaDB e o servidor web (Apache/Nginx) sempre atualizados.
-Firewall: Configure um firewall (ex: UFW no Linux) para bloquear portas desnecessárias.
-Permissões de Arquivos: Defina permissões corretas para arquivos e diretórios (ex: 755 para diretórios, 644 para arquivos).
-Desativar Serviços Desnecessários: Desative serviços e módulos não utilizados no servidor.
-
-2. Segurança do PHP:
-Configuração do php.ini:
-Desative display_errors em produção.
-Defina error_reporting para E_ALL em desenvolvimento e desative em produção.
-Limite o tamanho de upload de arquivos (upload_max_filesize).
-Desative funções perigosas como exec, shell_exec, system, etc.
-Use HTTPS: Configure SSL/TLS para criptografar a comunicação entre o cliente e o servidor.
-Validação de Entrada: Sempre valide e sanitize dados de entrada para evitar injeções de SQL e XSS.
-
-3. Segurança do MariaDB:
-Senhas Fortes: Use senhas complexas para usuários do banco de dados.
-Privilégios Mínimos: Conceda apenas as permissões necessárias para cada usuário do banco.
-Backups Automatizados: Configure backups regulares do banco de dados.
-Evite SQL Injection: Use prepared statements com PDO ou MySQLi.
-Remova Usuários Padrão: Remova ou renomeie o usuário root e outros usuários padrão.
-
-4. Segurança da Aplicação:
-Proteção contra XSS (Cross-Site Scripting):
-Use funções como htmlspecialchars para escapar saídas de dados.
-Proteção contra CSRF (Cross-Site Request Forgery):
-Implemente tokens CSRF em formulários.
-Autenticação Segura:
-Use hash seguro para senhas (ex: password_hash no PHP).
-Implemente autenticação de dois fatores (2FA) se possível.
-Limite de Tentativas de Login:
-Implemente bloqueio após várias tentativas falhas de login.
-CORS (Cross-Origin Resource Sharing):
-Configure políticas CORS para restringir acesso a recursos de origens não confiáveis.
-
-5. Monitoramento e Logs:
-Logs de Acesso e Erros: Habilite logs no servidor web e no PHP para monitorar atividades suspeitas.
-Ferramentas de Monitoramento: Use ferramentas como Fail2Ban para bloquear IPs maliciosos.
-Auditoria Regular: Revise logs e permissões periodicamente.
-
-6. Backup e Recuperação:
-Backups Automatizados: Configure backups regulares do banco de dados e arquivos do sistema.
-
-
-
-
-
-
 
 
 
