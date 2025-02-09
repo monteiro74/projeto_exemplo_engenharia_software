@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animal</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+    <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+        <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Criar</button>
+        <button style="padding: 10px; background-color: #2196F3; color: white; border: none; cursor: pointer;">Ler</button>
+        <button style="padding: 10px; background-color: #FFC107; color: white; border: none; cursor: pointer;">Atualizar</button>
+        <button style="padding: 10px; background-color: #F44336; color: white; border: none; cursor: pointer;">Deletar</button>
+    </div>
+    <h2>Cadastro de Animal</h2>
+    <form action="processa_animal.php" method="post" style="max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="apelido">Apelido:</label>
+        <input type="text" id="apelido" name="apelido" required style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="raca">Raça:</label>
+        <input type="text" id="raca" name="raca" style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" style="width: 100%; padding: 8px; margin: 5px 0;">
+            <option value="M">Macho</option>
+            <option value="F">Fêmea</option>
+        </select><br><br>
+
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" name="altura" step="0.01" style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.01" style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="cor_principal">Cor Principal:</label>
+        <input type="text" id="cor_principal" name="cor_principal" style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <label for="id_cliente">ID do Cliente:</label>
+        <input type="number" id="id_cliente" name="id_cliente" required style="width: 100%; padding: 8px; margin: 5px 0;"><br><br>
+
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Cadastrar</button>
+    </form>
+</body>
+</html>
