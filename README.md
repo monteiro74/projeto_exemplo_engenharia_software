@@ -2,11 +2,23 @@
 
 Repositório usado nas disciplinas de:
 
-a) Engenharia de Software e,<br>
-b) Modelagem e projeto de banco de dados.
+a) Engenharia de Software,<br>
+b) projeto de sistemas, <br>
+c) Modelagem e projeto de banco de dados.
+
+
+Proposta de exercício: 
+* Identificar os erros no projeto, em cada parte existe espaço para melhorias.
+* Propor sugestões para os itens identificados.
+* Refazer os prompts para sanar os problemas.
+* Refazer o banco de dados após as modificações.
+* Aplicar as mudanças na ferramenta de desenvolvimento, gerar novas telas.
+
+
 
 ---
 # Sumário
+
 
 
 - [Projeto exemplo para Engenharia de Software](#projeto-exemplo-para-engenharia-de-software)
@@ -54,7 +66,6 @@ b) Modelagem e projeto de banco de dados.
   - [15.1. Comandos CREATE table](#151-comandos-create-table)
   - [15.2. Comandos INSERT gerando dados fictícios](#152-comandos-insert-gerando-dados-fictícios)
     - [15.2.1. Explicação dos dados fictícios](#1521-explicação-dos-dados-fictícios)
-
 
 
 
